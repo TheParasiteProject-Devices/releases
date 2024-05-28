@@ -1,25 +1,52 @@
 # pdx234
 
-### 05-27-2024
+### 05-28-2024
+
+#### build/make
+
+* fd072b4  make: sysprop.mk: Treat dev-keys as release-keys  [Ido Ben-Hur]
+* cc91b5e  Revert "build: Always use release-keys"  [someone5678]
+
+#### build/soong
+
+* fd2ec63  allowlists: support inline signing for U [1/2]  [John Galt]
 
 #### device/sony/sm8550-common
 
-* 3b3c016  sm8550: Signing build with custom key  [someone5678]
+* f2a72d5  sm8550: Signing build with custom key  [someone5678]
+
+#### external/exfatprogs
+
+* a7b8f72  Fixing issues in METADATA file external_updater expects string in METADATA file but it couldn't find any to update the project.  [Sadaf Ebrahimi]
+* d9929c2  [LSC] Add LOCAL_LICENSE_KINDS to external/exfatprogs  [Bob Badour]
+* 99d0baa  ANDROID: Add metadata files  [Daniel Rosenberg]
 
 #### manifest
 
 * b68491d  manifest: parasite: Track vendor/parasite-signatures  [someone5678]
 
+#### vendor/google/mainline_modules
+
+* 3eb5d72  mainline_modules: Enable virtualization support by default  [someone5678]
+* 3704a32  Enable virtualization support  [Oliver Scott]
+
+#### vendor/google/pixel-framework
+
+* b35f1b1  Revert "SettingsGoogle: Apply R8 optimization based on SystemUI"  [someone5678]
+* 77fbe2d  SystemUIGoogle: Remove R8 optimizations  [minaripenguin]
+
 #### vendor/parasite
 
 * 0479f7d2  parasite: Include signature configs if exists  [someone5678]
 
-#### vendor/parasite-prebuilts
-
-* 4d47336  parasite-prebuilts: Ship Gramophone by default  [someone5678]
-
 #### vendor/parasite-signatures
 
+* 5770db6  Update README.md  [someone5678]
+* 239a085  signing: support inline signing for U [2/2]  [John Galt]
+* 8f7e98f  common: BoardConfigSign: Clean-ups  [someone5678]
+* f016fbc  common: config: Setup PRODUCT_OTA_PUBLIC_KEYS  [someone5678]
+* d722d54  common: BoardConfigSign: Remove OTA key path  [someone5678]
+* 2a3ef4f  common: Remove BUILD.bazel symlink  [someone5678]
 * 035674e  Update README.md  [someone5678]
 * 2dbcd7f  common: generate.sh: Check whether dir exists  [someone5678]
 * a9683aa  common: Generate build files  [someone5678]
@@ -29,6 +56,15 @@
 * 0ddf8e2  common: Add auto makefile and symlinks setup script  [someone5678]
 * 87e3fdb  common: Support build signing  [someone5678]
 * ce31d49  common: Make certificate directory overridable  [someone5678]
+
+### 05-27-2024
+
+#### vendor/parasite-prebuilts
+
+* 4d47336  parasite-prebuilts: Ship Gramophone by default  [someone5678]
+
+#### vendor/parasite-signatures
+
 * edebad4  Update README.md  [someone5678]
 * f2abbc5  Update symlinks  [someone5678]
 * e28c2b3  Update README.md  [someone5678]
@@ -96,16 +132,21 @@
 
 ### 05-25-2024
 
-#### build/make
-
-* 82fdc52  build: core: Add support for setting ota package key  [someone5678]
-
-### 05-24-2024
-
 #### bionic
 
 * 0c0e0e7  system_properties: Update pihook props  [someone5678]
 * 314f249  system_properties: Introduce native PropImitationHooks  [Adithya R]
+
+#### vendor/certification
+
+* 62f0ccf  certification: Clean-up  [someone5678]
+
+#### vendor/parasite
+
+* 86f32bc  PixelPropsUtils: Check whether values are empty before put into map  [someone5678]
+* 04c1d65  PixelPropsUtils: Move certified props to a string resource  [Ido Ben-Hur]
+
+### 05-24-2024
 
 #### device/sony/pdx234
 
@@ -118,12 +159,10 @@
 
 #### vendor/certification
 
-* 62f0ccf  certification: Clean-up  [someone5678]
+* e44b9b2  certification: Update  [someone5678]
 
 #### vendor/parasite
 
-* 86f32bc  PixelPropsUtils: Check whether values are empty before put into map  [someone5678]
-* 04c1d65  PixelPropsUtils: Move certified props to a string resource  [Ido Ben-Hur]
 * 3cb56c8  PixelPropsUtils: Clean up and update  [Joey]
 
 #### vendor/sony/pdx234
@@ -133,10 +172,4 @@
 #### vendor/sony/sm8550-common
 
 * 832a8f5  sm8550-common: Update  [someone5678]
-
-### 05-23-2024
-
-#### vendor/certification
-
-* e44b9b2  certification: Update  [someone5678]
 
