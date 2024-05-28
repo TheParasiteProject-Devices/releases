@@ -1,6 +1,6 @@
 # pdx234
 
-### 05-28-2024
+### 05-29-2024
 
 #### build/make
 
@@ -21,9 +21,19 @@
 * d9929c2  [LSC] Add LOCAL_LICENSE_KINDS to external/exfatprogs  [Bob Badour]
 * 99d0baa  ANDROID: Add metadata files  [Daniel Rosenberg]
 
-#### manifest
+#### hardware/sony
 
-* b68491d  manifest: parasite: Track vendor/parasite-signatures  [someone5678]
+* ab6b411  XperiaDisplay: Add vendor.semc.hardware.display up to 2.5  [someone5678]
+* d2d4481  XperiaDisplay: Make sure it's not enable by default on first boot  [lolipuru]
+* 66f5b5c  XperiaDisplay: Drop livedisplay  [lolipuru]
+
+#### vendor/aosp
+
+* 89ec324  vendor: tools: changelog: Use bash  [someone5678]
+
+#### vendor/google/gms
+
+* 1925d8b  gms: overlay: Properly override SettingsLib's headline font  [someone5678]
 
 #### vendor/google/mainline_modules
 
@@ -37,7 +47,7 @@
 
 #### vendor/parasite
 
-* 0479f7d2  parasite: Include signature configs if exists  [someone5678]
+* 85930bb  PixelPropsUtils: Spoof NestBox to Pixel 6 Pro  [someone5678]
 
 #### vendor/parasite-signatures
 
@@ -47,6 +57,19 @@
 * f016fbc  common: config: Setup PRODUCT_OTA_PUBLIC_KEYS  [someone5678]
 * d722d54  common: BoardConfigSign: Remove OTA key path  [someone5678]
 * 2a3ef4f  common: Remove BUILD.bazel symlink  [someone5678]
+
+### 05-28-2024
+
+#### manifest
+
+* b68491d  manifest: parasite: Track vendor/parasite-signatures  [someone5678]
+
+#### vendor/parasite
+
+* 0479f7d2  parasite: Include signature configs if exists  [someone5678]
+
+#### vendor/parasite-signatures
+
 * 035674e  Update README.md  [someone5678]
 * 2dbcd7f  common: generate.sh: Check whether dir exists  [someone5678]
 * a9683aa  common: Generate build files  [someone5678]
@@ -56,15 +79,6 @@
 * 0ddf8e2  common: Add auto makefile and symlinks setup script  [someone5678]
 * 87e3fdb  common: Support build signing  [someone5678]
 * ce31d49  common: Make certificate directory overridable  [someone5678]
-
-### 05-27-2024
-
-#### vendor/parasite-prebuilts
-
-* 4d47336  parasite-prebuilts: Ship Gramophone by default  [someone5678]
-
-#### vendor/parasite-signatures
-
 * edebad4  Update README.md  [someone5678]
 * f2abbc5  Update symlinks  [someone5678]
 * e28c2b3  Update README.md  [someone5678]
@@ -77,7 +91,7 @@
 * 656d3b1  Initial commit  [AnierinB]
 * c3d4605  Initial commit  [someone5678]
 
-### 05-26-2024
+### 05-27-2024
 
 #### frameworks/base
 
@@ -108,10 +122,6 @@
 * 353da8f  tools/resolve_btfids: Skip unresolved symbol warning for empty BTF sets  [Kumar Kartikeya Dwivedi]
 * 53ec986  minimal sony changes  [Luofan Chen]
 
-#### prebuilts/tools-parasite
-
-* ee103e9  tools-parasite: Add avbroot  [someone5678]
-
 #### vendor/aosp
 
 * cfda495  Revert "Implement immersive navigation to navbar no hint overlay"  [someone5678]
@@ -127,8 +137,15 @@
 
 #### vendor/parasite-prebuilts
 
+* 4d47336  parasite-prebuilts: Ship Gramophone by default  [someone5678]
 * 2aa3371  parasite-prebuilts: Import Gramophone  [someone5678]
 * 004b1b2  parasite-prebuilts: Prepare for import Gramophone  [someone5678]
+
+### 05-26-2024
+
+#### prebuilts/tools-parasite
+
+* ee103e9  tools-parasite: Add avbroot  [someone5678]
 
 ### 05-25-2024
 
@@ -136,6 +153,11 @@
 
 * 0c0e0e7  system_properties: Update pihook props  [someone5678]
 * 314f249  system_properties: Introduce native PropImitationHooks  [Adithya R]
+
+#### system/core
+
+* e7442aa  init: Adapt snet spoof changes to A14 QPR2  [someone5678]
+* 4927a27  init: Add ro.oem_unlock_supported  [someone5678]
 
 #### vendor/certification
 
@@ -145,31 +167,5 @@
 
 * 86f32bc  PixelPropsUtils: Check whether values are empty before put into map  [someone5678]
 * 04c1d65  PixelPropsUtils: Move certified props to a string resource  [Ido Ben-Hur]
-
-### 05-24-2024
-
-#### device/sony/pdx234
-
-* 20952a8  pdx234: Update  [someone5678]
-
-#### system/core
-
-* e7442aa  init: Adapt snet spoof changes to A14 QPR2  [someone5678]
-* 4927a27  init: Add ro.oem_unlock_supported  [someone5678]
-
-#### vendor/certification
-
-* e44b9b2  certification: Update  [someone5678]
-
-#### vendor/parasite
-
 * 3cb56c8  PixelPropsUtils: Clean up and update  [Joey]
-
-#### vendor/sony/pdx234
-
-* 11fe70a  pdx234: Update  [someone5678]
-
-#### vendor/sony/sm8550-common
-
-* 832a8f5  sm8550-common: Update  [someone5678]
 
