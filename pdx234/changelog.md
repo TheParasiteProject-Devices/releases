@@ -1,10 +1,331 @@
 # pdx234
 
+### 06-05-2024
+
+#### device/parasite/sepolicy
+
+* 352ee66  fixup! sepolicy: Add google_battery service policies by default  [someone5678]
+
+#### device/sony/extra
+
+* 811586c  extra: props: Import Xperia specific props for features  [someone5678]
+
+#### device/sony/sm8550-common
+
+* d2533f9  sm8550-common: configs: wifi: Import configs from wifi-bonding  [someone5678]
+* 792bc62  sm8550-common: props: odm: Enable SDR dimming for HWC  [someone5678]
+* 878a2f9  sm8550-common: props: odm: Clean-ups  [someone5678]
+* 608d1a5  sm8550-common: props: Set default Wi-Fi country code  [someone5678]
+* 28b6e75  sm8550-common: props: Disable forced safe media volume  [someone5678]
+
+#### frameworks/base
+
+* 8d78d11  SystemUI: Fix the bluetooth icon cannot be toggled by status tuner  [lgjint]
+* 432d291  SystemUI: Add null check for wakelock in KeyguardViewMediator  [Pranav Vashi]
+* adb0f42  SystemUI: Prevent OOB when reinflating QS panel with notifications  [minaripenguin]
+* bcd25c1  SystemUI: Prevent systemui crash when reinflating QS  [minaripenguin]
+* eda8f40  SystemUI: customization: Avoid NPE in ClockRegistry  [someone5678]
+* e5a1acf  SystemUI: tuner: Set profile to be primary profile only  [someone5678]
+
+#### hardware/google/graphics/common
+
+* 5bc3dbf  libdrmresource: Add missing epoll_event.h include  [razorloves]
+
+#### hardware/google/pixel
+
+* 86e16fe  Restore drv2624 vibrator HAL APEX  [Michael Bestas]
+* 7a53776  kernel_headers: Guard with soong namespace  [Michael Bestas]
+* fb71dcb  citadel: Guard with proprietary source presence  [Michael Bestas]
+* 0806c45  pixel: Add lineage health HAL  [Michael Bestas]
+* ddca9af  pixel: Implement PowerShare HAL  [Alessandro Astone]
+* ac4a92b  pixel: Add lineage touch hal  [Alessandro Astone]
+* 0de50cd  pixel: Disable userdebug diagnostics  [Ethan Chen]
+
+#### hardware/google/pixel-sepolicy
+
+* 4c0ad36  Move turbo_adapter policy out of googlebattery  [Michael Bestas]
+* 3bd26a2  sepolicy: Add lineage health HAL policy  [Michael Bestas]
+* 3a860b1  sepolicy: Add PowerShare HAL policy  [Alessandro Astone]
+* f901cf5  sepolicy: Add lineage touch hal policy  [Alessandro Astone]
+
+#### manifest
+
+* 8f0e5ad  manifest: parasite: Track hardware/google/pixel-sepolicy  [someone5678]
+
+#### packages/apps/Settings
+
+* 54b215a  Settings: Forcefully enable Hotspot Speed setting  [someone5678]
+* 2e2b918  WiFi: Remove country code checking.  [xyyx]
+* ed7a524  Settings: Move all custom security options to misc security settings  [someone5678]
+* 8fc6b62  Settings: Add additional security settings preference  [someone5678]
+* 5456df6  ExternalStorageProvider: Conditionally remove SAF restrictions [2/2]  [someone5678]
+* ecfb204  DataProcessor: Do not skip and replace screen on component with screen on time  [minaripenguin]
+* b800704  NightDisplay Settings: Use List Preference for NightLight settings  [Akash]
+* ae326cd  DarkMode Settings: Use List Preference rather ugly Drop Down  [Pranav Vashi]
+* afceafc  Settings: Allow to hide screen capture status from apps [2/2]  [someone5678]
+* 77097b8  Settings: Update Annoying Notifications title  [someone5678]
+* c5711cd  Settings: Update Misc Haptics title  [someone5678]
+* f1fbc58  CustomSettings: Remove un-implemented features  [someone5678]
+* e91a344  Settings: Generify custom project info props  [someone5678]
+* 39e7081  Settings: Fix regulatory info availability check  [Ido Ben-Hur]
+* 6832111  Settings: Add a dev option to unlimit screenrecord filesize [2/2]  [Ido Ben-Hur]
+* 849ea73  Settings: Update hide developer status strings  [someone5678]
+* fa466fa  Settings: Update storage encryption status spoofing strings  [someone5678]
+* 2b3ee26  Settings: Fix setting device name based on market name  [John Vincent]
+* 4f08e7f  Settings: Set device name from marketname if available  [Pranav Vashi]
+* f0b9d63  Settings: deviceinfo: Move Battery info preference back to device info page  [someone5678]
+* 6386ae9  Settings: Add icon for emergency broadcasts  [Pranav Vashi]
+* 05c9b14  Settings: Remove dividers in Network & Internet  [Pranav Vashi]
+* 176c1f1  Settings: Add Market Name to device info  [someone5678]
+* 1260487  Make battery cycle count configurable and disable it by default  [Michael Bestas]
+* d901deb  Hide unavailable battery info  [Michael Bestas]
+* 0de3ce2  Settings: deviceinfo: Extend Battery info page  [Jyotiraditya Panda]
+* 268a1a5  Make battery info configurable and enable it by default  [Michael Bestas]
+* c459e99  Settings: Use marketname for App Aspect Ratio summary  [someone5678]
+* 985d1c1  fixup! Add option to reset network settings to factory  [someone5678]
+* 4c41054  Settings: Update data/time prefs to SwitchPreferenceCompat  [someone5678]
+* 7a77dd4  Also disable switch for "Allow background usage"  [Tommy Webb]
+* 5e16589  Update PhoneLink 14-3 Settings change  [chawan]
+* dec29c3  Island: Add Now playing settings  [minaripenguin]
+* 4c0b7c7  Settings: Add fragment for Island Feature  [minaripenguin]
+* 5a270a4  Settings: support per-app volume [3/3]  [cjybyjk]
+* 3d094e0  Settings: Add haptics to brightness slider [2/2]  [someone5678]
+* e9f7ef0  Settings: Move three-fingers-swipe to screenshot to SwitchPreferenceCompat  [someone5678]
+* 66df54e  Settings: ButtonSettings: Move to SwitchPreferenceCompat  [someone5678]
+* de95c82  BatteryStateDatabase: Set exportSchema to false  [someone5678]
+* 934cab8  Settings: Make all user apps cloneable [2/2]  [Jyotiraditya Panda]
+* 95c9676  SoundSettings: Add charging vibration settings  [xyyx]
+* 67fdfc4  Settings: Add support for disabling fingerprint lockout [2/2]  [SamarV-121]
+* 63b8e7e  fixup! Settings: Allow extended/"L" back swipe to trigger actions/app/activities [2/2]  [someone5678]
+* dffa18a  Settings: Always restore keyChordPowerVolumeUp to mute...  [Adithya R]
+* 87cddcf  Settings: Add userRestriction for auto brightness  [Erfan Abdi]
+* 5215eb7  Settings: Introduce new refresh rate selector page  [Adithya R]
+* 691f239  Settings: Gesture nav: Add back launch menu action  [someone5678]
+* c925686  Settings: Gesture nav: Add go forward action  [someone5678]
+* 82d1ead  Settings: Gesture nav: Correctly disable left/right option when long swipe setting is disabled  [someone5678]
+* 3feb8a6  Settings: Gestures nav: Add back show recents action  [someone5678]
+* d4c2066  Settings: Gesture nav: Remove timeout setting  [someone5678]
+* f40c1ad  Allow extended/"L" back swipe to trigger actions/app/activities [2/2]  [ezio84]
+* 47da9e9  Settings: Spoof current storage encryption status [2/2]  [someone5678]
+* 05b1c1e  ChargingControl: Don't index settings if it is not supported  [Luofan Chen]
+* c7ef3bc  Settings: Add charging control preferences  [Danny Trunk]
+* c4b4f43  Settings: Reset props for status bar lyric [2/2]  [cjybyjk]
+* e865191  Settings: Add status bar lyric [2/2]  [Kujou Yuko]
+* e25b694  Settings: Add optional haptic feedback on scrolling with fling gesture [2/2]  [Blaster4385]
+* 06728ce  QuickSettings: Add Haptic Feedback to tiles [2/2]  [amartinz]
+* fd7a79e  Settings: Add optional haptic feedback to volume panel [2/2]  [Blaster4385]
+* 4e6326b  Settings: Align user avatar with homepage title  [jhonboy121]
+* be34ec5  Status bar: Wifi Standard Icon [2/2]  [minaripenguin]
+* 4cd3f35  PhoneNumberPreferenceController: Fixup sensitive info for multi sims  [Ido Ben-Hur]
+* 799aeeb  Settings: Improve protected sensitive info in about phone  [Ido Ben-Hur]
+* 252424c  Settings: Allow to quickly open Running Services from meminfo view  [ezio84]
+* d54ee18  Settings: Declare an activity for WirelessDebuggingFragment  [Ido Ben-Hur]
+* 5481ba8  Settings: Extend protect sensitive info to MAC [2/2]  [Ido Ben-Hur]
+* 7e457f7  Settings: Allow toggling floating rotation button [2/2]  [Ido Ben-Hur]
+* 84bfacd  Settings: Allow disabling color inversion support [2/2]  [Ido Ben-Hur]
+* 9992e95  Settings: disable all bugreport settings  [maxwen]
+* c94b4d2  Settings: Fix potential NPE in WifiTetherSecurityPreferenceController  [Fabian Leutenegger]
+* f8abfe2  Settings: buttons text should no longer be allCaps  [maxwen]
+* 120944d  Fix long click intent for Smart Pixels tile [2/2]  [Pranav Vashi]
+* 1e125b8  Settings: Smart Pixels [2/2]  [Adin Kwok]
+* 3197189  Settings: Add developer setting to set the default GPU renderer.  [Joe Maples]
+* 77b3ff9  Settings: Update Application downgrade and Ignore window secure strings  [someone5678]
+* fa4a47c  Settings: Bluetooth: Don't check persistable uri permission for BtHelper  [someone5678]
+* 600d06e  Settings: allow disable of screenshot shutter sound [2/2]  [someone5678]
+* e599233  Settings: fix typo in settings namespace for qr scanner on ls  [maxwen]
+* 5d9d665  Settings: Fix tint on newly added private VPN and mobile plan icons  [Bruno Martins]
+* 91768a0  Settings: Update private dns icons  [penglezos]
+* 5dd2ee7  Settings: Make roaming indicator optional [2/2]  [Pranav Vashi]
+* a459327  Settings: Option to Display Data Disabled Indicator Icon [2/2]  [varund7726]
+* 2279fa0  Settings: User toggle for unlimited photos storage [2/2]  [spezi77]
+* 4439412  Settings: Add advanced settings preference  [someone5678]
+* d6270fa  Fix LTE Only mode on World Mode  [flawedworld]
+* 1494a1d  LTE Only Mode  [Pratyush]
+* aaf058f  Settings: Add location indicators toggle to privacy control settings  [someone5678]
+* 3d7bfbd  Settings: Don't check ro.build.selinux  [someone5678]
+* cffb48b  Settings: Add proximity check on wake preference  [Bruno Martins]
+* 69f3a82  crdroid: Transparent QS customization  [ShevT]
+* 7484a55  Settings: Add Device codename to Firmware version window  [ganeshi4u]
+* 86e1502  Settings: Move Vo5G toggle right below VoLTE  [Adithya R]
+* d139951  Settings: StatusBarSettings: Restore Network Traffic Settings  [someone5678]
+* 88e92f7  Settings: Add default value for Navigation Bar IME Space  [someone5678]
+* 5deb32b  Settings: Allow to skip confirmation in biometric auth dialog [3/2]  [someone5678]
+* e7ac7ca  Settings: Re-order SELinux status on About Phone  [someone5678]
+* b8843d3  Settings: Allow to skip confirmation in biometric auth dialog [2/2]  [cjh1249131356]
+* 02cc89f  Settings: Export FaceEnrollFinish activity to Sense  [Chris Crump]
+* ff0f291  Settings: Partial import DotOS A11 About Phone design  [IacobIonut01]
+* f5934b5  Port "Battery Usage Alerts" feature from factory images  [ezio84]
+* 2d966c8  Settings: Implement cutout force full screen [2/2]  [jhenrique09]
+* 9907505  Settings: Add empty TheParasiteProject config overlay  [someone5678]
+* 18b94d7  Settings: Hide ADB and developer setting enable status [2/2]  [someone5678]
+* d3957f6  Properly set Wi-Fi Privacy spinner initial state  [Tommy Webb]
+* 8ed92f42  Settings: Do not skip fp authentication for udfps  [Adithya R]
+* 96d2618  Settings: Add a preference to battery optimization page  [jhonboy121]
+* d22c938  Settings: Black theme [2/3]  [SagarMakhar]
+* 3996c85  Settings: Hide radio info if device don't support voice  [LynnrinChan]
+* d4b726a  Settings: Expose radio info (*#*#4636#*#*)  [xyyx]
+* 2b3cda4  Link location indicators toggle in privacy settings  [Danny Lin]
+* dadd21f  Settings: Improve code for time spent in app  [Jyotiraditya Panda]
+* dfa1681  AppInfo: Add time spent in app from Wellbeing  [Jason Edson]
+* 435870d  Settings: use Glif themed button bar  [Timi Rautamäki]
+* 3702cb4  Add toggle for connectivity check  [Aayush Gupta]
+* a21b859  AGPS: Mention that it's ignored during user-initiated emergency calls  [Chirayu Desai]
+* d0cacf7  Settings: StatusBarSettings: Restore Network Traffic Settings  [someone5678]
+* 3f4186e  Settings: Add switch preference for AGPS  [juwei]
+* 460857e  NetworkProviderSettings: Fixup uninitialized mWifiManager  [Jacob McSwain]
+* 172cdb9  Settings: Add more required libraries  [Joey Huab]
+* 858ff62  Settings: Add Glide library  [SagarMakhar]
+* 58272a0  Settings: Regulatory: Fullscreen instead of AlertDialog  [ReallySnow]
+* 20faec5  Settings: Remove IME space under keyboard feature [2/2]  [timjosten]
+* 03733a8  Settings: Allow using 4G icon instead LTE [2/2]  [neobuddy89]
+* 3bdc11d  Settings: Remove DSU Loader if unsupported  [Joey Huab]
+* 6907dc5  Settings: Remove A/B preference if unsupported  [Luca Stefani]
+* 7304758  Settings: Add Default USB Configuration  [ZeNiXxX]
+* 87ee765  Settings: Show SoC Model rather than value of ro.board.platform if available  [Tim Zimmermann]
+* 150ad42  Settings: Align TotalRAMPreferenceController with MemoryUsagePreferenceController from dev settings  [Tim Zimmermann]
+* 7767704  DeviceInfo: Add back SELinux status to About Phone  [mydongistiny]
+* 8f760a9  Settings: Add platform and RAM to Model & Hardware  [Rashed Abdel-Tawab]
+* b16d2f8  Settings: Reset battery stats [2/2]  [Jorge Ruesga]
+* 41485c0  InstalledApp: Hide GooglePlay icon for webapps  [DarkJoker360]
+* 67c19c5  Settings: Link smallest width options in display settings  [Subhajeet Muhuri]
+* ebfe27d  Settings: Expose saved devices fragment via intent  [Adithya R]
+* 08ae9b2  Settings: default to GlifV3Theme  [Timi Rautamäki]
+* 629ff6f  Port brightness slider changes [2/2]  [Pranav Vashi]
+* bd820cd  Settings: DevicePicker: Adapt to S style  [ReallySnow]
+* 3acb0b8  development: Enable force resizable activities by default  [minaripenguin]
+* fa470b0  development: Enable freeform windows by default  [minaripenguin]
+* b0b89eb  Settings: Long press to copy wifi password  [Ido Ben-Hur]
+* ef1e87f  Settings: Remove divider from Battery Manager  [Akash Srivastava]
+* d06be775  Settings: Observe auto brightness mode changes  [Ido Ben-Hur]
+* 5ee5d4f  Open app when clicking on icon in App Info  [deadman96385]
+* 14cc7a9  InstalledApp: show link to Google Play  [George G]
+* bfef985  InstalledAppDetails: fix refreshing storage summary after force stop  [Altaf-Mahdi]
+* 5b82b9f  Expand abbreviation in average memory usage string  [Danny Lin]
+* 5a88b64  Enable FeatureFlags on "user" builds too  [ezio84]
+* 8a93783  Battery: Implement background process killer [2/2]  [Dil3mm4]
+* d740a56  Allow to suppress notifications sound/vibration if screen is ON [2/2]  [ezio84]
+* 1e4dd4f  Settings: Add window ignore secure feature [2/2]  [LibXZR]
+* cbf5777  Settings: Add application downgrade feature [2/2]  [LibXZR]
+* 3003bc7  Ignore custom app space management activities  [Danny Lin]
+* 32522b0  Change fingerprint strings to be more generic  [jhenrique09]
+* e05c4a4  FingerprintEnroll: Add config for dedicated side mounted fps  [Bruno Martins]
+
+#### vendor/aosp
+
+* 44b123d  vendor: Remove TARGET_KERNEL_HEADERS from EXPORT_TO_SOONG  [someone5678]
+* a105a71  vendor: config: props: Set default wifi country code  [someone5678]
+
+#### vendor/parasite
+
+* dd6a612  PixelPropsUtils: Spoof Photos even if util is disabled  [someone5678]
+
+#### vendor/sony/extra
+
+* 4f5c2c2  SoundEnhancementCustom: Set profile to be primary profile only  [someone5678]
+
+### 06-04-2024
+
+#### device/xiaomi/sm6150-common
+
+* 1f9b5a5  sm6150-common: Signing build with custom key  [someone5678]
+* e019e22  sm6150-common: Setup broken-rules  [someone5678]
+* 25bc890  sm6150-common: BoardConfig: Set loop.max_part to 8  [someone5678]
+* b3474d9  fixup! sm6150-common: configs: audio: Add hotword input for hotword mic concurrency  [someone5678]
+* 870df4a  sm6150-common: configs: audio: Add hotword input for hotword mic concurrency  [Jasmine Cha]
+* 3528100  sm6150-common: Remove FM Tuner from audio input devices  [iovxw]
+* 0c416ec  sm6150-common: Enable puffdiff for ota compression  [someone5678]
+* 48bb234  sm6150-common: Enable zucchini for ota compression  [someone5678]
+* 4a1e30b  sm6150-common: Setup additional options for ota  [someone5678]
+* c8280c8  sm8550-common: overlay: Remove default pinner service  [someone5678]
+* 074fbc5  sm6150-common: overlay: Wifi: Update targepackage to Google APEX  [someone5678]
+* 72c27e0  sm6150-common: sm6150.mk -> common.mk  [someone5678]
+* d65117e  sm6150-common: Remove LineageOS specific stuffs  [someone5678]
+
+#### device/xiaomi/sweet
+
+* fa128e0  sweet: releasetools: Flash custom logo img  [someone5678]
+* 2502ba4  sweet: include firmware blobs  [someone5678]
+* 2b0e41b  sweet: releasetools: flash vbmeta_system as well  [Akhil Narang]
+* 528ce66  sweet: releasetools: Ship and update vbmeta image  [XiNGRZ]
+* ce8d071  sweet: releasetools: Add dtbo image to the output zip if present  [XiNGRZ]
+* 32eb531  sweet: Add from 31 to 34 to PRODUCT_EXTRA_VNDK_VERSIONS  [someone5678]
+* a9508d4  sweet: Set VNDK versions  [someone5678]
+* 55d115c  sweet: Setup BOARD_API_LEVEL  [someone5678]
+* c4ca95c  sweet: Ship CarrierServices  [someone5678]
+* f2e777e  sweet: Ship AOSP based custom recovery  [someone5678]
+* d997858  Set BOOT_SECURITY_PATCH during build  [Garret Kelly]
+* 8f77206  Set VENDOR_SECURITY_PATCH to platform  [Chris Fries]
+* 52136e4  sweet: sm6150.mk -> common.mk  [someone5678]
+* 2c231fa  sweet: Parasitizing  [someone5678]
+* 48f2dd1  sweet: Remove LineageOS specific stuffs  [someone5678]
+
+#### kernel/xiaomi/sm6150
+
+* 7bb8f92  syscall: Fake uname to 4.19 also for netbpfload  [Tim Zimmermann]
+* 1f62a60  syscall: Fake uname to 4.19 for bpfloader/netd  [Tim Zimmermann]
+* 64dbf0c3  gen_headers_{arm, arm64}: Add btf.h to the list  [Cyber Knight]
+* 199b804  BACKPORT: devmap: Allow map lookups from eBPF  [Toke Høiland-Jørgensen]
+* 79d54c4  BACKPORT: xdp: Add devmap_hash map type for looking up devices by hashed index  [Toke Høiland-Jørgensen]
+* 5f7a6e5  kernel: bpf: devmap: Create __dev_map_alloc_node  [Tim Zimmermann]
+* 90d6378  BACKPORT: bpf: Post-hooks for sys_bind  [Andrey Ignatov]
+* 672d5b1  BACKPORT: bpf: Hooks for sys_connect  [Andrey Ignatov]
+* 8772bb3  BACKPORT: net: Introduce __inet_bind() and __inet6_bind  [Andrey Ignatov]
+* 9d645a9  BACKPORT: bpf: Hooks for sys_bind  [Andrey Ignatov]
+* a8d9acc  BACKPORT: bpf: introduce BPF_PROG_QUERY command  [Alexei Starovoitov]
+* 87f9b7b  BACKPORT: bpf: Check attach type at prog load time  [Andrey Ignatov]
+* 56547933  bpf: offload: rename the ifindex field  [Jakub Kicinski]
+* cd4d4d3  BACKPORT: bpf: offload: add infrastructure for loading programs for a specific netdev  [Jakub Kicinski]
+* e131757  BACKPORT: net: bpf: rename ndo_xdp to ndo_bpf  [Jakub Kicinski]
+* c9055b8  bpf: btf: fix truncated last_member_type_id in btf_struct_resolve  [Lorenz Bauer]
+* d0c8ce9  bpf/btf: Fix BTF verification of enum members in struct/union  [Yoshiki Komachi]
+* 7bf6065  bpf: fix BTF limits  [Alexei Starovoitov]
+* 8feabef  bpf, btf: fix a missing check bug in btf_parse  [Martin Lau]
+* bde9fdb  bpf: btf: Fix a missing check bug  [Wenwen Wang]
+* 99220f8  bpf: btf: Fix end boundary calculation for type section  [Martin KaFai Lau]
+* feacea6  bpf: fix bpf_skb_load_bytes_relative pkt length check  [Daniel Borkmann]
+* 838cb5c  bpf: btf: Ensure the member->offset is in the right order  [Martin KaFai Lau]
+* 261c8cc  bpf: btf: Clean up BTF_INT_BITS() in uapi btf.h  [Martin KaFai Lau]
+* d84f5e9  bpf: btf: Fix bitfield extraction for big endian  [Okash Khawaja]
+* f72fb58  bpf: btf: Ensure t->type == 0 for BTF_KIND_FWD  [Martin KaFai Lau]
+* 4fe6eca  bpf: btf: Check array t->size  [Martin KaFai Lau]
+* 78bbff8  bpf: btf: avoid -Wreturn-type warning  [Arnd Bergmann]
+* 0d48119  bpf: btf: Avoid variable length array  [Martin KaFai Lau]
+* 1863990  bpf: btf: Remove unused bits from uapi/linux/btf.h  [Martin KaFai Lau]
+* 120d191  bpf: btf: Check array->index_type  [Martin KaFai Lau]
+* ba30af5  bpf: btf: Change how section is supported in btf_header  [Martin KaFai Lau]
+* a810a1b  bpf: Fix compiler warning on info.map_ids for 32bit platform  [Martin KaFai Lau]
+* 78336ea  BACKPORT: bpf: Use char in prog and map name  [Martin KaFai Lau]
+* d51a0d9  bpf: Change bpf_obj_name_cpy() to better ensure map's name is init by 0  [Martin KaFai Lau]
+* 33f3f9e  BACKPORT: bpf: Add map_name to bpf_map_info  [Martin KaFai Lau]
+* bb8ba9e  BACKPORT: bpf: Add name, load_time, uid and map_ids to bpf_prog_info  [Martin KaFai Lau]
+* 086cfe0  bpf: btf: Avoid WARN_ON when CONFIG_REFCOUNT_FULL=y  [Martin KaFai Lau]
+* 31fe70a  BACKPORT: bpf: btf: Clean up btf.h in uapi  [Martin KaFai Lau]
+* a5aeb96  bpf: btf: Add BPF_OBJ_GET_INFO_BY_FD support to BTF fd  [Martin KaFai Lau]
+* d0db8db  BACKPORT: bpf: btf: Add BPF_BTF_LOAD command  [Martin KaFai Lau]
+* 254dab9  bpf: btf: Add pretty print capability for data with BTF type info  [Martin KaFai Lau]
+* 44ea822  bpf: btf: Check members of struct/union  [Martin KaFai Lau]
+* 6488b65  bpf: btf: Validate type reference  [Martin KaFai Lau]
+* 7830ad0  bpf: Update logging functions to work with BTF  [Tim Zimmermann]
+* 416d2ec  BACKPORT: bpf: btf: Introduce BPF Type Format (BTF)  [Martin KaFai Lau]
+* 0fa7c89  BACKPORT: bpf: Rename bpf_verifer_log  [Martin KaFai Lau]
+* a124a48  BACKPORT: bpf: encapsulate verifier log state into a structure  [Jakub Kicinski]
+* b58b766  BACKPORT: bpf: add skb_load_bytes_relative helper  [Daniel Borkmann]
+
+#### vendor/parasite-prebuilts
+
+* 929225a  parasite-prebuilts: update-files: Add Gramophone  [someone5678]
+* e802818  parasite-prebuilts: Add updater script  [someone5678]
+
 ### 06-03-2024
 
 #### frameworks/base
 
+* a656d45  WindowDecor: Pass correct displayId for back key event  [Dhina17]
 * c6268dc  TelephonyManager: Gracefully handle null telephony service [2]  [minaripenguin]
+
+#### hardware/sony
+
+* 2988908  XperiaSettings: Set profile to be primary profile only  [someone5678]
 
 #### kernel/sony/sm8550
 
@@ -31,28 +352,14 @@
 * 30b40dd  tools/resolve_btfids: Skip unresolved symbol warning for empty BTF sets  [Kumar Kartikeya Dwivedi]
 * f8ca1fe  minimal sony changes  [Luofan Chen]
 
-#### packages/apps/Aperture
+#### packages/apps/KProfiles
 
-* aac5e1c  Automatic translation import  [LineageOS Infra]
-
-#### packages/apps/Updater
-
-* d614744  Automatic translation import  [LineageOS Infra]
-* 38cc977  Updater: Handle ErrorCode::kUpdateAlreadyInstalled more gracefully  [LuK1337]
-
-#### vendor/parasite
-
-* 6c987cc  PixelPropsUtils: Spoof Photos even if util is disabled  [someone5678]
+* e073caf  KProfiles: Set profile to be primary profile only  [someone5678]
 
 #### vendor/parasite-prebuilts
 
-* cb83454  Gramophone: Import 1.0.8  [someone5678]
-
-#### vendor/sony/extra
-
-* fb8fde9  GamingAccessorySettingsCustom: Redirect to Pixel Launcher  [someone5678]
-* a89149f  extra: custom: Inital decomp for GamingAccessorySettings  [someone5678]
-* 734d3d0  extra: Inital custom GamingAccessorySettings  [someone5678]
+* 8be82a9  parasite-prebuilts: Import Gramophone  [someone5678]
+* 9800400  parasite-prebuilts: Prepare for import Gramophone  [someone5678]
 
 ### 06-02-2024
 
@@ -60,6 +367,30 @@
 
 * aae1572  SystemUI: Ignore R8 optimizations warnings  [minaripenguin]
 * cfd8337  SystemUI: Do not shrink resources  [minaripenguin]
+
+#### packages/apps/Aperture
+
+* aac5e1c  Automatic translation import  [LineageOS Infra]
+
+#### packages/apps/BtHelper
+
+* 7a6f09f  PodsService: Correctly broadcast ACTION_BATTERY_LEVEL_CHANGED  [someone5678]
+
+#### packages/apps/Updater
+
+* d614744  Automatic translation import  [LineageOS Infra]
+* 38cc977  Updater: Handle ErrorCode::kUpdateAlreadyInstalled more gracefully  [LuK1337]
+
+#### vendor/sony/extra
+
+* fb8fde9  GamingAccessorySettingsCustom: Redirect to Pixel Launcher  [someone5678]
+* a89149f  extra: custom: Inital decomp for GamingAccessorySettings  [someone5678]
+* 734d3d0  extra: Inital custom GamingAccessorySettings  [someone5678]
+
+### 06-01-2024
+
+#### frameworks/base
+
 * 558805d  ExternalStorageProvider: Conditionally remove SAF restrictions [1/2]  [Richard Raya]
 * 27b4dd664  Wifi Standard: Optimize handling for flooding network requests  [minaripenguin]
 * 7972a3f  Add Gravis GamePad Pro USB key layout  [Nathaniel Manista]
@@ -307,158 +638,12 @@
 
 #### packages/apps/BtHelper
 
-* 7a6f09f  PodsService: Correctly broadcast ACTION_BATTERY_LEVEL_CHANGED  [someone5678]
 * e8e0376  Revert "BtHelper: Check whether bond state changes to none"  [someone5678]
 * 954db4f  PodsService: Set METADATA_MAIN_BATTERY  [someone5678]
-
-#### packages/apps/Settings
-
-* 8e1fb1e  Settings: Move all custom security options to misc security settings  [someone5678]
-* da2744a  Settings: Add additional security settings preference  [someone5678]
-* de65f87  ExternalStorageProvider: Conditionally remove SAF restrictions [2/2]  [someone5678]
 
 #### vendor/parasite
 
 * b65dcec  PixelPropsUtils: Sort packagesToChangeRecentPixel entries  [someone5678]
 * d583c71  GamesPropsUtils: Move PUBG Mobile spoof to ROG Phone 8 as well  [Joey]
 * 2b3cc64  PixelPropsUtils: Stop spoofing Gboard and Play store  [Joey]
-
-### 06-01-2024
-
-#### packages/apps/Settings
-
-* 454c0a8  DataProcessor: Do not skip and replace screen on component with screen on time  [minaripenguin]
-
-#### vendor/google/pixel-additional
-
-* d884e0e  pixel-additional: Drop TurboAdapter_NoBatt  [someone5678]
-* 4fed5af  TurboAdapter_NoBatt: Return null for get* methods  [someone5678]
-
-#### vendor/parasite
-
-* fa8f79d  PixelPropsUtils: Move all apps out of Pixel 5a list  [someone5678]
-
-### 05-31-2024
-
-#### device/sony/extra
-
-* 914bc91  extra: Import gaming components  [someone5678]
-* 0debff2  extra: Unpin all modified apks  [someone5678]
-
-#### device/sony/sm8550-common
-
-* 92d88d7  sm8550-common: vibrator: Rename to avoid conflicts  [someone5678]
-* feb6aed  sm8550-common: Update powerhint.json nodes to kalama  [someone5678]
-* 6d37bfa  sm8550-common: Use HintManager for HWUI  [Vaisakh Murali]
-* f8e087f  sm8550-common: rootdir: Kill WALT CPU boosting  [Sugakesshaa]
-* 40b23c8  sm8550-common: powerhint: Drop CPU freqs boosting on INTERACTION  [bheatleyyy]
-* 7a9275a  sm8550-common: powerhint: Follow taro's CPU freqs for little cluster  [bheatleyyy]
-* 593c932  sm8550-common: rootdir: Do not allow foreground tasks to run on CPU7  [Jake Weinstein]
-* 0e6df47  sm8550-common: rootdir: Move background cpuset to CPU0-1  [Jake Weinstein]
-* 5350224  sm8550-common: rootdir: Set restricted cpuset to the same CPUs as system-background  [Jake Weinstein]
-* 0b3b3e0  sm8550-common: sepolicy: Allow powerhal write to /proc  [Sugakesshaa]
-* 44e8e6a  sm8550-common: rootdir: Enable powerhint parsing after boot completion  [Bruno Martins]
-* 41ae819  sm8550-common: powerhint: Adapt and tune for SM8475 (cape)  [bheatleyyy]
-* cc79f9b  sm8550-common: Import powerhint.json from lahaina  [bheatleyyy]
-* 9b1e682  sm8550-common: Provide a static lib for power mode extension  [Arian]
-* 29aeaed  sm8550-common: Migrate to common libqti-perfd-client and power-libperfmgr  [Bruno Martins]
-* 32bf502  sm8550-common: Remove QTI perfd  [Wei Wang]
-* e062953  sm8550-common: Move init.qcom.post_boot.sh here  [someone5678]
-* 1947676  sm8550: Signing build with custom key  [someone5678]
-
-#### hardware/qcom-caf/common
-
-* 29e63ca  libqti-perfd-client: Add more dummy methods  [someone5678]
-* 40a7e32  qcom: Allow a device to manually override which HALs it wants to use  [Akhil Narang]
-
-#### manifest
-
-* afb908d  [TMP] manifest: parasite: Track hardware/qcom-caf/common diff --git a/snippets/lineage-caf.xml b/snippets/lineage-caf.xml index 378758192..56136b36c 100644  [someone5678]
-
-#### packages/apps/Aperture
-
-* 8d4db99  Aperture: Switch to ZXing-C++  [LuK1337]
-* 3a903a6  Aperture: Update kotlin to 1.9.0  [LuK1337]
-* 10b101e  Aperture: Update ZXing to 3.5.3  [LuK1337]
-
-#### packages/apps/Settings
-
-* bde2d9f  NightDisplay Settings: Use List Preference for NightLight settings  [Akash]
-* f8a80e6  DarkMode Settings: Use List Preference rather ugly Drop Down  [Pranav Vashi]
-
-#### vendor/google/gms
-
-* 92f42be  device_config: Update Live Caption model  [aswin7469]
-
-#### vendor/parasite
-
-* 93957a5  PixelPropsUtils: Spoof Gboard and Ai Wallpapers to husky  [Joey]
-
-#### vendor/parasite-signatures
-
-* 0a1f334  common: generate.sh: Allow to skip prompt  [someone5678]
-* c1b11a9  common: BoardConfigSign: Do not generify avb algorithm  [someone5678]
-* ef0c61b  common: Run setup-buildfiles.sh  [someone5678]
-* 2eb3bcc  common: Regularly generate releasekey  [someone5678]
-* 5c13aea  Update README.md  [someone5678]
-* f60a47f  common: Run setup-buildfiles.sh  [someone5678]
-* eef4220  keys: Initialize  [AnierinB]
-* ec1dccb  common: Run setup-buildfiles.sh  [someone5678]
-* 47bedcd  common: setup-buildfiles.sh: Create symlink for avb_pkmd.bin  [someone5678]
-* f9f4522  common: generate.sh: Generate avb_pkmd.bin  [someone5678]
-* cab39a3  common: Import prebuilt avbtool  [someone5678]
-* f3dd844  common: generate.sh: Remove rsa option  [someone5678]
-* e659883  common: make_key: Only generates rsa key  [someone5678]
-* 1fbb5d5  common: Generate build files  [someone5678]
-* 784ebc8  keys: Update lists and force RSA 4096 for APEX  [AnierinB]
-* 0f5a361  Update README.md  [someone5678]
-* e756e81  signing: support inline signing for U [2/2]  [John Galt]
-* 023f590  common: BoardConfigSign: Clean-ups  [someone5678]
-* e97768d  common: config: Setup PRODUCT_OTA_PUBLIC_KEYS  [someone5678]
-* 30482a3  common: BoardConfigSign: Remove OTA key path  [someone5678]
-* ca73b6b  common: Remove BUILD.bazel symlink  [someone5678]
-* 25a5093  Update README.md  [someone5678]
-* 9958ecf  common: generate.sh: Check whether dir exists  [someone5678]
-* e63aa07  common: Generate build files  [someone5678]
-* cb49bfc  common: Cleanup and restructure  [someone5678]
-* 78d16b2  common: setup-buildfiles.sh: Auto setup PRODUCT_CERTIFICATE_OVERRIDES  [someone5678]
-* eec35f4  common: generate.sh: Cat certificate file list  [someone5678]
-* 67e5e75  common: Add auto makefile and symlinks setup script  [someone5678]
-* 0346f69  common: Support build signing  [someone5678]
-* 7b7d46f  common: Make certificate directory overridable  [someone5678]
-* e34fe93  Update README.md  [someone5678]
-* 04cb9e3  Update symlinks  [someone5678]
-* df35089  Update README.md  [someone5678]
-* b4ccfcb  make_key: Do not set password  [someone5678]
-* ed6ffc2  common: Adapt to current project  [someone5678]
-
-#### vendor/sony/extra
-
-* 5394f0f  extra: custom: Disable uses library checks  [someone5678]
-* 8de0a7c  extra: Import gaming components  [someone5678]
-* 2fef11c  extra: custom: ThreeSixtyRASystem: Make it usable  [someone5678]
-* 4aafdc9  extra: custom: SoundEnhancement: Show under audio settings  [someone5678]
-* d0519b3  extra: custom: Reapply previous cusomisations  [someone5678]
-* 4a6d48d  extra: custom: Inital decomp  [someone5678]
-* 146c769  extra: Inital custom SoundEnhancement & ThreeSixtyRASystem  [someone5678]
-* e96c189  extra: Unpin all modified apks  [someone5678]
-
-### 05-30-2024
-
-#### vendor/aosp
-
-* 8f6ab31  soong: Add power libperfmgr extension config  [Arian]
-
-#### vendor/google/pixel-additional
-
-* a2371ee  TurboAdapter_NoBatt: Throws remote exception  [someone5678]
-
-#### vendor/sony/extra
-
-* 9fce5c0  extra: custom: daxService: Update tile name  [someone5678]
-
-#### vendor/sony/sm8550-common
-
-* 43e5b7b  sm8550-common: Remove QTI perfd  [someone5678]
-* 4b4030b  sm8550-common: Move init.qcom.post_boot.sh to device tree  [someone5678]
 
