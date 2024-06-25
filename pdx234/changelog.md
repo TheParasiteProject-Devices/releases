@@ -2,6 +2,40 @@
 
 ### 06-25-2024
 
+#### device/sony/pdx234
+
+* 80dffc2  pdx234: overlay: parasite: Setup X-Reality mode preset for this device  [someone5678]
+
+#### device/sony/sm8550-common
+
+* 70c1ca1  sm8550-common: Setup DeviceAsWebcam  [Yumi Yukimura]
+
+#### frameworks/base
+
+* 65e7ea9  fixup! SystemUI: Add API for runtime taskbar config  [Oliver Scott]
+* eaaaf62  fixup! SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling  [Oliver Scott]
+* 909b221  services: Make X-reality display engine mode preset configurable  [someone5678]
+
+#### hardware/sony
+
+* dcfe7ec  sony: XperiaDisplay: Notify livedisplay calib override  [someone5678]
+* 066bdcc  sony: Add libidd dummy  [someone5678]
+* af360a1  XperiaDisplay: Introduce X-Reality Engine  [saku-bruh]
+* 9b870ba  XperiaSettings: Set profile to be primary profile only  [someone5678]
+* 6d28f4c  XperiaDisplay: Make sure it's not enable by default on first boot  [lolipuru]
+
+#### vendor/aosp
+
+* 6603b69  [TMP] Revert "kernel: Update default clang version to r510928"  [someone5678]
+* 26a70d7  kernel: Update default clang version to r510928  [Aaron Kling]
+* c7e8eb0  kernel: Add rust prebuilts to path  [Aaron Kling]
+
+#### vendor/qcom/opensource/usb
+
+* 10c592d  USBGadgetHAL: Add support for UVC function  [Yumi Yukimura]
+
+### 06-24-2024
+
 #### device/sony/sm8550-common
 
 * 79d9066  sm8550-common: init: Give proper permissions for /dev/diag  [Yohan Black]
@@ -246,6 +280,10 @@
 * b2a8649  Settings: Build custom-preference library  [jhenrique09]
 * 0dd888f  fingerprint: Rework enrollment screen  [Bruno Martins]
 
+#### tools/extract-utils
+
+* 79a2a0f  extract-utils: Set install_symlink PREFIX based on installed_location  [Mashopy]
+
 #### vendor/aosp
 
 * 47d60b3  vendor: AOSPASettingsOverlay: Clean-ups  [someone5678]
@@ -277,12 +315,16 @@
 
 * 3057461  keys: Allow updating existing dir  [AnierinB]
 
+#### vendor/qcom/opensource/usb
+
+* 3c47c8c  init.qcom.usb.rc: Add support for DeviceAsWebcam feature  [Yumi Yukimura]
+
 #### vendor/sony/sm8550-common
 
 * 30f1b56  sm8550-common: Run setup-makefiles.sh  [someone5678]
 * eee2c58  sm8550-common: Kill useless in device diagnostics  [someone5678]
 
-### 06-24-2024
+### 06-23-2024
 
 #### art
 
@@ -307,10 +349,6 @@
 
 * b3f28a2  Introduce legacy FCM  [Michael Bestas]
 
-#### hardware/sony
-
-* 800aa50  sony: Add libidd dummy  [someone5678]
-
 #### packages/apps/Updater
 
 * 3e5a79e  Catch exceptions when enabling performance mode  [Eamon Powell]
@@ -318,10 +356,6 @@
 #### system/sepolicy
 
 * 1a0d8d0  Resolve neverallow in retrofit devices  [Michael Bestas]
-
-#### tools/extract-utils
-
-* 79a2a0f  extract-utils: Set install_symlink PREFIX based on installed_location  [Mashopy]
 
 #### vendor/parasite/common
 
@@ -335,7 +369,7 @@
 * bdd57e9  generate.sh: Don't generate avb_pkmd if already exists  [someone5678]
 * aba2393  keys: Add nfc  [AnierinB]
 
-### 06-23-2024
+### 06-22-2024
 
 #### bootable/recovery
 
@@ -370,11 +404,17 @@
 * afa38c4  PixelPropsUtils: Allow disabling `onEngineGetCertificateChain` via prop  [Joey]
 * 63dc681  PixelPropsUtils: Do not spoof gms to Pixel  [someone5678]
 
-### 06-22-2024
+### 06-21-2024
 
 #### frameworks/native
 
 * 1c733f0  SF: Bring back support for disabling backpressure propagation  [Adithya R]
+
+#### hardware/broadcom/libbt
+
+* 7a07aba  Improve UART baud rate handling  [Francesco "Dil3mm4" Manzo]
+* 3f7c225  hardware: recognize SYN chip in hw_config_cback  [Francesco "Dil3mm4" Manzo]
+* 82dd93b  hardware: increase firmware settlement delay  [Francesco "Dil3mm4" Manzo]
 
 #### vendor/google/dexopt_profiles
 
@@ -383,34 +423,4 @@
 #### vendor/sony/sm8550-common
 
 * ec353ee  sm8550-common: Allow pipe2 to qwesd  [someone5678]
-
-### 06-21-2024
-
-#### bionic
-
-* cd2a0d4  Prevent serial of ro props from self increment  [LoveSy]
-* fcf8349  Ensure prop has zero padding  [canyie]
-
-#### device/sony/pdx234
-
-* 4a19eef  pdx234: Set config_is_side_fps to true  [someone5678]
-
-#### frameworks/native
-
-* c30c60b  Disable useless Keystore features  [chiteroman]
-
-#### hardware/broadcom/libbt
-
-* 7a07aba  Improve UART baud rate handling  [Francesco "Dil3mm4" Manzo]
-* 3f7c225  hardware: recognize SYN chip in hw_config_cback  [Francesco "Dil3mm4" Manzo]
-* 82dd93b  hardware: increase firmware settlement delay  [Francesco "Dil3mm4" Manzo]
-
-#### packages/apps/Aperture
-
-* a2e97e4  Aperture: Set initial package stopped state  [Michael Bestas]
-* 2a3c12e  Aperture: Include as a preinstalled package  [Tommy Webb]
-
-#### vendor/custom-preference
-
-* ba41358  custom-preference: Add DeviceConfigSwitchPreference  [someone5678]
 
