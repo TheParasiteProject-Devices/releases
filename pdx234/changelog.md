@@ -1,14 +1,148 @@
 # pdx234
 
-### 06-25-2024
+### 06-26-2024
 
 #### device/sony/pdx234
 
-* 80dffc2  pdx234: overlay: parasite: Setup X-Reality mode preset for this device  [someone5678]
+* 421fd84  pdx234: overlay: parasite: Setup X-Reality mode preset for this device  [someone5678]
 
 #### device/sony/sm8550-common
 
-* 70c1ca1  sm8550-common: Setup DeviceAsWebcam  [Yumi Yukimura]
+* eace897  sm8550-common: overlay: Remove "Saturated" from supported profile  [someone5678]
+* c204e00  sm8550-common: Setup DeviceAsWebcam  [Yumi Yukimura]
+* 8097b5b  sm8550-common: init: Give proper permissions for /dev/diag  [Yohan Black]
+* 93fd129  sm8550-common: Enable Smart Pixels support  [someone5678]
+* db8b750  sm8550-common: Build libidd dummy  [someone5678]
+* 0bbc3d6  sm8550-common: Kill useless in device diagnostics  [someone5678]
+* a8afd57  sm8550-common: Mark CNE symlink target as required package  [Bruno Martins]
+* 9fc88fd  sm8550-common: Declare EGL libs as symlinks during extraction  [Bruno Martins]
+* d1dc2f9  sm8550-common: Declare IMS libs as symlinks during extraction  [Bruno Martins]
+* 15a115c  sm8550-common: Move all symlinks to install_symlink targets  [someone5678]
+* 6f61f0d  sm8550-common: Move to new RFS install_symlink targets  [Bruno Martins]
+* 6a48c72  sm8550-common: Unset BUILD_BROKEN_INCORRECT_PARTITION_IMAGES  [Bruno Martins]
+* 4f078a8  sm8550-common: Allow pipe2 to qwesd  [someone5678]
+* 71d8af7  sm8550-common: Build some VNDK libraries  [micky387]
+* 93ba104  sm8550-common: props: Move props to avoid sepolicy denials  [someone5678]
+* dd53ba7  sm8550-common: Build missing libraries for 14 QPR3  [Michael Bestas]
+* 47a79c7  sm8550-common: vendorsetup.sh: Correct var name  [someone5678]
+* 765392f  sm8550-common: Enable blur  [someone5678]
+* 6ae8f59  sm8550-common: vendorsetup.sh: Guard it  [someone5678]
+* 810c099  sm8550-common: Do not set BOARD_API_LEVEL manually  [someone5678]
+* 705f626  sm8550-common: Update parasite signature dir  [someone5678]
+* aa25ac4  sm8550-common: Run reorder-libs.py  [someone5678]
+* 4ef5052  [TMP] Automatically patch Sony changes to qti usb  [someone5678]
+* 2e49f41  sm8550-common: Include Qcom usb configs  [someone5678]
+* 6861d3d  sm8550-common: Build and import more display components  [someone5678]
+* 81db5e3  sm8550-common: configs: wifi: Import configs from wifi-bonding  [someone5678]
+* 3287e99  sm8550-common: props: odm: Enable SDR dimming for HWC  [someone5678]
+* 572403e  sm8550-common: props: odm: Clean-ups  [someone5678]
+* 281fbe1  sm8550-common: props: Set default Wi-Fi country code  [someone5678]
+* c85c84a  sm8550-common: vibrator: Rename to avoid conflicts  [someone5678]
+* 37d5a43  sm8550-common: Update powerhint.json nodes to kalama  [someone5678]
+* 7b8e511  sm8550-common: Use HintManager for HWUI  [Vaisakh Murali]
+* 04aa05a  sm8550-common: rootdir: Kill WALT CPU boosting  [Sugakesshaa]
+* 7150279  sm8550-common: powerhint: Drop CPU freqs boosting on INTERACTION  [bheatleyyy]
+* 70d6267  sm8550-common: powerhint: Follow taro's CPU freqs for little cluster  [bheatleyyy]
+* c02d2a7  sm8550-common: rootdir: Do not allow foreground tasks to run on CPU7  [Jake Weinstein]
+* da040bc  sm8550-common: rootdir: Move background cpuset to CPU0-1  [Jake Weinstein]
+* c082cca  sm8550-common: rootdir: Set restricted cpuset to the same CPUs as system-background  [Jake Weinstein]
+* 7989254  sm8550-common: sepolicy: Allow powerhal write to /proc  [Sugakesshaa]
+* 4d2e4c9  sm8550-common: rootdir: Enable powerhint parsing after boot completion  [Bruno Martins]
+* 28211bb  sm8550-common: powerhint: Adapt and tune for SM8475 (cape)  [bheatleyyy]
+* b3f520d  sm8550-common: Import powerhint.json from lahaina  [bheatleyyy]
+* c3aa93d  sm8550-common: Provide a static lib for power mode extension  [Arian]
+* dbac21b  sm8550-common: Migrate to common libqti-perfd-client and power-libperfmgr  [Bruno Martins]
+* f6c7001  sm8550-common: Remove QTI perfd  [Wei Wang]
+* 423c9d1  sm8550-common: Move init.qcom.post_boot.sh here  [someone5678]
+* 486287b  sm8550: Signing build with custom key  [someone5678]
+* 77d548e  sm8550-common: Import Google changes on DEC7 Volume on all mic paths  [Arseniy Graur]
+* 74b3c52  sm8550-common: rottdir: Remove duplicated TA patition permission setup  [someone5678]
+* f70d045  sm8550-common: rootdir: Move powershare permission setup to ueventd.sony.rc  [someone5678]
+* eac1b90  sm8550-common: configs: audio: Sync hotword input to primary input  [someone5678]
+* 413fbad  sm8550-common: Build Kprofiles as LKM  [someone5678]
+* 00232de  sm8550-common: overlay: Add Sony's public vendor platform signature  [someone5678]
+* 75ff722  sm8550-common: Enable puffdiff for ota compression  [someone5678]
+* 1643af5  sm8550-common: Enable zucchini for ota compression  [someone5678]
+
+#### device/xiaomi/sweet
+
+* eee4cd5  [TESTING] Enable microG integration  [someone5678]
+
+#### external/bouncycastle
+
+* d420665  Add more files to bouncycastle-repackaged-unbundled  [someone5678]
+
+#### frameworks/base
+
+* fd7c018  Import certification changes  [someone5678]
+* d8ca92c  Revert "Keystore: Spoof locked bootloader on local attestations"  [someone5678]
+
+#### hardware/sony
+
+* da6ae01  XperiaParts: Notify user of the behavior of the creator mode  [Luofan Chen]
+* 6e84037  XperiaParts: Don't setup display HAL on boot if setting is disabled  [Luofan Chen]
+* 05f2972  sony: Add libidd dummy  [someone5678]
+* 61991b2  XperiaDisplay: Introduce X-Reality Engine  [saku-bruh]
+* dfddb4c  XperiaSettings: Set profile to be primary profile only  [someone5678]
+* 430dc35  XperiaDisplay: Make sure it's not enable by default on first boot  [lolipuru]
+
+#### hardware/xiaomi
+
+* 7f9dcf1  hidl: biometrics: fingerprint: Set thread to high CFS priority  [Nauval Rizky]
+* 4fdb6f3  interfaces: fxtunnel: Add fxtunnel 1.0 interface  [bengris32]
+* 8448f1f  XiaomiEuicc: Remove references to EuiccPixel  [Bruno Martins]
+* 1c6e5a2  XiaomiEuicc: Move to priv-app and grant required permissions  [someone5678]
+* 332b87f  XiaomiEuicc: Disable EuiccGoogle when GMS and GSF are not installed  [Peter Cai]
+* c796111  Introduce XiaomiEuicc  [Bruno Martins]
+* 54ffb9d  dolby: Convert to SwitchPreferenceCompat  [Michael Bestas]
+* 0e2aa22  DolbyManager: Migrate to CompoundButton.OnCheckedChangeListener  [Chaohui Wang]
+* fe95159  dolby: Enable use_resource_processor for all sysui deps  [Peter Kalauskas]
+* b003cd0  vintf: Add more hals to fcm  [Adithya R]
+* fd02f28  xiaomi: Introduce Dolby Atmos  [Adithya R]
+* 7aea56c  vibrator: effect: Fallback to click if an effect is missing  [Adithya R]
+* ccb8279  vibrator: effect: Create double click effect from click if necessary  [Arian]
+* 470a6b4  vibrator: effect: Read vibration fifo data from vendor  [Arian]
+* 61ec891  vintf: Remove transports from FCM  [Bruno Martins]
+* 7ba79ec  vintf: Add synaptic interfaces to FCM  [Andrey Sprynga]
+* 3dd9b99  aidl: light: Add RGB sync support  [LuK1337]
+* 7da3f21  aidl: light: Lower battery light priority  [LuK1337]
+* cab0f67  aidl: light: Support the `left` LED  [danielml]
+* bba3857  aidl: light: Add support for button-backlight2 device  [LuK1337]
+* 8ced65e  aidl: light: Add support for timed mode  [Bruno Martins]
+* ec5b9a4  aidl: light: Refactor  [Sebastiano Barezzi]
+* 3f9bef8  vintf: Add extra GoodixFingerprint interfaces  [Bruno Martins]
+* 31f5d42  vintf: Add {goodix 2.1, fingerprintextension, motor} to fcm  [Arian]
+* 9892a7a  aidl: Remove useless makefile  [Bruno Martins]
+
+#### manifest
+
+* 4b9502b  manifest: parasite: Track external/bouncycastle  [someone5678]
+
+#### vendor/aosp
+
+* 50838d8  [TMP] Revert "kernel: Update default clang version to r510928"  [someone5678]
+* 7411a00  kernel: Update default clang version to r510928  [Aaron Kling]
+* 5a433e3  kernel: Add rust prebuilts to path  [Aaron Kling]
+* e94eb1c  vendor: AOSPASettingsOverlay: Clean-ups  [someone5678]
+* 513f05b  vendor: aconfig: Remove use_media_router2_for_info_media_manager  [someone5678]
+* 221152b  vendor: aconfig: Enable volume panel related configs  [someone5678]
+* 36d9a8d  kernel: Add support to append DTBs to kernel image  [Yumi Yukimura]
+* fe022e5  vendor: optimisation: Move shutdown prop to system_ext  [someone5678]
+* 60e83be  vendor: Move out aconfig to top of repo  [someone5678]
+* 8b9a169  fixup! Hookup GRALLOC_HANDLE_HAS_UBWCP_FORMAT  [AdarshGrewal]
+
+#### vendor/certification
+
+* dafd9c1  libs: Adapt to current project  [someone5678]
+* 05ca98e  libs: Adapt import to current project  [someone5678]
+* 13530c8  libs: Import FrameworkPatch sources  [chiteroman]
+* d83f82d  certification: Add com.android.internal.util.custom.certification  [someone5678]
+
+#### vendor/parasite/common
+
+* c6239ad  PixelPropsUtils: Move out certfication stuffs  [someone5678]
+
+### 06-25-2024
 
 #### frameworks/base
 
@@ -16,38 +150,11 @@
 * eaaaf62  fixup! SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling  [Oliver Scott]
 * 909b221  services: Make X-reality display engine mode preset configurable  [someone5678]
 
-#### hardware/sony
-
-* dcfe7ec  sony: XperiaDisplay: Notify livedisplay calib override  [someone5678]
-* 066bdcc  sony: Add libidd dummy  [someone5678]
-* af360a1  XperiaDisplay: Introduce X-Reality Engine  [saku-bruh]
-* 9b870ba  XperiaSettings: Set profile to be primary profile only  [someone5678]
-* 6d28f4c  XperiaDisplay: Make sure it's not enable by default on first boot  [lolipuru]
-
-#### vendor/aosp
-
-* 6603b69  [TMP] Revert "kernel: Update default clang version to r510928"  [someone5678]
-* 26a70d7  kernel: Update default clang version to r510928  [Aaron Kling]
-* c7e8eb0  kernel: Add rust prebuilts to path  [Aaron Kling]
-
 #### vendor/qcom/opensource/usb
 
 * 10c592d  USBGadgetHAL: Add support for UVC function  [Yumi Yukimura]
 
 ### 06-24-2024
-
-#### device/sony/sm8550-common
-
-* 79d9066  sm8550-common: init: Give proper permissions for /dev/diag  [Yohan Black]
-* d96533d  sm8550-common: Enable Smart Pixels support  [someone5678]
-* 2211e17  sm8550-common: Build libidd dummy  [someone5678]
-* f882ede  sm8550-common: Kill useless in device diagnostics  [someone5678]
-* 0547ce4  sm8550-common: Mark CNE symlink target as required package  [Bruno Martins]
-* 9430e25  sm8550-common: Declare EGL libs as symlinks during extraction  [Bruno Martins]
-* cdcd327  sm8550-common: Declare IMS libs as symlinks during extraction  [Bruno Martins]
-* ca3ab76  sm8550-common: Move all symlinks to install_symlink targets  [someone5678]
-* 5abf556  sm8550-common: Move to new RFS install_symlink targets  [Bruno Martins]
-* 1f7cba0  sm8550-common: Unset BUILD_BROKEN_INCORRECT_PARTITION_IMAGES  [Bruno Martins]
 
 #### frameworks/base
 
@@ -284,15 +391,6 @@
 
 * 79a2a0f  extract-utils: Set install_symlink PREFIX based on installed_location  [Mashopy]
 
-#### vendor/aosp
-
-* 47d60b3  vendor: AOSPASettingsOverlay: Clean-ups  [someone5678]
-* 6cd9db2  vendor: aconfig: Remove use_media_router2_for_info_media_manager  [someone5678]
-* 5c1dfd4  vendor: aconfig: Enable volume panel related configs  [someone5678]
-* c43ce82  kernel: Add support to append DTBs to kernel image  [Yumi Yukimura]
-* f7da3be  vendor: optimisation: Move shutdown prop to system_ext  [someone5678]
-* 4d02b48  vendor: Move out aconfig to top of repo  [someone5678]
-
 #### vendor/google/gms
 
 * cd6771a  gms: Import SfpsOverlay for missing strings  [someone5678]
@@ -329,14 +427,6 @@
 #### art
 
 * 0f8e066  BACKPORT: Update product treble check for VNDK deprecation  [Tim Zimmermann]
-
-#### device/sony/sm8550-common
-
-* 3ef6755  sm8550-common: overlay: Setup display composition mode  [someone5678]
-* c0b7240  Add config value for a11y color mode  [Christine Franks]
-* ed01d03  sm8550-common: Allow pipe2 to qwesd  [someone5678]
-* eff9960  sm8550-common: Build some VNDK libraries  [micky387]
-* ec45d53  sm8550-common: props: Move props to avoid sepolicy denials  [someone5678]
 
 #### frameworks/base
 
@@ -403,24 +493,4 @@
 * 00ae528  PixelPropsUtils: Small update to isCallerSafetyNet  [someone5678]
 * afa38c4  PixelPropsUtils: Allow disabling `onEngineGetCertificateChain` via prop  [Joey]
 * 63dc681  PixelPropsUtils: Do not spoof gms to Pixel  [someone5678]
-
-### 06-21-2024
-
-#### frameworks/native
-
-* 1c733f0  SF: Bring back support for disabling backpressure propagation  [Adithya R]
-
-#### hardware/broadcom/libbt
-
-* 7a07aba  Improve UART baud rate handling  [Francesco "Dil3mm4" Manzo]
-* 3f7c225  hardware: recognize SYN chip in hw_config_cback  [Francesco "Dil3mm4" Manzo]
-* 82dd93b  hardware: increase firmware settlement delay  [Francesco "Dil3mm4" Manzo]
-
-#### vendor/google/dexopt_profiles
-
-* 7c1ad0a  dexopt_profiles: Update  [someone5678]
-
-#### vendor/sony/sm8550-common
-
-* ec353ee  sm8550-common: Allow pipe2 to qwesd  [someone5678]
 
