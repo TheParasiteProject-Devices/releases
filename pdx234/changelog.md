@@ -8,6 +8,8 @@
 
 #### device/xiaomi/sweet
 
+* e3697a8  sweet: Signing build with custom key  [someone5678]
+* 0595a68  sweet: Clean-up kernel board flags  [someone5678]
 * 0289887  [TESTING] Enable microG integration  [someone5678]
 * 1029999  fixup! sweet: libinit: Remove cts hack  [someone5678]
 * a06867e  Revert "sweet: overlay: Settings: Enable refresh rate controls"  [someone5678]
@@ -15,21 +17,121 @@
 
 #### frameworks/base
 
-* 42320bc  fixup! SystemUI: Integrate Google Lens into Screenshot UI  [someone5678]
+* cd59c33  SystemUI: IslandView: Use status bar height as top margin  [minaripenguin]
+* 6eecd9d  fixup! SystemUI: Integrate Google Lens into Screenshot UI  [someone5678]
+* d417f44  fixup! SystemUI: Allow using 4G icon instead of LTE [1/2]  [someone5678]
+* 26112eb  Set lower hotspotY for handwriting icon  [LuK1337]
+* 44540c9  [SQUASH] services: Boost gesture flings  [minaripenguin37]
+* db74eed  BluetoothDialog: Fix theme context  [Pranav Vashi]
+* 6266776  SystemUI: Allow skipping mirroring confirmation dialog [1/2]  [Sebastiano Barezzi]
+* 0e2620e  SystemUI: Disable FaceUnlock Lockouts [1/2]  [minaripenguin]
+* ad042e2  fwb: Add missing android.permission.REGISTER_STATS_PULL_ATOM launcher3 permission  [karthik1896]
+* 56ccc89  Camera: Prevent crash with prebuilt camera metadata  [Pranav Vashi]
+* e7debcf  keylayouts: Nintendo ProCon: Map it like stock does  [Nolen Johnson]
+* f176214  LensScreenshotReceiver: Return when failed to start activity  [someone5678]
+* e40f552  Import certification changes  [someone5678]
+* 6875403  Camera: Clearing exception for Extended Face  [Sauhard Pande]
+* ec4389c  camera: Allow selected camera apps to skip unconfigure  [LuK1337]
+* 8977501  Guard in short-circuit evaluations for stringSplit methods.  [Mohammed Irfan]
+* 8ceec7584  Camera: Don't crash when trying to disable shutter sound  [jhenrique09]
+* 9527d99  Camera: Add feature extensions  [Sauhard Pande]
+* 1b58a6a  Fix Photosphere/Camera FCs  [Jostein Kjønigsen]
+* 3cf8d95  Allow sending vendor- or device-specific commands to the camera HAL.  [Danny Baumann]
+* 0c81c366  Camera: Expose aux camera if packagename is null  [wbs306]
+* 53fec2e  CameraDeviceImpl: Don't crash when checking input configuration failed  [Xayah]
+* e8a88d2  CameraManager: Prevent out of bounds when extracting camera IDs  [minaripenguin]
+* d949668  Camera: Extend face detection  [Shuzhen Wang]
+* fbe21a2  [TMP] SystemUI: Use performHapticFeedback for volume slider haptic  [someone5678]
+* afb95b0  base: Allow disabling slider haptic feedbacks [1/2]  [Ido Ben-Hur]
+* 7e0a5b3  SystemUI: Correctly monet theme the new volume panel  [Ido Ben-Hur]
+* c76c6e6  SystemUI: KeyguardUnlockAnimationController: Catch all exception  [someone5678]
+* 1a224c5  Squash of SystemUI: Show bluetooth battery level  [LuK1337]
+* a428766  core: jni: Add backwards compat methods for QCOM WFD  [LuK1337]
+* 0dd3196  WiredAccessoryManager: replace every non digit character  [Francesco "Dil3mm4" Manzo]
+* 2508027  SystemUI: Fix build after recording changes  [someone5678]
+* 640d943  base: Do not reset keyguard going away state  [minaripenguin]
+* db2a13b  WallpaperManagerService: Get rid of removed UIDs that have set dim  [Ido Ben-Hur]
+* 16c7098  code: ConfigurationController: Prevent an NPE  [minaripenguin]
+* dff63bb  [TMP] base: Don't ignore PhoneLink's call on calledWithValidTokenLocked  [someone5678]
+* 0de7f7e  base: Add hide annotation to all Device Integration components  [someone5678]
+* 01e362f  PackageManager: Add platform sig arr for MS system apps  [someone5678]
+* 911a8ef  services: Introduce X-reality display engine mode [1/2]  [minaripenguin]
+* d6e5083  Add keylayout for Xbox Wireless Controller  [Akshay Tigga]
+* 6e566ca  SystemUI: screenshot: Catch RejectedExecutionException  [someone5678]
+* a2360c1  base: Make device integration disable/enable through props  [someone5678]
+* 9ef96d1  base: Enable device integration  [Omkar Chandorkar]
+* 01fdd06  base: add support of the Phone Link  [Arthur Shuai]
+* f8cc3c5  SystemUI: Add null check for wakelock in KeyguardViewMediator  [Pranav Vashi]
+* afc5131  SystemUI: Prevent OOB when reinflating QS panel with notifications  [minaripenguin]
+* 4c6fb6a  SystemUI: Prevent systemui crash when reinflating QS  [minaripenguin]
+* efea72a  SystemUI: customization: Avoid NPE in ClockRegistry  [someone5678]
+* e685a82  SystemUI: tuner: Set profile to be primary profile only  [someone5678]
+* 30d3c02  WindowDecor: Pass correct displayId for back key event  [Dhina17]
+* b0f03cb  SystemUI: Ignore R8 optimizations warnings  [minaripenguin]
+* b06fe56  SystemUI: Do not shrink resources  [minaripenguin]
+* 46b4aa7  ExternalStorageProvider: Conditionally remove SAF restrictions [1/2]  [Richard Raya]
+* 24325e2  JobSchedulerService:fix arrayIndexOutOfBoundsException to aviod systemServer crash.  [lijilou]
+* 0441f18  Vibrator: Force to return a non-zero duration  [flakeforever]
+* f47128f  Fix NPE when traversing viewgroup display list  [minaripenguin]
+* 718162f  BatteryStatsImpl: Guard against OOB  [Ido Ben-Hur]
+* df71ce7  core: Broadcast intent when display power state changes  [Adithya R]
+* 2abf0db  Allow signature spoofing for microG Companion/Services  [LuK1337]
+* affabb0  SystemUI: Add FingerprintInteractiveToAuthProvider implementation  [Adithya R]
+* 7e69d03  SettingsLib: Use framework resource for headline font  [Adithya R]
+* 77b87b62  SystemUI: Fix lottie malformed json crashes  [minaripenguin]
+* 844b785  EdgeBackGestureHandler: Change back gesture height intervals  [Anushek Prasal]
+* 8a62470  base: Allow to hide screen capture status from apps [1/2]  [someone5678]
+* 781f902  BrightnessController: Update icon state for auto bg icon  [yukiscape]
+* cd05289  ActivityManagerNative: Prevent possible soft-reboot  [fusionjack]
+* 30cdd43  SystemUI: IslandView: Update color implementation  [Pranav Vashi]
+* 4e22d00  SystemUI: IslandView: Auto remove now playing notification  [Pranav Vashi]
+* 6437942  SystemUI: IslandView: Properly handle island notification on track change  [Pranav Vashi]
+* dcd0278  Revert "Remove dependency on IME subtype from TSMS"  [Michael Bestas]
+* 1fbeacc  Allow lid to send a generic COVER_CHANGED broadcast  [jrior001]
+* 31b3ade  SystemUI: add FloatingRotationButton for hw-key devices  [Michal Pražák]
+* 3e4d60b  BatteryMeterView: Hide icon on battery-less devices  [Bruno Martins]
+* 22636ed  Don't skip theme application if it's already current  [Michael Bestas]
+* 903a67b  SystemUI: Clean-up IME space feature  [someone5678]
+* 9d5140c  KeyStore: Add getApplicationContext method required for Asus Devices  [Jackeagle]
+* 6160a91  SystemUI: PowerShareTile: Clean-ups  [someone5678]
+* b7ca7bc  SystemUI: screenshot: add delay for long-press partial screenshot  [Pranav Vashi]
+* 239be1c  Forward port 'Swap volume buttons' (1/3)  [nadlabak]
+* d02c0ba  SystemUI: screenshot: close QS after launching long screenshot activity  [LuK1337]
+* fb56b67  SystemUI: screenshot: disable magnification for partial screenshots  [Cosmin Tanislav]
+* 7471f70  SystemUI: screenshot: open long screenshot activity for partial screenshots  [Cosmin Tanislav]
+* 96e44e5  Implement click to take partial screenshot [1/3]  [Jesse Chan]
+* 2839032  CameraServiceProxy: fix exception  [Dmitrii]
+* aebdfe5  Fix "Manage App & Content access" for profiles  [Tommy Webb]
+* e85734c  Keyguard: Hide battery indication on battery-less devices  [Bruno Martins]
+* cdb7514  SettingsLib: Update 5G+ icon to Silk design  [Adithya R]
+* 1289aab  SettingsLib: Update 4G+ icon to Silk design as well  [TH779]
+* 9515ca1  SettingsLib: Update LTE+ icon as per new Silk design  [Adithya]
+* f276bcf  PackageManager: Add separated vendor platform signatures for GMS  [someone5678]
+* 711aebf5  PackageManager: Allow device to specify vendor platform signatures  [Ethan Chen]
+* 9982990  Island: Fix some album-art not showing  [Subratam6296]
+* 198f90b  base: SystemUI: Add Black theme [1/3]  [SagarMakhar]
 
-#### vendor/aosp
+#### hardware/xiaomi
 
-* 0191262  vendor: art: Unset FULL_SYSTEM_OPTIMIZE_JAVA  [someone5678]
-* 05dd64f  kernel: use systemimage_intermediates on devices with no vendor  [Han Sol Jin]
-* 27e38e7  kernel: Better x86 support  [Sebastiano Barezzi]
+* 1962135  vibrator: effect: libqtivibratoreffect: Add libc++fs to static libs  [someone5678]
 
-#### vendor/google/pixel-framework
+#### packages/apps/Settings
 
-* af30c00  Revert "SystemUIGoogle: Initiate smart pixels service"  [someone5678]
+* a49df7b  fixup! Settings: Implement hide gestural navigation hint bar [2/3]  [someone5678]
+* 96a2c02  fixup! Settings: Black theme [2/3]  [someone5678]
+
+#### packages/apps/XiaomiParts
+
+* 34a54a3  XiaomiParts: Remove duplicated props  [someone5678]
 
 #### vendor/parasite/common
 
 * 3f58579  PixelPropsUtils: Simplify gms account activity check  [someone5678]
+
+#### vendor/parasite/prebuilts
+
+* 559030e  vendor: microG: Workaround for setup looping issue  [someone5678]
+* b43ff03  vendor: microG: Set skip_preprocessed_apk_checks  [someone5678]
 
 ### 07-12-2024
 
@@ -60,97 +162,6 @@
 
 #### frameworks/base
 
-* 9f66fbd  fixup! SystemUI: Allow using 4G icon instead of LTE [1/2]  [someone5678]
-* 041f3bd  Set lower hotspotY for handwriting icon  [LuK1337]
-* e53e5a4  [SQUASH] services: Boost gesture flings  [minaripenguin37]
-* f2d53d0  BluetoothDialog: Fix theme context  [Pranav Vashi]
-* b65027f  SystemUI: Allow skipping mirroring confirmation dialog [1/2]  [Sebastiano Barezzi]
-* 15e1dfb  SystemUI: Disable FaceUnlock Lockouts [1/2]  [minaripenguin]
-* a883769  fwb: Add missing android.permission.REGISTER_STATS_PULL_ATOM launcher3 permission  [karthik1896]
-* a62a772  Camera: Prevent crash with prebuilt camera metadata  [Pranav Vashi]
-* 7b1975c  keylayouts: Nintendo ProCon: Map it like stock does  [Nolen Johnson]
-* 0fbef67  LensScreenshotReceiver: Return when failed to start activity  [someone5678]
-* 9e051b8  Import certification changes  [someone5678]
-* 7d68b47  Camera: Clearing exception for Extended Face  [Sauhard Pande]
-* 22b41d2  camera: Allow selected camera apps to skip unconfigure  [LuK1337]
-* c6c1a0e  Guard in short-circuit evaluations for stringSplit methods.  [Mohammed Irfan]
-* 1ee3137  Camera: Don't crash when trying to disable shutter sound  [jhenrique09]
-* bc3c469  Camera: Add feature extensions  [Sauhard Pande]
-* a931266  Fix Photosphere/Camera FCs  [Jostein Kjønigsen]
-* b4904c1  Allow sending vendor- or device-specific commands to the camera HAL.  [Danny Baumann]
-* bb7b8dd  Camera: Expose aux camera if packagename is null  [wbs306]
-* 033bd1b  CameraDeviceImpl: Don't crash when checking input configuration failed  [Xayah]
-* 780605e  CameraManager: Prevent out of bounds when extracting camera IDs  [minaripenguin]
-* 2ba2d65  Camera: Extend face detection  [Shuzhen Wang]
-* a8c18e3  [TMP] SystemUI: Use performHapticFeedback for volume slider haptic  [someone5678]
-* 894941b  base: Allow disabling slider haptic feedbacks [1/2]  [Ido Ben-Hur]
-* 83e03ec  SystemUI: Correctly monet theme the new volume panel  [Ido Ben-Hur]
-* f20e6d8  SystemUI: KeyguardUnlockAnimationController: Catch all exception  [someone5678]
-* 3b35baf  Squash of SystemUI: Show bluetooth battery level  [LuK1337]
-* 97b6d23b  core: jni: Add backwards compat methods for QCOM WFD  [LuK1337]
-* 468ae8e  WiredAccessoryManager: replace every non digit character  [Francesco "Dil3mm4" Manzo]
-* 9a55320  SystemUI: Fix build after recording changes  [someone5678]
-* a2f79b5  base: Do not reset keyguard going away state  [minaripenguin]
-* c6381b7  WallpaperManagerService: Get rid of removed UIDs that have set dim  [Ido Ben-Hur]
-* e4793f3  code: ConfigurationController: Prevent an NPE  [minaripenguin]
-* 6a29d43  [TMP] base: Don't ignore PhoneLink's call on calledWithValidTokenLocked  [someone5678]
-* d721065  base: Add hide annotation to all Device Integration components  [someone5678]
-* 6ec627c  PackageManager: Add platform sig arr for MS system apps  [someone5678]
-* 09e6da8  services: Introduce X-reality display engine mode [1/2]  [minaripenguin]
-* 1f3da96  Add keylayout for Xbox Wireless Controller  [Akshay Tigga]
-* 1640435  SystemUI: screenshot: Catch RejectedExecutionException  [someone5678]
-* 65a4265  base: Make device integration disable/enable through props  [someone5678]
-* 8141c61  base: Enable device integration  [Omkar Chandorkar]
-* e693008  base: add support of the Phone Link  [Arthur Shuai]
-* 4f16650  SystemUI: Add null check for wakelock in KeyguardViewMediator  [Pranav Vashi]
-* dd069da  SystemUI: Prevent OOB when reinflating QS panel with notifications  [minaripenguin]
-* 8f69c87  SystemUI: Prevent systemui crash when reinflating QS  [minaripenguin]
-* 9a6e174  SystemUI: customization: Avoid NPE in ClockRegistry  [someone5678]
-* 069f75f  SystemUI: tuner: Set profile to be primary profile only  [someone5678]
-* 5cdab76  WindowDecor: Pass correct displayId for back key event  [Dhina17]
-* 5e1d3e3  SystemUI: Ignore R8 optimizations warnings  [minaripenguin]
-* 56a78f9  SystemUI: Do not shrink resources  [minaripenguin]
-* 33a6fe0  ExternalStorageProvider: Conditionally remove SAF restrictions [1/2]  [Richard Raya]
-* cb0150c  JobSchedulerService:fix arrayIndexOutOfBoundsException to aviod systemServer crash.  [lijilou]
-* ce673f1  Vibrator: Force to return a non-zero duration  [flakeforever]
-* d10ad37  Fix NPE when traversing viewgroup display list  [minaripenguin]
-* af55041  BatteryStatsImpl: Guard against OOB  [Ido Ben-Hur]
-* 93c81b4  core: Broadcast intent when display power state changes  [Adithya R]
-* 6e1025d  Allow signature spoofing for microG Companion/Services  [LuK1337]
-* 566ecd6  SystemUI: Add FingerprintInteractiveToAuthProvider implementation  [Adithya R]
-* b2c32e7  SettingsLib: Use framework resource for headline font  [Adithya R]
-* dffc7bb  SystemUI: Fix lottie malformed json crashes  [minaripenguin]
-* b4906ca  EdgeBackGestureHandler: Change back gesture height intervals  [Anushek Prasal]
-* 3b30e8b  base: Allow to hide screen capture status from apps [1/2]  [someone5678]
-* bebed13  BrightnessController: Update icon state for auto bg icon  [yukiscape]
-* d1a9791  ActivityManagerNative: Prevent possible soft-reboot  [fusionjack]
-* 55d49fb  SystemUI: IslandView: Update color implementation  [Pranav Vashi]
-* f874292a5  SystemUI: IslandView: Auto remove now playing notification  [Pranav Vashi]
-* 4998911  SystemUI: IslandView: Properly handle island notification on track change  [Pranav Vashi]
-* 4c42b59  Revert "Remove dependency on IME subtype from TSMS"  [Michael Bestas]
-* 270b63e  Allow lid to send a generic COVER_CHANGED broadcast  [jrior001]
-* 48e579b  SystemUI: add FloatingRotationButton for hw-key devices  [Michal Pražák]
-* 15971e0  BatteryMeterView: Hide icon on battery-less devices  [Bruno Martins]
-* 94bccc2  Don't skip theme application if it's already current  [Michael Bestas]
-* 4bc8564  SystemUI: Clean-up IME space feature  [someone5678]
-* 8b9e18c  KeyStore: Add getApplicationContext method required for Asus Devices  [Jackeagle]
-* a6e7b71  SystemUI: PowerShareTile: Clean-ups  [someone5678]
-* ee0925c  SystemUI: screenshot: add delay for long-press partial screenshot  [Pranav Vashi]
-* a795bc2  Forward port 'Swap volume buttons' (1/3)  [nadlabak]
-* 06c697c  SystemUI: screenshot: close QS after launching long screenshot activity  [LuK1337]
-* 066dc93  SystemUI: screenshot: disable magnification for partial screenshots  [Cosmin Tanislav]
-* 48de3ee  SystemUI: screenshot: open long screenshot activity for partial screenshots  [Cosmin Tanislav]
-* f58d7c7  Implement click to take partial screenshot [1/3]  [Jesse Chan]
-* 3f5eaa2  CameraServiceProxy: fix exception  [Dmitrii]
-* ce878b7  Fix "Manage App & Content access" for profiles  [Tommy Webb]
-* 83aac1f  Keyguard: Hide battery indication on battery-less devices  [Bruno Martins]
-* e092b63  SettingsLib: Update 5G+ icon to Silk design  [Adithya R]
-* 60108a8  SettingsLib: Update 4G+ icon to Silk design as well  [TH779]
-* c97a636  SettingsLib: Update LTE+ icon as per new Silk design  [Adithya]
-* 44eefb1  PackageManager: Add separated vendor platform signatures for GMS  [someone5678]
-* 8c7389c  PackageManager: Allow device to specify vendor platform signatures  [Ethan Chen]
-* 99e6f84  Island: Fix some album-art not showing  [Subratam6296]
-* 9648d71  base: SystemUI: Add Black theme [1/3]  [SagarMakhar]
 * 6c2327d  Fix NPE in SystemUI  [first last]
 * f88b6fc  Textutils: Optimize writeToParcel performance  [minaripenguin]
 * 14f5c35  SettingsLib: Fix crash when checking emergency gesture state  [minaripenguin]
@@ -338,21 +349,20 @@
 
 #### vendor/aosp
 
+* 0191262  vendor: art: Unset FULL_SYSTEM_OPTIMIZE_JAVA  [someone5678]
+* 05dd64f  kernel: use systemimage_intermediates on devices with no vendor  [Han Sol Jin]
+* 27e38e7  kernel: Better x86 support  [Sebastiano Barezzi]
 * 48c6e50  kernel: Add kernel modules to partition file list  [Aaron Kling]
 * 4d4456f  apn: Add GPB Mobile  [Andrey Sprynga]
-* 6b5dc8c  apns: Update Telia Finland APNs  [JH]
 
 #### vendor/google/pixel-framework
 
+* af30c00  Revert "SystemUIGoogle: Initiate smart pixels service"  [someone5678]
 * 75c3a72  SystemUIGoogle: Update smartspace proto  [Akash Srivastava]
 * e64db06  SystemUIGoogle: Update  [someone5678]
 * 35c7a6c  SettingsGoogle: Add modification  [someone5678]
 
 ### 07-11-2024
-
-#### bootable/recovery
-
-* 9f6d286  recovery_ui: Retry for getting battery info  [Luofan Chen]
 
 #### frameworks/base
 
@@ -862,23 +872,23 @@
 * 77d7e31  Settings: Fix potential NPE in WifiTetherSecurityPreferenceController  [Fabian Leutenegger]
 * 3cacd8e  Settings: buttons text should no longer be allCaps  [maxwen]
 
+#### vendor/aosp
+
+* 6b5dc8c  apns: Update Telia Finland APNs  [JH]
+
 ### 07-10-2024
+
+#### bootable/recovery
+
+* 9f6d286  recovery_ui: Retry for getting battery info  [Luofan Chen]
 
 #### hardware/sony
 
 * 99288ce  sepolicy: Label filesystem for init  [someone5678]
-* 164c42a  sepolicy: Allow hal_light_default to modify sysfs_dp  [someone5678]
-* 285d8f7  sepolicy: Allow vendor_sony_euiccmemoryreset_app to binder call vendor_hal_miscta_default  [someone5678]
-
-#### system/sepolicy
-
-* f3643a7  sepolicy: Also allow vendor_init to get/set bluetooth_prop  [someone5678]
 
 #### vendor/aosp
 
 * 7f04e91  factory: zygote and rescue party properties  [Ryan Chu]
-* a12ba8c  vendor: Move art related configs  [someone5678]
-* a48e6f7  extra: configs: Do not include other java mini debug info  [Yurical]
 
 ### 07-09-2024
 
@@ -887,22 +897,12 @@
 * 5e894d8  parasite: sepolicy: Allow hal_lineage_powershare_default to use vnbinder  [someone5678]
 * 241b4ad  parasite: sepolicy: Label filesystem and memory proc for init  [someone5678]
 
-#### device/qcom/sepolicy_vndr/sm8550
-
-* d671ace  sepolicy_vndr: Allow init/vendor_init to write proc firmware config  [Luofan Chen]
-
-#### device/sony/pdx234
-
-* 1754a1b  pdx234: overlay: Update from XperiaLabs pdx234 tree  [someone5678]
-
 #### hardware/sony
 
+* 164c42a  sepolicy: Allow hal_light_default to modify sysfs_dp  [someone5678]
+* 285d8f7  sepolicy: Allow vendor_sony_euiccmemoryreset_app to binder call vendor_hal_miscta_default  [someone5678]
 * 05ff3b0  sepolicy: Allow vendor_sony_euiccmemoryreset_app to find required services  [someone5678]
 * b0d6838  sepolicy: Allow vendor_qti_init_shell to access cgroup files  [someone5678]
-
-#### manifest
-
-* e3e9dd9  manifest: parasite: caf: Track android_device_qcom_sepolicy_vndr for sm8550  [someone5678]
 
 #### packages/apps/Settings
 
@@ -941,123 +941,16 @@
 * 6c77152  Settings: Black theme [2/3]  [SagarMakhar]
 * 0b3a43e  Settings: Hide radio info if device don't support voice  [LynnrinChan]
 * 6b1433c  Settings: Expose radio info (*#*#4636#*#*)  [xyyx]
-* 9adf8ec  Settings: Improve code for time spent in app  [Jyotiraditya Panda]
-* 27592ac  AppInfo: Add time spent in app from Wellbeing  [Jason Edson]
-* f34ce13  Settings: use Glif themed button bar  [Timi Rautamäki]
-* ddb4d6b  Add toggle for connectivity check  [Aayush Gupta]
-* c46de4d  AGPS: Mention that it's ignored during user-initiated emergency calls  [Chirayu Desai]
-* 761aecb  Settings: StatusBarSettings: Restore Network Traffic Settings  [someone5678]
-* 350b8c9  Settings: Add switch preference for AGPS  [juwei]
-* 2184b78  NetworkProviderSettings: Fixup uninitialized mWifiManager  [Jacob McSwain]
-* f9a9fa9  Settings: Add more required libraries  [Joey Huab]
-* 8a02633  Settings: Add Glide library  [SagarMakhar]
-* fa62e17  Settings: Regulatory: Fullscreen instead of AlertDialog  [ReallySnow]
-* e879017  Settings: Remove IME space under keyboard feature [2/2]  [timjosten]
-* a5f9872  Settings: Allow using 4G icon instead LTE [2/2]  [neobuddy89]
-* c21c700  Settings: Remove DSU Loader if unsupported  [Joey Huab]
-* 13e8e8a  Settings: Remove A/B preference if unsupported  [Luca Stefani]
-* e29340e  Settings: Add Default USB Configuration  [ZeNiXxX]
-* 82b661a  Settings: Show SoC Model rather than value of ro.board.platform if available  [Tim Zimmermann]
-* 7a33665  Settings: Align TotalRAMPreferenceController with MemoryUsagePreferenceController from dev settings  [Tim Zimmermann]
-* be751c3  DeviceInfo: Add back SELinux status to About Phone  [mydongistiny]
-* 098cc5d  Settings: Add platform and RAM to Model & Hardware  [Rashed Abdel-Tawab]
-* e967493  Settings: Reset battery stats [2/2]  [Jorge Ruesga]
-* 52611dc  InstalledApp: Hide GooglePlay icon for webapps  [DarkJoker360]
-* 82cb5a6  Settings: Link smallest width options in display settings  [Subhajeet Muhuri]
-* 26424bb  Settings: Expose saved devices fragment via intent  [Adithya R]
-* 1ca3bee  Settings: default to GlifV3Theme  [Timi Rautamäki]
-* ac50908  Port brightness slider changes [2/2]  [Pranav Vashi]
-* 01a7541  Settings: DevicePicker: Adapt to S style  [ReallySnow]
-* b84dad1  development: Enable force resizable activities by default  [minaripenguin]
-* 0dbb8f8  development: Enable freeform windows by default  [minaripenguin]
-* 4c9801e  Settings: Long press to copy wifi password  [Ido Ben-Hur]
-* 0a467f9  Settings: Remove divider from Battery Manager  [Akash Srivastava]
-* 22476f5  Settings: Observe auto brightness mode changes  [Ido Ben-Hur]
-* 8dacc50  Open app when clicking on icon in App Info  [deadman96385]
-* 7320a3e  InstalledApp: show link to Google Play  [George G]
-* 9b320d7  InstalledAppDetails: fix refreshing storage summary after force stop  [Altaf-Mahdi]
-* bbd089b  Expand abbreviation in average memory usage string  [Danny Lin]
-* 3613650  Enable FeatureFlags on "user" builds too  [ezio84]
-* 296e70e  Battery: Implement background process killer [2/2]  [Dil3mm4]
-* 4408382  Allow to suppress notifications sound/vibration if screen is ON [2/2]  [ezio84]
-* ad649db  Settings: Add window ignore secure feature [2/2]  [LibXZR]
-* 8f7dc56  Settings: Add application downgrade feature [2/2]  [LibXZR]
-* f59a641  Ignore custom app space management activities  [Danny Lin]
-* 8dd078a  FingerprintEnroll: Add config for dedicated side mounted fps  [Bruno Martins]
-* 37dc264  Settings: Introduce Smart Pause [2/2]  [Chris Crump]
-* cbf250e  ButtonSettings: Remove split screen action  [jhenrique09]
-* 2e35b71  Settings: Long press power button to toggle flashlight [2/2]  [Chris Crump]
-* 3e42308  Settings: add TextView for summary into SeekBarDialogPreference  [cjybyjk]
-* 880d167  SoftAp: add Hidden SSID preference  [cjybyjk]
-* e94e432  Settings: navigation mode settings [2/2]  [maxwen]
-* cb8b67f  Settings: Add hide notch support [3/3]  [Henrique Silva]
-* 8341e7f  Settings: Add three-fingers-swipe to screenshot [2/2]  [ghbhaha]
-* 841490a  Settings: Implement hide gestural navigation hint bar [2/3]  [Jesse Chan]
-* 9cecc32  Settings: Changes for LiveDisplay  [Henrique Silva]
-* 07f6907  Revert "Settings: Restore statusbar brightness preferences"  [someone5678]
-* 0113879  Settings: StatusBarSettings: Drop all un-implemented features  [someone5678]
-* 12d6191  Settings: Import statusbar and others customizations  [Steve Kondik]
-* 4c144db  Settings: Always show button settings  [Henrique Silva]
-* e1ec9c9  Settings: Incall vibration option [3/3]  [beanstown106]
-* fb2bad8  Settings: Add misc haptics category  [someone5678]
-* ab92ec0  Settings: Add toggle for heads up notifications  [Michael Bestas]
-* 7a224b4  Settings: Add option to scramble pin layout when unlocking (1/2).  [Adnan]
-* 4f77550  Settings: Add setup UI for minimum delay between an app's notification sounds  [Danny Baumann]
-* ce6cc0f  Settings: display: Add wake on plug switch  [Jon Evans]
-* b02289d  Settings: Add double tap to sleep preference  [Rashed Abdel-Tawab]
-* ba1e4da  Hide the "Show the vibrate icon in the Status Bar" setting  [Chirayu Desai]
-* e07f1d6  Settings: Add back increasing ring feature (2/2).  [Danny Baumann]
-* 409b6be  Settings: Configurable 0, 90, 180 and 270 degree rotation [2/2]  [kufikugel]
-* a285647  Settings: Protect sensitive data on the about phone  [althafvly]
-* 4748a6c  Settings: Add missing icons network and internet menu  [kleidione Freitas]
-* 653fd79  ButtonSettings: Add preferences for back key long press customization  [LuK1337]
-* 383bd6b  Settings: Add FastCharge preference into Battery settings  [Bruno Martins]
-* 13c34eb  ButtonSettings: Remove diff actions for go devices  [jhenrique09]
-* a4e2b60  SystemNavigationPreferenceController: Only show gestures if navbar visible  [jhenrique09]
-* 8737e5f  Settings: Fix ButtonBacklightBrightness dialog  [Andy CrossGate Yan]
-* 4abcd05  KeyboardSettings: Add a RemotePreference for device-specific panel  [Bruno Martins]
-* a6f6d08  Settings: Display: Add High Touch Polling Rate Support  [Ramii Ahmed]
-* 702c80d  Settings: Improve touch gestures preferences  [jhenrique09]
-* a484dcd  Settings: Allow devices to provide remote gesture preferences  [Bruno Martins]
-* fceb266  Settings: Add high touch sensitivity and touchscreen hovering toggles  [LuK1337]
-* b5d903f  Settings: Add preference for TouchGestures  [Anushek Prasal]
-* e60cc3e  ButtonSettings: Add a RemotePreference for device-specific panel  [Bruno Martins]
-* 9e0b4cb  ButtonSettings: Add a setting to swap capacitive keys  [Arian]
-* 2c6c9e2  Implement button settings  [jhenrique09]
-* 876cbc7  Settings: add sim status listener in about phone  [hoffc]
-* c7a1750  SlicesDatabaseHelper: Use Build.VERSION.INCREMENTAL  [jhenrique09]
-* 686857d  Settings: Good news, `encryptable=footer` is broken  [Michael W]
-* 61526d9  Settings: Add switch for battery led  [jhenrique09]
-* 8cc9c21  Settings: Make NetworkScanHelper max search time customizable  [LuK1337]
-* f616a52  Settings: Hide AOD pref is device provides Doze settings  [Bruno Martins]
-* c2b8f0e  Settings: Add a RemotePreference for device-specific doze settings  [Steve Kondik]
-* 57eb86b  Settings: Build custom-preference library  [jhenrique09]
-* 23ee9b3  fingerprint: Rework enrollment screen  [Bruno Martins]
-* f82d986  fingerprint: hide link icon when there's no link  [Timi Rautamäki]
-* 1834d7c  Revert "[Wi-Fi] Remove 'Do not validate' option in CA certificate spinner"  [TogoFire]
-* 2ddfbc8  Settings: Allow using legacy VPN types  [Alessandro Astone]
-* bf76868  Allow sorting Applications by size  [Roman Royer]
-* 0a41bfd  get outer NFC preference to listen for changes  [inthewaves]
-* df9b801  Settings: Don't show module version if isn't a date  [jhenrique09]
-* b90647d  Settings: Force disable top level support preference  [jhenrique09]
-* b7b6ff5  Settings: Check if we have any color modes declared in overlay  [Luca Stefani]
-* d92dad8  Remove useless USB page header  [Michael Bestas]
-* 16572e0  Fix inconsistent USB preference screen title  [Danny Lin]
-* d6b3cab  Settings: Hide unsupported USB modes automatically  [Wang Han]
-* ef8de7a  BasebandVersionPreferenceController: Trim baseband if needed  [Bruno Martins]
-* 3dcba60  QS dev tiles: Don't set them to active area  [Alex Cruz]
-* 04d6104  Remove feedback and bug report stuff  [ezio84]
-
-#### system/core
-
-* f24e611  init: devices: Add option to accept any device as boot device  [Yumi Yukimura]
 
 #### system/sepolicy
 
+* f3643a7  sepolicy: Also allow vendor_init to get/set bluetooth_prop  [someone5678]
 * 1879593  sepolicy: Allow hal_audio_default to get/set bluetooth_prop for a2dp offloading.  [someone5678]
 
 #### vendor/aosp
 
+* a12ba8c  vendor: Move art related configs  [someone5678]
+* a48e6f7  extra: configs: Do not include other java mini debug info  [Yurical]
 * 47fc7a0  vendor: Move persist.vendor.recovery_update to ADDITIONAL_SYSTEM_PROPERTIES  [someone5678]
 * 6819f35  overlay: Enable the app battery usage list page feature  [LuK1337]
 
