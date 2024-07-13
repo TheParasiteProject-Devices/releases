@@ -8,9 +8,8 @@
 
 #### device/xiaomi/sweet
 
-* e3697a8  sweet: Signing build with custom key  [someone5678]
-* 0595a68  sweet: Clean-up kernel board flags  [someone5678]
-* 0289887  [TESTING] Enable microG integration  [someone5678]
+* 818667e  sweet: Signing build with custom key  [someone5678]
+* bf3b022  sweet: Clean-up kernel board flags  [someone5678]
 * 1029999  fixup! sweet: libinit: Remove cts hack  [someone5678]
 * a06867e  Revert "sweet: overlay: Settings: Enable refresh rate controls"  [someone5678]
 * c837bfc  Revert "sweet: correct PRODUCT_MODEL"  [someone5678]
@@ -115,6 +114,27 @@
 
 * 1962135  vibrator: effect: libqtivibratoreffect: Add libc++fs to static libs  [someone5678]
 
+#### kernel/sony/sm8550
+
+* d7125f4c  configs: sony: Enable Kallsyms  [someone5678]
+* 8de92ad  drivers: qcom: Make CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS depend on DEBUGFS  [Luofan Chen]
+* e1b9f34  Makefile.lib: Lower kernel gzip compression to fastest  [Angelo G. Del Regno]
+* e403ae7  configs: sony: Enable ZRAM writeback  [Luofan Chen]
+* e274f45  arch: configs: sony: Disable CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS  [Luofan Chen]
+* 1162b02  configs: Move sony specific config to its fragment  [Luofan Chen]
+* 94ee07b  sony: config: Use 1M for kernel log  [Juhyung Park]
+* b816221  sony: config: Disable most of the debugging configs  [Pranav Vashi]
+* d6c837a  sony: config: Disable wcd-usbss  [Bruno Martins]
+* 0e7a119  sony: config: Unset all configs related with crow chipset  [Bruno Martins]
+* 2d59616  power: Import wakeup_irq_debug driver  [Luofan Chen]
+* 33b4ca9  ARM64: dts: vendor: Add symlink to sm8550-devicetrees  [Bruno Martins]
+* ebba2cc  et6xx: Align implementation in sm8550  [Luofan Chen]
+* 1f26d0a  et6xx: Remove reference to hardware_info  [Luofan Chen]
+* 963eec5  drivers: sony: Import et6xx driver from 68.0.A.0.768  [Luofan Chen]
+* 745d5f2  drivers: Import sony drivers to build inline  [Luofan Chen]
+* 608f86e  tools/resolve_btfids: Skip unresolved symbol warning for empty BTF sets  [Kumar Kartikeya Dwivedi]
+* 7895034  minimal sony changes  [Luofan Chen]
+
 #### packages/apps/Settings
 
 * a49df7b  fixup! Settings: Implement hide gestural navigation hint bar [2/3]  [someone5678]
@@ -122,7 +142,7 @@
 
 #### packages/apps/XiaomiParts
 
-* 34a54a3  XiaomiParts: Remove duplicated props  [someone5678]
+* 364ccd2  XiaomiParts: Remove duplicated policies  [someone5678]
 
 #### vendor/parasite/common
 
@@ -324,23 +344,6 @@
 
 #### kernel/sony/sm8550
 
-* 751c6b1  drivers: qcom: Make CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS depend on DEBUGFS  [Luofan Chen]
-* 0043912  Makefile.lib: Lower kernel gzip compression to fastest  [Angelo G. Del Regno]
-* bb8bbec  configs: sony: Enable ZRAM writeback  [Luofan Chen]
-* 7184c83  arch: configs: sony: Disable CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS  [Luofan Chen]
-* 50667ea  configs: Move sony specific config to its fragment  [Luofan Chen]
-* a232192  sony: config: Use 1M for kernel log  [Juhyung Park]
-* 0a71a43  sony: config: Disable most of the debugging configs  [Pranav Vashi]
-* fad3cdd  sony: config: Disable wcd-usbss  [Bruno Martins]
-* e7a742e  sony: config: Unset all configs related with crow chipset  [Bruno Martins]
-* ef00382  power: Import wakeup_irq_debug driver  [Luofan Chen]
-* 2015e45e  ARM64: dts: vendor: Add symlink to sm8550-devicetrees  [Bruno Martins]
-* 3585201  et6xx: Align implementation in sm8550  [Luofan Chen]
-* 7508e62  et6xx: Remove reference to hardware_info  [Luofan Chen]
-* 2949e9e  drivers: sony: Import et6xx driver from 68.0.A.0.768  [Luofan Chen]
-* 88a3fe4  drivers: Import sony drivers to build inline  [Luofan Chen]
-* 96e0345  tools/resolve_btfids: Skip unresolved symbol warning for empty BTF sets  [Kumar Kartikeya Dwivedi]
-* 8ec0455  minimal sony changes  [Luofan Chen]
 * d581cf9  Merge tag 'ASB-2024-07-05_13-5.15' of https://android.googlesource.com/kernel/common into HEAD  [Bruno Martins]
 
 #### packages/apps/Settings
@@ -904,44 +907,6 @@
 * 05ff3b0  sepolicy: Allow vendor_sony_euiccmemoryreset_app to find required services  [someone5678]
 * b0d6838  sepolicy: Allow vendor_qti_init_shell to access cgroup files  [someone5678]
 
-#### packages/apps/Settings
-
-* d48c913  Settings: Add developer setting to set the default GPU renderer.  [Joe Maples]
-* 02015d2  Settings: Update Application downgrade and Ignore window secure strings  [someone5678]
-* e535933  Settings: Bluetooth: Don't check persistable uri permission for BtHelper  [someone5678]
-* 4155a9e  Settings: allow disable of screenshot shutter sound [2/2]  [someone5678]
-* 5d05c88  Settings: fix typo in settings namespace for qr scanner on ls  [maxwen]
-* c70707d  Settings: Fix tint on newly added private VPN and mobile plan icons  [Bruno Martins]
-* facf8fe  Settings: Update private dns icons  [penglezos]
-* 5eb1525  Settings: Make roaming indicator optional [2/2]  [Pranav Vashi]
-* 9f8ea27  Settings: Option to Display Data Disabled Indicator Icon [2/2]  [varund7726]
-* ca3d6a1  Settings: User toggle for unlimited photos storage [2/2]  [spezi77]
-* 9cdee41  Settings: Add advanced settings preference  [someone5678]
-* 47356d2  Fix LTE Only mode on World Mode  [flawedworld]
-* bd21961  LTE Only Mode  [Pratyush]
-* 321e469  Settings: Don't check ro.build.selinux  [someone5678]
-* 781a2d5  Settings: Add proximity check on wake preference  [Bruno Martins]
-* 683449c  crdroid: Transparent QS customization  [ShevT]
-* 36b0241  Settings: Add Device codename to Firmware version window  [ganeshi4u]
-* 1abb75c  Settings: Move Vo5G toggle right below VoLTE  [Adithya R]
-* 4561e0f  Settings: StatusBarSettings: Restore Network Traffic Settings  [someone5678]
-* e491788  Settings: Add default value for Navigation Bar IME Space  [someone5678]
-* 24d9451  Settings: Allow to skip confirmation in biometric auth dialog [3/2]  [someone5678]
-* c95cd8b  Settings: Re-order SELinux status on About Phone  [someone5678]
-* 14c1b43  Settings: Allow to skip confirmation in biometric auth dialog [2/2]  [cjh1249131356]
-* 69dd555  Settings: Export FaceEnrollFinish activity to Sense  [Chris Crump]
-* fb7b046  Settings: Partial import DotOS A11 About Phone design  [IacobIonut01]
-* e4722a6  Port "Battery Usage Alerts" feature from factory images  [ezio84]
-* 1cc2643  Settings: Implement cutout force full screen [2/2]  [jhenrique09]
-* 5dd461f  Settings: Add empty TheParasiteProject config overlay  [someone5678]
-* c998fd0  Settings: Hide ADB and developer setting enable status [2/2]  [someone5678]
-* 6e3fe1a  Properly set Wi-Fi Privacy spinner initial state  [Tommy Webb]
-* 3703a30  Settings: Do not skip fp authentication for udfps  [Adithya R]
-* d427a9b  Settings: Add a preference to battery optimization page  [jhonboy121]
-* 6c77152  Settings: Black theme [2/3]  [SagarMakhar]
-* 0b3a43e  Settings: Hide radio info if device don't support voice  [LynnrinChan]
-* 6b1433c  Settings: Expose radio info (*#*#4636#*#*)  [xyyx]
-
 #### system/sepolicy
 
 * f3643a7  sepolicy: Also allow vendor_init to get/set bluetooth_prop  [someone5678]
@@ -952,14 +917,8 @@
 * a12ba8c  vendor: Move art related configs  [someone5678]
 * a48e6f7  extra: configs: Do not include other java mini debug info  [Yurical]
 * 47fc7a0  vendor: Move persist.vendor.recovery_update to ADDITIONAL_SYSTEM_PROPERTIES  [someone5678]
-* 6819f35  overlay: Enable the app battery usage list page feature  [LuK1337]
 
 #### vendor/google/gms
 
 * 4b21816  fixup! gms: Initial configs from previous repo  [someone5678]
-
-#### vendor/parasite/common
-
-* bf6cfe2  PixelPropsUtils: Spoof gms processes to it's own model and fp if it's Pixel  [someone5678]
-* a533a8a  [SQUASH] Implement DeviceConfigUtils and service [2/2]  [jhenrique09]
 
