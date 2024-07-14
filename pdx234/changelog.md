@@ -1,5 +1,15 @@
 # pdx234
 
+### 07-14-2024
+
+#### vendor/aosp
+
+* c71dfea  vendor: overlay: Move back res to non-RRO which uses Resources.getSystem()  [someone5678]
+
+#### vendor/google/gms
+
+* c15a9a9  gms: Enable app cloning building blocks config  [someone5678]
+
 ### 07-13-2024
 
 #### device/sony/sm8550-common
@@ -92,7 +102,7 @@
 * 22636ed  Don't skip theme application if it's already current  [Michael Bestas]
 * 903a67b  SystemUI: Clean-up IME space feature  [someone5678]
 * 9d5140c  KeyStore: Add getApplicationContext method required for Asus Devices  [Jackeagle]
-* 6160a91  SystemUI: PowerShareTile: Clean-ups  [someone5678]
+* 6160a914  SystemUI: PowerShareTile: Clean-ups  [someone5678]
 * b7ca7bc  SystemUI: screenshot: add delay for long-press partial screenshot  [Pranav Vashi]
 * 239be1c  Forward port 'Swap volume buttons' (1/3)  [nadlabak]
 * d02c0ba  SystemUI: screenshot: close QS after launching long screenshot activity  [LuK1337]
@@ -261,7 +271,7 @@
 * 3ff7395  TelephonyManager: Add getLteOnCdmaMode() function for default subId  [Ido Ben-Hur]
 * 029840c  telephony: Add ICCID into CarrierIdentifier  [Mengjun Leng]
 * 27db297  base: Spoof current storage encryption status [1/2]  [someone5678]
-* 2128eac  core: Allow telephony stack and its components to receive un-sanitized ServiceState entries  [minaripenguin]
+* 2128eacb  core: Allow telephony stack and its components to receive un-sanitized ServiceState entries  [minaripenguin]
 * 758f0ed  Skip checking SystemUI's permission for observing sensor privacy  [Han Wang]
 * b11ab7c  SystemUI: enable fading squiggle animation of qs media player  [nift4]
 * 281f678  [SQUASH] BatteryStatsViewer: Squash of changes  [Michael Bestas]
@@ -892,33 +902,4 @@
 #### vendor/aosp
 
 * 7f04e91  factory: zygote and rescue party properties  [Ryan Chu]
-
-### 07-09-2024
-
-#### device/parasite/sepolicy
-
-* 5e894d8  parasite: sepolicy: Allow hal_lineage_powershare_default to use vnbinder  [someone5678]
-* 241b4ad  parasite: sepolicy: Label filesystem and memory proc for init  [someone5678]
-
-#### hardware/sony
-
-* 164c42a  sepolicy: Allow hal_light_default to modify sysfs_dp  [someone5678]
-* 285d8f7  sepolicy: Allow vendor_sony_euiccmemoryreset_app to binder call vendor_hal_miscta_default  [someone5678]
-* 05ff3b0  sepolicy: Allow vendor_sony_euiccmemoryreset_app to find required services  [someone5678]
-* b0d6838  sepolicy: Allow vendor_qti_init_shell to access cgroup files  [someone5678]
-
-#### system/sepolicy
-
-* f3643a7  sepolicy: Also allow vendor_init to get/set bluetooth_prop  [someone5678]
-* 1879593  sepolicy: Allow hal_audio_default to get/set bluetooth_prop for a2dp offloading.  [someone5678]
-
-#### vendor/aosp
-
-* a12ba8c  vendor: Move art related configs  [someone5678]
-* a48e6f7  extra: configs: Do not include other java mini debug info  [Yurical]
-* 47fc7a0  vendor: Move persist.vendor.recovery_update to ADDITIONAL_SYSTEM_PROPERTIES  [someone5678]
-
-#### vendor/google/gms
-
-* 4b21816  fixup! gms: Initial configs from previous repo  [someone5678]
 
