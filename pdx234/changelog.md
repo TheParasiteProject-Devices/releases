@@ -1,10 +1,23 @@
 # pdx234
 
-### 07-27-2024
+### 07-29-2024
+
+#### frameworks/base
+
+* 405e5cc  fixup! base: Hide ADB and developer setting enable status [1/2]  [someone5678]
+* e023026  camera2: allow access to CaptureRequest.mLogicalCameraSettings  [Cosmin Tanislav]
+
+#### hardware/qcom-caf/common
+
+* 56139e5  libqti-perfd-client: Define dummy perf_hint_renew method  [chaptsand]
+
+### 07-28-2024
 
 #### device/parasite/sepolicy
 
 * d969184  parasite: sepolicy: Add cache cleaner script [2/2]  [someone5678]
+
+### 07-27-2024
 
 #### device/sony/extra
 
@@ -195,11 +208,19 @@
 
 * 4e90d7f  Fix ClassCastException during onNotificationPosted  [minaripenguin]
 
+#### packages/apps/Updater
+
+* 51ba8b5  Throw actual error when verifying imported updates  [Sefa Eyeoglu]
+
 #### system/sepolicy
 
 * dada8ea  Allow system server to access tmpfs files  [minaripenguin]
 * 7c02cde  Allow ueventd to read apexd property  [Suchang Woo]
 * b615112  sepolicy: Allow permissive in recovery on user builds  [Pranav Vashi]
+
+#### vendor/aosp
+
+* 5a5c37c  kernel: Deduplicate file paths in file_list.txt  [LuK1337]
 
 #### vendor/sony/sm8550-common
 
@@ -210,14 +231,8 @@
 #### device/sony/sm8550-common
 
 * 8dcbe53  Revert "sm8550-common: Add BUILD_BROKEN_INCORRECT_PARTITION_IMAGES"  [someone5678]
-
-#### packages/apps/Updater
-
-* 51ba8b5  Throw actual error when verifying imported updates  [Sefa Eyeoglu]
-
-#### vendor/aosp
-
-* 5a5c37c  kernel: Deduplicate file paths in file_list.txt  [LuK1337]
+* 11bd55b  sm8550-common: Move DeviceAsWebcam resource to non-RRO  [someone5678]
+* 79cda75  sm8550-common: Sync euicc setting to stock  [someone5678]
 
 #### vendor/google/dexopt_profiles
 
@@ -226,118 +241,4 @@
 #### vendor/google/pixel-framework
 
 * 22c88cd  SettingsGoogle: Match Pixel UDFPS animation padding  [Jake Weinstein]
-
-### 07-24-2024
-
-#### device/sony/pdx234
-
-* 6caac17  pdx234: gms: Copy EEA V2 device config  [someone5678]
-* 0fe5722  pdx234: Matches fp and desc to stock EEA  [someone5678]
-
-#### device/sony/sm8550-common
-
-* 11bd55b  sm8550-common: Move DeviceAsWebcam resource to non-RRO  [someone5678]
-* 79cda75  sm8550-common: Sync euicc setting to stock  [someone5678]
-
-#### device/xiaomi/sweet
-
-* 627d21b  sweet: Go back to ext4 for cache partition  [someone5678]
-* 8922efb  sweet: gms: Increase back GBoard key size to 1.2  [someone5678]
-
-#### hardware/xiaomi
-
-* 27c92a0  vibrator: Add support for TEXTURE_TICK effect  [someone5678]
-* 355bd63  vibrator: effect: libqtivibratoreffect: Add libc++fs to static libs  [someone5678]
-* ebf4c15  hidl: biometrics: fingerprint: Set thread to high CFS priority  [Nauval Rizky]
-* 8a7ad9d  interfaces: fxtunnel: Add fxtunnel 1.0 interface  [bengris32]
-* 5f6129e  XiaomiEuicc: Remove references to EuiccPixel  [Bruno Martins]
-* 127cf0d  XiaomiEuicc: Move to priv-app and grant required permissions  [someone5678]
-* c9857c4  XiaomiEuicc: Disable EuiccGoogle when GMS and GSF are not installed  [Peter Cai]
-* 7932f91  Introduce XiaomiEuicc  [Bruno Martins]
-* 1049cca  dolby: Convert to SwitchPreferenceCompat  [Michael Bestas]
-* c70d6ff  DolbyManager: Migrate to CompoundButton.OnCheckedChangeListener  [Chaohui Wang]
-* a00eef1  dolby: Enable use_resource_processor for all sysui deps  [Peter Kalauskas]
-* ce2b912  vintf: Add more hals to fcm  [Adithya R]
-* ee089a5  xiaomi: Introduce Dolby Atmos  [Adithya R]
-* 52f3657  vibrator: effect: Fallback to click if an effect is missing  [Adithya R]
-* 23d201b  vibrator: effect: Create double click effect from click if necessary  [Arian]
-* 27adc02  vibrator: effect: Read vibration fifo data from vendor  [Arian]
-* 1b0f566  vintf: Remove transports from FCM  [Bruno Martins]
-* ff205f1  vintf: Add synaptic interfaces to FCM  [Andrey Sprynga]
-* 6154c8a  aidl: light: Add RGB sync support  [LuK1337]
-* 342962c  aidl: light: Lower battery light priority  [LuK1337]
-* a617d73  aidl: light: Support the `left` LED  [danielml]
-* e2cc75a  aidl: light: Add support for button-backlight2 device  [LuK1337]
-* ed42e89  aidl: light: Add support for timed mode  [Bruno Martins]
-* 084bc1f  aidl: light: Refactor  [Sebastiano Barezzi]
-* a8cc952  vintf: Add extra GoodixFingerprint interfaces  [Bruno Martins]
-* 3078cfe  vintf: Add {goodix 2.1, fingerprintextension, motor} to fcm  [Arian]
-* 9020cd6  aidl: Remove useless makefile  [Bruno Martins]
-* 337f005  Move to common power-libperfmgr  [Michael Bestas]
-* eca1ae3  hidl: biometrics: Add support for the fortsense fingerprint hal  [basamaryan]
-* 010354a  power: Remove wakeup behavior from PowerHintSession and PowerSessionManager  [Matt Buckley]
-* 1a13686  power: Add better tracing for sendHint and refactor existing tracing  [Matt Buckley]
-* 0d88105  ADPF: refine StaleTimeHandler  [Jimmy Shiu]
-* 030f713  ADPF: remove unused EarlyBoostHandler  [Jimmy Shiu]
-* 5cffe03  vintf: Add fpc and goodix 1.0 extensions to fcm  [Arian]
-* 3edf5ca  vintf: Add fingerprint extension to common fcm  [Jens Reidel]
-* 4112b54  interfaces: fingerprints: extension: 1.0: Reverse the remaining interfaces  [Giovanni Ricca]
-* b2f69de  interfaces: fingerprints: Initial reverse engineered 1.0 extension  [Erfan Abdi]
-* 6190e45  interfaces: goodix: Initial reserve engineered 1.0 fingerprintextension  [bengris32]
-* 71e7ea3  interfaces: goodix: Reverse the remaining calls  [Giovanni Ricca]
-* cbc85de  vintf: Add common xiaomi framework compatibility matrix  [Arian]
-* 336bc8e  sensors: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-* 4de7116  megvii: libmegface -> libmegface_xiaomi  [Hazama25]
-* a3160f0  megvii: Return a char pointer for some stubs instead  [Tim Schumacher]
-* e052c90  megvii: Initial stub libraries  [Sebastiano Barezzi]
-* d666a38  sensors: Add new single tap sensor node  [Fabian Leutenegger]
-* dd1fc35  sensors: Implement Single Tap Sensor  [Cyber Knight]
-* d346b22  sensors: Implement Double Tap Sensor  [Cyber Knight]
-* 85baf68  sensors: Implement UDFPS Sensor  [Cyber Knight]
-* e18a65e  sensors: Implement `GetPollPath()` and `IsPathValid()`  [Cyber Knight]
-* ab07c8f  sensors: Create sysfs polling one shot sensor  [Cosmin Tanislav]
-* a7b90e0  sensors: Add udfps long press sensor  [Cosmin Tanislav]
-* eedd562  sensors: Fix locking around setOperationMode and activate  [Cosmin Tanislav]
-* ad7be5e  sensors: Move one shot sensor out of main class  [Cosmin Tanislav]
-* d31a213  sensors: Make sensor set mode operation function virtual  [Cosmin Tanislav]
-* c386d65  sensors: Make sensor flush function virtual  [Cosmin Tanislav]
-* 80e5b0b  sensors: Make sensor run function virtual  [Cosmin Tanislav]
-* d34971b  sensors: Make sensor batch function virtual  [Cosmin Tanislav]
-* b99468d  Add dummy sensors sub HAL  [Cosmin Tanislav]
-
-#### vendor/google/gms
-
-* 3b59b2c  fixup! gms: Add support for DSE search engine choice screen and EEA device features  [someone5678]
-
-### 07-23-2024
-
-#### device/xiaomi/sweet
-
-* b45c8c6  sweet: sepolicy: Remove duplicated policies  [someone5678]
-* cc95bf6  sweet: Explicitly disable "Enable GL comp backpressure"  [helliscloser]
-* a258220  sweet: unset BOARD_USERDATAIMAGE_PARTITION_SIZE  [SGCMarkus]
-
-#### hardware/sony
-
-* 7e712f9  fixup! XperiaParts: Don't setup display HAL on boot if setting is disabled  [someone5678]
-
-#### packages/apps/GameSpace
-
-* 5a1842d  GameSpace: Import qs_tile_background ripple resource for tile  [someone5678]
-* c896758  GameSpace: Split app name and settings title  [someone5678]
-* dfccd9b  GameSpace: Add Google Game Dashboard shortcut  [someone5678]
-* 69d71cc  GameSpace: Move game library to its own preference  [someone5678]
-* 29d6845  GameSpace: Migrate MainSwitchBar and Switch to Material3  [Bruno Martins]
-* 9924548  GameSpace: Rename title to Game Mode  [someone5678]
-* e53d73c  GameSpace: Add meta-data for Settings entry  [someone5678]
-* 76f2af3  GameSpace: Enable enableOnBackInvokedCallback  [someone5678]
-* d656b9c  GameSpace: Hide from launcher  [someone5678]
-* 4e9fb68  GameSpace: Fix stopping session service in secondary users  [Dhina17]
-* d926563  GameSpace: Update fps once menu switcher attached to window  [Dhina17]
-* db0d027  GameSpace: Skip starting game bar if already connected  [Pranav Vashi]
-
-#### vendor/aosp
-
-* 86566fa  build: Override host metadata  [Danny Lin]
-* fd54f67  apns: Fix broken entries  [Sebastiano Barezzi]
 
