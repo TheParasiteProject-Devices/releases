@@ -1,123 +1,211 @@
 # pdx234
 
-### 08-19-2024
+### 08-26-2024
 
 #### frameworks/base
 
-* 85de605  fixup! base: Hide ADB and developer setting enable status [1/2]  [someone5678]
+* 99509c0  Spoof a valid certificate chain for hardware attestations [1/2]  [chiteroman]
+* b0021a2  services: Add NPE check for updating system app from play store  [Pranav Vashi]
+* 60cca2b  base: PixelPropsUtils: Add Extra  [someone5678]
 
-#### packages/apps/KProfiles
+#### hardware/xiaomi
 
-* bacbf69  KProfiles: Mark the QS tile as toggleable  [Ido Ben-Hur]
+* 7b1ebce  IFAAService: Add null checks  [Sebastiano Barezzi]
+* 8666282  IFAAService: Include all AIDL files  [Sebastiano Barezzi]
+* c18fc2f  IFAAService: Add missing license headers  [Sebastiano Barezzi]
+* 280adfe  IFAAService: Don't use fqname to reference service class  [Sebastiano Barezzi]
+* a3509b8  IFAAService: Drop compile SDK and version code from manifest  [Sebastiano Barezzi]
+* 41cf1a7  IFAAService: Reformat manifest  [Sebastiano Barezzi]
+* 069649d  vintf: Add PixelWorks Iris interfaces to FCM  [Andrey Sprynga]
+* 539bc37  vintf: Add focaltech and silead FP Interfaces to FCM  [HeroBuxx]
 
-#### packages/apps/Settings
+#### packages/modules/adb
 
-* 18c49e2  Settings: StatusBarLyric: Update title  [someone5678]
-* 49e40da  Settings: Use MainSwitchPreference for network traffic monitor  [someone5678]
-
-#### vendor/aosp
-
-* 4aa819d  aconfig: Set RELEASE_ACONFIG_FLAG_DEFAULT_PERMISSION to RW  [someone5678]
+* 43ed9b4  Squashed import of adb root patches  [LuK1337]
 
 #### vendor/certification
 
-* fee4f0e  certification: Update  [someone5678]
-
-#### vendor/google/dexopt_profiles
-
-* 7e37ed1  dexopt_profiles: Update  [someone5678]
+* 190ceca4  Spoof a valid certificate chain for hardware attestations [2/2]  [chiteroman]
+* 05ffcc6  certification: libs: Clean-up before changes  [someone5678]
 
 #### vendor/google/gms
 
-* d136c4f  [TMP] device_config: Disable floating search bar for now  [someone5678]
-* 79d54a1  device_config: Disable qs tile search  [someone5678]
-* 42f194a  device_config: Update launcher configs  [someone5678]
+* 0b93e97  gms: configs: Exempt Google Dialer from location indicator  [someone5678]
+* b8ea073  gms: configs: Disable SystemUpdateV2Activity  [someone5678]
+* e59b59f  overlay: Add GameSpace to notification listener access  [minaripenguin]
+* 7258240  gms: PixelConfigOverlayCustom: Update default notif access packages  [someone5678]
+* 8952d53  Revert "gms: configs: Remove Live Wallpaper module unblocking"  [someone5678]
+* 753413b  gms: configs: Update process lists  [someone5678]
+* 2a56ca7  gms: configs: Add and update configs for circle to search  [someone5678]
 
-#### vendor/google/pixel-framework
+#### vendor/google/gms-common-proprietary
 
-* ccf50b9  SettingsGoogle: Move Lineage touch settings under touch category  [someone5678]
+* b476606  gms: Use NexusLauncherRelease from P8 Pro for now  [someone5678]
+
+#### vendor/google/mainline_modules
+
+* 12e1ef9  mainline_modules: Directly extract google-install-constraints-package-allowlist  [someone5678]
+* 559306c  mainline_modules: overlays: Update priority to 1  [someone5678]
+* 1572cd4  mainline_modules: overlays: Disable gms ota components  [someone5678]
 
 #### vendor/parasite/common
 
-* 8829d37  PixelPropsUtils: Move configs to rro [2/2]  [someone5678]
-* 8210461  PixelPropsUtils: Update gms process list  [someone5678]
-* 5d7c06b  PixelPropsUtils: Make CertHook more independent  [someone5678]
-* f4ddfd0  libs: Add PhenotypeFlagsUtils [1/2]  [someone5678]
+* e7f42fd  PixelPropsUtils: Add Extra  [someone5678]
 
-### 08-18-2024
+### 08-25-2024
 
-#### frameworks/base
+#### device/lineage/sepolicy
 
-* 51c6399  base: PixelPropsUtils: Move configs to rro [1/2]  [someone5678]
-
-#### vendor/aosp
-
-* e7dfa3c  Revert "vendor: props: Enable PixelPropsUtils by default"  [someone5678]
-
-#### vendor/certification
-
-* 83ab1fa  libs: Hide CertHook class  [someone5678]
-* d4e877a  libs: Allow to disable CertHook  [someone5678]
-
-#### vendor/google/gms
-
-* 8fc636a  PixelPropsUtils: Move configs to rro [3/2]  [someone5678]
-* fffffdc  gms: overlay: Hide Live Translate settings  [someone5678]
-* dbc28e9  phenotype_flags: Hide Gemini setting in Messages  [someone5678]
-* 5da196b  [TMP] gms: Ship Tensor 2024 features for now  [someone5678]
-* 01064bd  gms: Ship Tensor Pixel configs by default  [someone5678]
-
-### 08-17-2024
+* 2275b98  common: add legacy vibrator AIDL  [Han Sol Jin]
 
 #### frameworks/base
 
-* f67ef78  fixup! Allow to suppress notifications sound/vibration if screen is ON [1/2]  [Pranav Vashi]
-* 4dc2891  base: Add PhenotypeFlagsUtils [2/2]  [someone5678]
+* bd6a995  SystemUI: Update track title and artist on metadata change  [alphime]
 
 #### vendor/google/gms
 
-* 8f2e31e  gms: Add PhenotypeFlagsUtils [3/2]  [someone5678]
+* 414858a  gms: configs: It's Bugle time!  [someone5678]
 
-### 08-16-2024
+### 08-24-2024
+
+#### frameworks/base
+
+* c3a32ce  SystemUI: Fix Island loop if suddenly close  [alphi]
+
+#### hardware/sony
+
+* a7c89cc  sony: sepolicy: Address AIDL NFC hal  [someone5678]
+
+#### vendor/google/gms
+
+* 4db25a8  Update README.md  [someone5678]
+* ba0479d  gms: configs: Remove Live Wallpaper module unblocking  [someone5678]
+* a88fae7  gms: configs: Unspoof AICore  [someone5678]
+* 4f41ada  gms: Don't include 2024 Tensor apps  [someone5678]
+* 10b6ecf  gms: configs: Add more apps to live translate blocklist  [someone5678]
+* f62d2b7  gms: configs: Disable Live Translate  [someone5678]
+* c0c04a0  gms: Import SettingsGoogleFutureFaceEnroll  [someone5678]
+* 537863a  gms: config: Update  [someone5678]
+* a7f09ca  gms: Exclude FIR proximity sensors support by default  [someone5678]
+* fb61456  gms: Add monet bootanimation switch [3/2]  [someone5678]
+* 76d152e  gms: Update bootanimation modification  [someone5678]
+* f7ec420  gms: Import missing permissions  [someone5678]
+* dbcf9a5  gms: skip_preprocessed_apk_checks for Meet  [someone5678]
+* 44ef80e  gms: Update optional libraries  [someone5678]
+* 1f011a4  gms: Remove leftover 2024 experience  [someone5678]
+* 46b6e2f  gms: overlays: Expose 2024 experience to PixelAIPrebuilt  [someone5678]
+* 197afaf  gms: Split more apps  [someone5678]
+
+#### vendor/google/gms-common-proprietary
+
+* c687a00  gms: Import SettingsGoogleFutureFaceEnroll  [someone5678]
+* d6e8ea9  gms: Import missing firproximity.xml  [someone5678]
+
+### 08-23-2024
+
+#### device/lineage/sepolicy
+
+* 26d1da8  sepolicy: label default powershare implementation  [Cosmin Tanislav]
+
+#### device/qcom/sepolicy_vndr/sm8550
+
+* 52e9556  sepolicy: add missing sepolicy rules for kalama  [someone5678]
+* 12aff57  sepolicy: add sys_module capability for hal_wifi_default  [Hu Wang]
+* 94ca800  sepolicy: Label vendor.qti.ims.factoryaidlservice.IImsFactory  [Michael Bestas]
+* a387193  sepolicy: Move some AIDL rules to common policy  [Michael Bestas]
 
 #### device/sony/pdx234
 
-* cc1465f  pdx234: SonyPDX234NfcNciRes: Add targetName and move to vendor  [Luofan Chen]
+* 485a1f4  pdx234: Update  [someone5678]
+
+#### device/sony/sm8550-common
+
+* 414f74b  sm8550-common: Check media_codecs xml from XQ-DQ72_Customized_HK_67.1.A.2.270  [Luofan Chen]
+* 6467ae8  sm8550-common: usb_compositions: Change vid and pid to sony  [Luofan Chen]
 
 #### frameworks/base
 
-* 9f97027  SystemUI: Reduce keyguard indication text padding  [minaripenguin]
-* 42a2975  SystemUI: Don't enforce Island notif on landscape  [someone5678]
-* 8c2168c  SystemUI: Show island notification on landscape  [minaripenguin]
-* a24ba6a  Island: Recycle icon bitmap to avoid memory leak  [minaripenguin]
+* 4742623  base: cmds: Add monet bootanimation switch [1/2]  [someone5678]
 
-#### vendor/google/gms
+#### hardware/lineage/interfaces
 
-* 6415eb2  gms: Update comment of proprietary-files*.txt  [someone5678]
-* aa8fd35  gms: Add symlink to blob  [someone5678]
-* 003651f  Update README.md  [someone5678]
-* ab55742  gms: Import makefiles from common blobs  [someone5678]
-* 16b94e6  Update README.md  [someone5678]
-* 75714a0  gms: vendorsetup.sh: Remove previously merged apks before merge  [someone5678]
-* b18c96c  gms: vendorsetup.sh: Guard it  [someone5678]
-* 04178e8  gms: Split blobs going over 100MB  [Omkar Chandorkar]
-* 67a1b3d  gms: Kill git lfs  [someone5678]
-* 5a73587  gms: Add symlink to blob repo  [someone5678]
-* 0978876  pixel-style: Add new setupwizard props from caiman  [Joey Huab]
+* bd66d5b  powershare: add default implementation  [Cosmin Tanislav]
 
-#### vendor/parasite/common
+#### hardware/sony
 
-* 32d26bc  PixelPropsUtils: Spoof Weather to recent Pixel  [someone5678]
-* 6946bac  PixelPropsUtils: Move to Pixel 9 Pro  [someone5678]
+* f228bac  Disable 32 bit variants of audio libraries for 64 bit audio targets  [Arian]
 
-### 08-15-2024
+#### manifest
+
+* 5cc3f1c  manifest: lineage: Track device/qcom/sepolicy_vndr/sm8550  [someone5678]
 
 #### packages/apps/GameSpace
 
-* 174fd13  GameSpace: Show correct default settings  [Dhina17]
-* 0a0532f  GameSpace: Don't add floating action if game closed too quickly  [Dhina17]
+* c1358f5  GameSpace: Fix the limit of only four widget apps  [YiQiu]
+* 8a686a9   GameSpace: Introduce Quick Start app feature  [YiQiu]
 
-#### vendor/certification
+#### packages/apps/Settings
 
-* 773c7cb  certification: Update  [someone5678]
+* 378ba74  Settings: Add monet bootanimation switch [2/2]  [someone5678]
+
+#### tools/extract-utils
+
+* ed53b67  extract_utils: Ignore extra flags during sort  [LuK1337]
+
+#### vendor/aosp
+
+* 1eb7a3c  soong: add powershare configs  [Cosmin Tanislav]
+
+#### vendor/google/gms
+
+* 08f5b6e  gms: Update  [someone5678]
+
+#### vendor/google/gms-common-proprietary
+
+* 2cdc32a  gms: Update bootanimation  [someone5678]
+* 1646ded  gms: Import missing permissions  [someone5678]
+* 8bd2d96  gms: Update  [someone5678]
+* 8c8d1e0  gms: Add SystemUIClocks-Handwritten  [someone5678]
+* 5e91c16  gms: Remove SystemUIClocks-Handwritten  [someone5678]
+
+#### vendor/google/pixel-additional
+
+* 88911cd  pixel-additional: Update  [someone5678]
+* b666d75  pixel-additional: Prepare for source change  [someone5678]
+
+#### vendor/google/pixel-framework
+
+* d844596  pixel-framework: Update  [someone5678]
+
+#### vendor/parasite/common
+
+* e147fd1  GamesPropsUtils: Spoof Brawl Stars to Mi 11T Pro  [Joey Huab]
+* 665b609  GamesPropsUtils: Update model for call of duty to Lenovo Y700  [Pranav Vashi]
+
+#### vendor/sony/pdx234
+
+* 5b316a4  pdx234: Update  [someone5678]
+
+#### vendor/sony/sm8550-common
+
+* 47258be  sm8550-common: Update  [someone5678]
+
+### 08-22-2024
+
+#### hardware/qcom-caf/sm8550/audio/pal
+
+* 2e928e9  Disable 32 bit variants of audio libraries for 64 bit audio targets  [Arian]
+
+#### hardware/qcom-caf/sm8550/audio/primary-hal
+
+* e0fe270  Disable 32 bit variants of audio libraries for 64 bit audio targets  [Arian]
+
+#### packages/apps/Aperture
+
+* a7f50c1  Aperture: Fix front camera intent preview mirroring  [Tommy Webb]
+* 5f6aa26  Aperture: Update CameraX to 1.4.0-rc01  [LuK1337]
+
+#### vendor/google/gms
+
+* f772674  gms: overlay: custom_features: Expose Tensor feature to dialer  [someone5678]
 
