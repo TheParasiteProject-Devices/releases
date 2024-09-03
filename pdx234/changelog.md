@@ -1,211 +1,197 @@
 # pdx234
 
-### 08-26-2024
+### 09-04-2024
 
-#### frameworks/base
+#### bootable/recovery
 
-* 99509c0  Spoof a valid certificate chain for hardware attestations [1/2]  [chiteroman]
-* b0021a2  services: Add NPE check for updating system app from play store  [Pranav Vashi]
-* 60cca2b  base: PixelPropsUtils: Add Extra  [someone5678]
+* 816b875  recovery: Always consider builds to be debuggable  [Pranav Vashi]
 
-#### hardware/xiaomi
+#### device/parasite/sepolicy
 
-* 7b1ebce  IFAAService: Add null checks  [Sebastiano Barezzi]
-* 8666282  IFAAService: Include all AIDL files  [Sebastiano Barezzi]
-* c18fc2f  IFAAService: Add missing license headers  [Sebastiano Barezzi]
-* 280adfe  IFAAService: Don't use fqname to reference service class  [Sebastiano Barezzi]
-* a3509b8  IFAAService: Drop compile SDK and version code from manifest  [Sebastiano Barezzi]
-* 41cf1a7  IFAAService: Reformat manifest  [Sebastiano Barezzi]
-* 069649d  vintf: Add PixelWorks Iris interfaces to FCM  [Andrey Sprynga]
-* 539bc37  vintf: Add focaltech and silead FP Interfaces to FCM  [HeroBuxx]
-
-#### packages/modules/adb
-
-* 43ed9b4  Squashed import of adb root patches  [LuK1337]
-
-#### vendor/certification
-
-* 190ceca4  Spoof a valid certificate chain for hardware attestations [2/2]  [chiteroman]
-* 05ffcc6  certification: libs: Clean-up before changes  [someone5678]
-
-#### vendor/google/gms
-
-* 0b93e97  gms: configs: Exempt Google Dialer from location indicator  [someone5678]
-* b8ea073  gms: configs: Disable SystemUpdateV2Activity  [someone5678]
-* e59b59f  overlay: Add GameSpace to notification listener access  [minaripenguin]
-* 7258240  gms: PixelConfigOverlayCustom: Update default notif access packages  [someone5678]
-* 8952d53  Revert "gms: configs: Remove Live Wallpaper module unblocking"  [someone5678]
-* 753413b  gms: configs: Update process lists  [someone5678]
-* 2a56ca7  gms: configs: Add and update configs for circle to search  [someone5678]
-
-#### vendor/google/gms-common-proprietary
-
-* b476606  gms: Use NexusLauncherRelease from P8 Pro for now  [someone5678]
-
-#### vendor/google/mainline_modules
-
-* 12e1ef9  mainline_modules: Directly extract google-install-constraints-package-allowlist  [someone5678]
-* 559306c  mainline_modules: overlays: Update priority to 1  [someone5678]
-* 1572cd4  mainline_modules: overlays: Disable gms ota components  [someone5678]
-
-#### vendor/parasite/common
-
-* e7f42fd  PixelPropsUtils: Add Extra  [someone5678]
-
-### 08-25-2024
-
-#### device/lineage/sepolicy
-
-* 2275b98  common: add legacy vibrator AIDL  [Han Sol Jin]
-
-#### frameworks/base
-
-* bd6a995  SystemUI: Update track title and artist on metadata change  [alphime]
-
-#### vendor/google/gms
-
-* 414858a  gms: configs: It's Bugle time!  [someone5678]
-
-### 08-24-2024
-
-#### frameworks/base
-
-* c3a32ce  SystemUI: Fix Island loop if suddenly close  [alphi]
-
-#### hardware/sony
-
-* a7c89cc  sony: sepolicy: Address AIDL NFC hal  [someone5678]
-
-#### vendor/google/gms
-
-* 4db25a8  Update README.md  [someone5678]
-* ba0479d  gms: configs: Remove Live Wallpaper module unblocking  [someone5678]
-* a88fae7  gms: configs: Unspoof AICore  [someone5678]
-* 4f41ada  gms: Don't include 2024 Tensor apps  [someone5678]
-* 10b6ecf  gms: configs: Add more apps to live translate blocklist  [someone5678]
-* f62d2b7  gms: configs: Disable Live Translate  [someone5678]
-* c0c04a0  gms: Import SettingsGoogleFutureFaceEnroll  [someone5678]
-* 537863a  gms: config: Update  [someone5678]
-* a7f09ca  gms: Exclude FIR proximity sensors support by default  [someone5678]
-* fb61456  gms: Add monet bootanimation switch [3/2]  [someone5678]
-* 76d152e  gms: Update bootanimation modification  [someone5678]
-* f7ec420  gms: Import missing permissions  [someone5678]
-* dbcf9a5  gms: skip_preprocessed_apk_checks for Meet  [someone5678]
-* 44ef80e  gms: Update optional libraries  [someone5678]
-* 1f011a4  gms: Remove leftover 2024 experience  [someone5678]
-* 46b6e2f  gms: overlays: Expose 2024 experience to PixelAIPrebuilt  [someone5678]
-* 197afaf  gms: Split more apps  [someone5678]
-
-#### vendor/google/gms-common-proprietary
-
-* c687a00  gms: Import SettingsGoogleFutureFaceEnroll  [someone5678]
-* d6e8ea9  gms: Import missing firproximity.xml  [someone5678]
-
-### 08-23-2024
-
-#### device/lineage/sepolicy
-
-* 26d1da8  sepolicy: label default powershare implementation  [Cosmin Tanislav]
+* 11f0185  sepolicy: Allow shell to run dmesg on recovery only  [someone5678]
+* 41a9c7b  sepolicy: Import twrp sepolicy  [someone5678]
+* eab2ea9  sepolicy: Allow recovery to set ro.adb.secure.recovery and shell prop  [someone5678]
 
 #### device/qcom/sepolicy_vndr/sm8550
 
-* 52e9556  sepolicy: add missing sepolicy rules for kalama  [someone5678]
-* 12aff57  sepolicy: add sys_module capability for hal_wifi_default  [Hu Wang]
-* 94ca800  sepolicy: Label vendor.qti.ims.factoryaidlservice.IImsFactory  [Michael Bestas]
-* a387193  sepolicy: Move some AIDL rules to common policy  [Michael Bestas]
-
-#### device/sony/pdx234
-
-* 485a1f4  pdx234: Update  [someone5678]
+* 806cb93  sepolicy_vndr: Allow init/vendor_init to write proc firmware config  [Luofan Chen]
+* cd38198  sepolicy_vndr: Label proc firmware config node  [Luofan Chen]
 
 #### device/sony/sm8550-common
 
-* 414f74b  sm8550-common: Check media_codecs xml from XQ-DQ72_Customized_HK_67.1.A.2.270  [Luofan Chen]
-* 6467ae8  sm8550-common: usb_compositions: Change vid and pid to sony  [Luofan Chen]
+* 76daae0  sm8550-common: Update symlink name  [someone5678]
 
 #### frameworks/base
 
-* 4742623  base: cmds: Add monet bootanimation switch [1/2]  [someone5678]
+* 0c9f3c2  base: PowerOffAlarmService: Avoid NullPointerException  [someone5678]
+* 5020ec2  Island: Remove notification when swiped dismiss  [minaripenguin]
+* 26f0a13  Island: Fix focused top-app detection  [minaripenguin]
+* f03c6c0  PinnerService: Try to pin SystemUIGoogle if SystemUI fails  [AnierinB]
 
-#### hardware/lineage/interfaces
+#### hardware/qcom-caf/common
 
-* bd66d5b  powershare: add default implementation  [Cosmin Tanislav]
-
-#### hardware/sony
-
-* f228bac  Disable 32 bit variants of audio libraries for 64 bit audio targets  [Arian]
+* d67755a  libqti-perfd-client: Do not log if any of value is NULL  [someone5678]
+* b054148  libqti-perfd-client: Define dummy perf_hint_renew method  [chaptsand]
+* b6fe5c2  common: Add nfc 1.2  [Landry GAIFFE]
+* bbadf2e  libqti-perfd-client: Correct report values and types of methods  [someone5678]
+* 31572c1  common: Add support for pineapple boards  [Venkat Yadlapati]
+* 6c4fa01  qcom: Allow a device to manually override which HALs it wants to use  [Akhil Narang]
 
 #### manifest
 
-* 5cc3f1c  manifest: lineage: Track device/qcom/sepolicy_vndr/sm8550  [someone5678]
+* f02f472  Revert "manifest: lineage: Track device/qcom/sepolicy_vndr/sm8550"  [someone5678]
 
-#### packages/apps/GameSpace
+#### system/sepolicy
 
-* c1358f5  GameSpace: Fix the limit of only four widget apps  [YiQiu]
-* 8a686a9   GameSpace: Introduce Quick Start app feature  [YiQiu]
-
-#### packages/apps/Settings
-
-* 378ba74  Settings: Add monet bootanimation switch [2/2]  [someone5678]
-
-#### tools/extract-utils
-
-* ed53b67  extract_utils: Ignore extra flags during sort  [LuK1337]
-
-#### vendor/aosp
-
-* 1eb7a3c  soong: add powershare configs  [Cosmin Tanislav]
-
-#### vendor/google/gms
-
-* 08f5b6e  gms: Update  [someone5678]
-
-#### vendor/google/gms-common-proprietary
-
-* 2cdc32a  gms: Update bootanimation  [someone5678]
-* 1646ded  gms: Import missing permissions  [someone5678]
-* 8bd2d96  gms: Update  [someone5678]
-* 8c8d1e0  gms: Add SystemUIClocks-Handwritten  [someone5678]
-* 5e91c16  gms: Remove SystemUIClocks-Handwritten  [someone5678]
-
-#### vendor/google/pixel-additional
-
-* 88911cd  pixel-additional: Update  [someone5678]
-* b666d75  pixel-additional: Prepare for source change  [someone5678]
-
-#### vendor/google/pixel-framework
-
-* d844596  pixel-framework: Update  [someone5678]
-
-#### vendor/parasite/common
-
-* e147fd1  GamesPropsUtils: Spoof Brawl Stars to Mi 11T Pro  [Joey Huab]
-* 665b609  GamesPropsUtils: Update model for call of duty to Lenovo Y700  [Pranav Vashi]
-
-#### vendor/sony/pdx234
-
-* 5b316a4  pdx234: Update  [someone5678]
+* 02d18f6  sepolicy: Allow shell to access dmesg on recovery only  [someone5678]
+* ed7243e  adbd: Allow adb root on user builds  [Alexander Winkowski]
+* 6790c93  Allow permissive backuptool domain on user builds  [Alexander Winkowski]
+* 45264cb  Allow system server to access tmpfs files  [minaripenguin]
+* 89c2adf  Allow ueventd to read apexd property  [Suchang Woo]
+* 7dd4e5b  sepolicy: Allow permissive in recovery on user builds  [Pranav Vashi]
+* d5d7c10  sepolicy: Also allow vendor_init to get/set bluetooth_prop  [someone5678]
+* 182747a  sepolicy: Allow hal_audio_default to get/set bluetooth_prop for a2dp offloading.  [someone5678]
+* 633cc3f  Resolve neverallow in retrofit devices  [Michael Bestas]
+* d6891c6  Allow ignore neverallows in user builds  [Zhenxiang]
+* b934153  sepolicy: allow fastbootd to operate devpts  [Randall Huang]
+* 6c8a4d3  sepolicy: allow system app to access sysfs_leds  [Marko Man]
 
 #### vendor/sony/sm8550-common
 
-* 47258be  sm8550-common: Update  [someone5678]
+* a8c0d4b  sm8550-common: Update symlink name  [someone5678]
+* ab4e802  sm8550-common: Update  [someone5678]
 
-### 08-22-2024
+### 09-03-2024
 
-#### hardware/qcom-caf/sm8550/audio/pal
+#### build/soong
 
-* 2e928e9  Disable 32 bit variants of audio libraries for 64 bit audio targets  [Arian]
+* ba58efc  soong: Increase heap size to 8GB for R8 and D8  [someone5678]
 
-#### hardware/qcom-caf/sm8550/audio/primary-hal
+#### kernel/sony/sm8550
 
-* e0fe270  Disable 32 bit variants of audio libraries for 64 bit audio targets  [Arian]
+* 33b88eb  configs: sony: Enable Kallsyms  [someone5678]
+* 06fa5fc  drivers: qcom: Make CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS depend on DEBUGFS  [Luofan Chen]
+* 544834a  Makefile.lib: Lower kernel gzip compression to fastest  [Angelo G. Del Regno]
+* daa911b  configs: sony: Enable ZRAM writeback  [Luofan Chen]
+* 354c0af0  arch: configs: sony: Disable CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS  [Luofan Chen]
+* b0bb9f9  configs: Move sony specific config to its fragment  [Luofan Chen]
+* 132b624  sony: config: Use 1M for kernel log  [Juhyung Park]
+* 2781ffb  sony: config: Disable most of the debugging configs  [Pranav Vashi]
+* efbaa2c  sony: config: Disable wcd-usbss  [Bruno Martins]
+* 0be3420  sony: config: Unset all configs related with crow chipset  [Bruno Martins]
+* eace1c3  power: Import wakeup_irq_debug driver  [Luofan Chen]
+* 4d71f14  ARM64: dts: vendor: Add symlink to sm8550-devicetrees  [Bruno Martins]
+* baac276  et6xx: Align implementation in sm8550  [Luofan Chen]
+* 1e75ba5  et6xx: Remove reference to hardware_info  [Luofan Chen]
+* ddccb85  drivers: sony: Import et6xx driver from 68.0.A.0.768  [Luofan Chen]
+* 4984f6f  drivers: Import sony drivers to build inline  [Luofan Chen]
+* 7ab8ad6  tools/resolve_btfids: Skip unresolved symbol warning for empty BTF sets  [Kumar Kartikeya Dwivedi]
+* 4e81268  minimal sony changes  [Luofan Chen]
 
-#### packages/apps/Aperture
+#### kernel/sony/sm8550-modules
 
-* a7f50c1  Aperture: Fix front camera intent preview mirroring  [Tommy Webb]
-* 5f6aa26  Aperture: Update CameraX to 1.4.0-rc01  [LuK1337]
+* f364fb9  dp_display: Fix compile after merge  [Luofan Chen]
+* d57ce4e  camera-kernel: Fixup after import sony changes  [someone5678]
+* 45e6537  sm8550-modules: qcom: wlan: Remove git merge conflicts leftover from dp_mon.h  [someone5678]
+* b1109d2  sm8550-modules: Add .gitignore  [someone5678]
+* 6136250  display-drivers: Set display brightness after entering AOD  [Luofan Chen]
+* fa463b9  dsi_panel: Add dsi_panel_get_backlight  [Demon000]
+* 443fd26  sony: sony_camera: Fix clang compile error  [Luofan Chen]
+* c903232  camera-kernel: Import changes from sony  [someone5678]
+* a002a15  Android.bp: Change kernel path  [Luofan Chen]
+* b5b19e7  sony: Import modules from sony  [Luofan Chen]
+* ec83091  video-driver: Import changes from sony  [Luofan Chen]
+* 5b7f0ba  securemsm-kernel: Import changes from sony  [Luofan Chen]
+* 4812e87  graphics-kernel: Import changes from sony  [Luofan Chen]
+* 8f26cf8  display-driver: Import changes from sony  [Luofan Chen]
+* 324b14d  bt-kernel: Import changes from sony  [Luofan Chen]
+* 51b8ade  audio-kernel: Import changes from sony  [Luofan Chen]
+* 10b5e50  Merge remote-tracking branch 'linaro/qca-wifi-host-cmn/wlan-cmn.driver.lnx.2.0.r61-rel'  [someone5678]
 
-#### vendor/google/gms
+#### system/core
 
-* f772674  gms: overlay: custom_features: Expose Tensor feature to dialer  [someone5678]
+* ce5af0f  toolbox/libmodprobe: add toolbox to vendor_ramdisk  [Junki Min]
+
+### 09-02-2024
+
+#### kernel/sony/sm8550
+
+* 550678f  Merge tag 'KERNEL.PLATFORM.2.0.r1-18400-kernel.0' of https://git.codelinaro.org/clo/la/kernel/msm-5.15 into HEAD  [Bruno Martins]
+
+#### kernel/sony/sm8550-modules
+
+* 8476703  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD  [Bruno Martins]
+* 400d29e  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into HEAD  [Bruno Martins]
+* de5084c  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD  [Bruno Martins]
+* 1c8ac4a  Merge tag 'GRAPHICS.LA.1.0.r1-08500-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/graphics-kernel into HEAD  [Bruno Martins]
+* 0212c29  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/datarmnet into HEAD  [Bruno Martins]
+* fc95562  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into HEAD  [Bruno Martins]
+* d7fdb1b  Merge tag 'CAMERA.LA.3.0.r1-09600-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into HEAD  [Bruno Martins]
+
+### 09-01-2024
+
+#### bionic
+
+* 26fdf5f  bionic: Optimize libc for performance  [Vaisakh Murali]
+
+#### hardware/xiaomi
+
+* 1eff3da  ir: Stop setting duty cycle  [Sebastiano Barezzi]
+* af6a4d1  Drop HIDL IR HAL  [Sebastiano Barezzi]
+* 01f73b1  Rewrite IR HAL in AIDL  [Sebastiano Barezzi]
+* c978c4d  sensors: Create v{1,2} subdirectories for respective subhals  [Arian]
+* 6c4ce8b  hidl: sensors: 2.1: HalProxy: Forward 'lshal debug' options.  [Chris Kuiper]
+* ecae650  hidl: sensors: 2.1: Adding suport for multiple multihal config files  [Aditya Chitnis]
+
+#### packages/resources/devicesettings
+
+* d973342  devicesettings: Import popupcamera strings  [Arian]
+
+#### vendor/parasite/common
+
+* 87eba3a  Utils: Run google-java-format  [someone5678]
+
+#### vendor/parasite/prebuilts
+
+* 8da425c  prebuilts: Update Gramophone to 1.0.9  [someone5678]
+
+### 08-31-2024
+
+#### art
+
+* b084098  art: Disable debug tracing on production builds  [Danny Lin]
+* 57c0bec  art: Optimize the entirity of ART for performance  [Vaisakh Murali]
+
+#### external/skia
+
+* 7327a0a  skia: Optimize for performance  [ralph950412]
+
+#### frameworks/base
+
+* 5339bbe  SurfaceControl: add more window types to consider NoVote  [Omkar Chandorkar]
+
+#### frameworks/native
+
+* e0f2434  getFps() -> getVsyncRate()  [Hridaya Prajapati]
+* 980716f  SF: Scheduler: vote max for NOTIFICATION_SHADE  [Juhyung Park]
+* eaf61e8  SF: Scheduler: set an expiration for heuristic layer's high refresh rate usages  [Adithya R]
+* a5e4b17  SF: Scheduler: touch boost whenever possible  [Juhyung Park]
+* 4f06e53  SF: Scheduler: opportunistically enter idle after touch  [Juhyung Park]
+* 0cef3a6  SF: Scheduler: relax measurements for heuristic mode  [Juhyung Park]
+* e38353f  SF: Scheduler: remove presentTime check in calculateAverageFrameTime()  [Juhyung Park]
+* a7ba87c  SF: Scheduler: maintain current refresh rate if no layers are detected  [Juhyung Park]
+
+#### manifest
+
+* 327a3ea  manifest: Sort entries  [someone5678]
+* 7a62809  manifest: parasite: Track external/skia  [someone5678]
+
+#### tools/extract-utils
+
+* ffc1ea0  extract-utils: use git apply instead of patch in apktool_patch  [Arian]
+* 64d350b  fixup! extract-utils: make image extraction follow symlinks as well  [nift4]
+
+#### vendor/aosp
+
+* ccf2962  aconfig: Enable qs_new_pipeline  [someone5678]
 
