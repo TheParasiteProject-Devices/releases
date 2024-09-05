@@ -1,10 +1,55 @@
 # pdx234
 
+### 09-05-2024
+
+#### build/make
+
+* 19823f5  Merge tag 'android-14.0.0_r71'  [someone5678]
+
+#### frameworks/av
+
+* 8ef6306  Merge tag 'android-14.0.0_r71'  [someone5678]
+
+#### frameworks/base
+
+* 7d66ba0  Merge tag 'android-14.0.0_r71'  [someone5678]
+
+#### manifest
+
+* 4267d79  Merge tag 'android-14.0.0_r71'  [someone5678]
+* fdfe2f1  Manifest for Android 14.0.0 Release 71  [The Android Open Source Project]
+* e9e2a15  Manifest for Android 14.0.0 Release 70  [The Android Open Source Project]
+* f38ade4  Manifest for Android 14.0.0 Release 69  [The Android Open Source Project]
+* c666ee5  Manifest for Android 14.0.0 Release 68  [The Android Open Source Project]
+* 16d4749  Manifest for Android 14.0.0 Release 67  [The Android Open Source Project]
+
+#### packages/apps/Settings
+
+* 9de75a2  Merge tag 'android-14.0.0_r71'  [someone5678]
+
+#### packages/services/Telecomm
+
+* d5b8189  Merge tag 'android-14.0.0_r71'  [someone5678]
+
+#### vendor/google/gms
+
+* 51bd7a1  gms: Update  [someone5678]
+
+#### vendor/google/gms-common-proprietary
+
+* 350215c  gms: Use NexusLauncherRelease from P8 Pro for now  [someone5678]
+* 1f49f1d  gms: Update  [someone5678]
+
 ### 09-04-2024
 
 #### bootable/recovery
 
+* 5947f64  [SQUASH] recovery: Integrate prebuilt module loading into AOSP Recovery  [glikched]
 * 816b875  recovery: Always consider builds to be debuggable  [Pranav Vashi]
+
+#### build/soong
+
+* 8b8c0a9  soong: cc: allow -u linker flag  [nift4]
 
 #### device/parasite/sepolicy
 
@@ -28,6 +73,10 @@
 * 26f0a13  Island: Fix focused top-app detection  [minaripenguin]
 * f03c6c0  PinnerService: Try to pin SystemUIGoogle if SystemUI fails  [AnierinB]
 
+#### hardware/google/camera
+
+* 8cd170f  camera: Guard with soong namespace  [Michael Bestas]
+
 #### hardware/qcom-caf/common
 
 * d67755a  libqti-perfd-client: Do not log if any of value is NULL  [someone5678]
@@ -39,6 +88,7 @@
 
 #### manifest
 
+* 6168cb7  manifest: Switch to our fork of hardware/google/camera  [Michael Bestas]
 * f02f472  Revert "manifest: lineage: Track device/qcom/sepolicy_vndr/sm8550"  [someone5678]
 
 #### system/sepolicy
@@ -56,6 +106,27 @@
 * b934153  sepolicy: allow fastbootd to operate devpts  [Randall Huang]
 * 6c8a4d3  sepolicy: allow system app to access sysfs_leds  [Marko Man]
 
+#### vendor/aosp
+
+* 556e18c  apn: Set correct apn for `Grameenphone`  [hipexscape]
+
+#### vendor/google/dexopt_profiles
+
+* fd43283  dexopt_profiles: Update  [someone5678]
+
+#### vendor/google/gms
+
+* c75500e  gms: Remove SystemUIClocks-Handwritten  [someone5678]
+* 66198ee  gms: Prepare to switch to komodo  [someone5678]
+
+#### vendor/google/mainline_modules
+
+* 11a47b8  mainline_modules: Update  [someone5678]
+
+#### vendor/google/pixel-additional
+
+* b189332  pixel-additional: Update  [someone5678]
+
 #### vendor/sony/sm8550-common
 
 * a8c0d4b  sm8550-common: Update symlink name  [someone5678]
@@ -66,6 +137,8 @@
 #### build/soong
 
 * ba58efc  soong: Increase heap size to 8GB for R8 and D8  [someone5678]
+
+### 09-02-2024
 
 #### kernel/sony/sm8550
 
@@ -87,6 +160,7 @@
 * 4984f6f  drivers: Import sony drivers to build inline  [Luofan Chen]
 * 7ab8ad6  tools/resolve_btfids: Skip unresolved symbol warning for empty BTF sets  [Kumar Kartikeya Dwivedi]
 * 4e81268  minimal sony changes  [Luofan Chen]
+* 550678f  Merge tag 'KERNEL.PLATFORM.2.0.r1-18400-kernel.0' of https://git.codelinaro.org/clo/la/kernel/msm-5.15 into HEAD  [Bruno Martins]
 
 #### kernel/sony/sm8550-modules
 
@@ -107,19 +181,6 @@
 * 324b14d  bt-kernel: Import changes from sony  [Luofan Chen]
 * 51b8ade  audio-kernel: Import changes from sony  [Luofan Chen]
 * 10b5e50  Merge remote-tracking branch 'linaro/qca-wifi-host-cmn/wlan-cmn.driver.lnx.2.0.r61-rel'  [someone5678]
-
-#### system/core
-
-* ce5af0f  toolbox/libmodprobe: add toolbox to vendor_ramdisk  [Junki Min]
-
-### 09-02-2024
-
-#### kernel/sony/sm8550
-
-* 550678f  Merge tag 'KERNEL.PLATFORM.2.0.r1-18400-kernel.0' of https://git.codelinaro.org/clo/la/kernel/msm-5.15 into HEAD  [Bruno Martins]
-
-#### kernel/sony/sm8550-modules
-
 * 8476703  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD  [Bruno Martins]
 * 400d29e  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into HEAD  [Bruno Martins]
 * de5084c  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD  [Bruno Martins]
@@ -127,6 +188,10 @@
 * 0212c29  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/datarmnet into HEAD  [Bruno Martins]
 * fc95562  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into HEAD  [Bruno Martins]
 * d7fdb1b  Merge tag 'CAMERA.LA.3.0.r1-09600-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into HEAD  [Bruno Martins]
+
+#### system/core
+
+* ce5af0f  toolbox/libmodprobe: add toolbox to vendor_ramdisk  [Junki Min]
 
 ### 09-01-2024
 
@@ -154,44 +219,4 @@
 #### vendor/parasite/prebuilts
 
 * 8da425c  prebuilts: Update Gramophone to 1.0.9  [someone5678]
-
-### 08-31-2024
-
-#### art
-
-* b084098  art: Disable debug tracing on production builds  [Danny Lin]
-* 57c0bec  art: Optimize the entirity of ART for performance  [Vaisakh Murali]
-
-#### external/skia
-
-* 7327a0a  skia: Optimize for performance  [ralph950412]
-
-#### frameworks/base
-
-* 5339bbe  SurfaceControl: add more window types to consider NoVote  [Omkar Chandorkar]
-
-#### frameworks/native
-
-* e0f2434  getFps() -> getVsyncRate()  [Hridaya Prajapati]
-* 980716f  SF: Scheduler: vote max for NOTIFICATION_SHADE  [Juhyung Park]
-* eaf61e8  SF: Scheduler: set an expiration for heuristic layer's high refresh rate usages  [Adithya R]
-* a5e4b17  SF: Scheduler: touch boost whenever possible  [Juhyung Park]
-* 4f06e53  SF: Scheduler: opportunistically enter idle after touch  [Juhyung Park]
-* 0cef3a6  SF: Scheduler: relax measurements for heuristic mode  [Juhyung Park]
-* e38353f  SF: Scheduler: remove presentTime check in calculateAverageFrameTime()  [Juhyung Park]
-* a7ba87c  SF: Scheduler: maintain current refresh rate if no layers are detected  [Juhyung Park]
-
-#### manifest
-
-* 327a3ea  manifest: Sort entries  [someone5678]
-* 7a62809  manifest: parasite: Track external/skia  [someone5678]
-
-#### tools/extract-utils
-
-* ffc1ea0  extract-utils: use git apply instead of patch in apktool_patch  [Arian]
-* 64d350b  fixup! extract-utils: make image extraction follow symlinks as well  [nift4]
-
-#### vendor/aosp
-
-* ccf2962  aconfig: Enable qs_new_pipeline  [someone5678]
 
