@@ -1,5 +1,28 @@
 # pdx234
 
+### 09-08-2024
+
+#### frameworks/base
+
+* 478f524  IslandView: Fix dismissal and cleanup resources when not needed  [minaripenguin]
+* ad4888a  services: Implement exit app animation boost  [minaripenguin]
+* ad47270  services: Implement activity boost optimization  [minaripenguin]
+* 27c790a  services: Implement transition boosting  [minaripenguin]
+* c753028  services: Implement scroll gesture boosting  [minaripenguin37]
+* 45f79ed  Revert "[SQUASH] services: Boost gesture flings"  [someone5678]
+
+### 09-07-2024
+
+#### vendor/google/gms
+
+* 45c92e9  gms: configs: Expose gemini in messages setting  [someone5678]
+
+### 09-06-2024
+
+#### vendor/google/dexopt_profiles
+
+* cb9f742  dexopt_profiles: Update  [someone5678]
+
 ### 09-05-2024
 
 #### build/make
@@ -31,14 +54,28 @@
 
 * d5b8189  Merge tag 'android-14.0.0_r71'  [someone5678]
 
+#### vendor/google/dexopt_profiles
+
+* fd43283  dexopt_profiles: Update  [someone5678]
+
 #### vendor/google/gms
 
 * 51bd7a1  gms: Update  [someone5678]
+* c75500e  gms: Remove SystemUIClocks-Handwritten  [someone5678]
+* 66198ee  gms: Prepare to switch to komodo  [someone5678]
 
 #### vendor/google/gms-common-proprietary
 
 * 350215c  gms: Use NexusLauncherRelease from P8 Pro for now  [someone5678]
 * 1f49f1d  gms: Update  [someone5678]
+
+#### vendor/google/mainline_modules
+
+* 11a47b8  mainline_modules: Update  [someone5678]
+
+#### vendor/google/pixel-additional
+
+* b189332  pixel-additional: Update  [someone5678]
 
 ### 09-04-2024
 
@@ -110,113 +147,8 @@
 
 * 556e18c  apn: Set correct apn for `Grameenphone`  [hipexscape]
 
-#### vendor/google/dexopt_profiles
-
-* fd43283  dexopt_profiles: Update  [someone5678]
-
-#### vendor/google/gms
-
-* c75500e  gms: Remove SystemUIClocks-Handwritten  [someone5678]
-* 66198ee  gms: Prepare to switch to komodo  [someone5678]
-
-#### vendor/google/mainline_modules
-
-* 11a47b8  mainline_modules: Update  [someone5678]
-
-#### vendor/google/pixel-additional
-
-* b189332  pixel-additional: Update  [someone5678]
-
 #### vendor/sony/sm8550-common
 
 * a8c0d4b  sm8550-common: Update symlink name  [someone5678]
 * ab4e802  sm8550-common: Update  [someone5678]
-
-### 09-03-2024
-
-#### build/soong
-
-* ba58efc  soong: Increase heap size to 8GB for R8 and D8  [someone5678]
-
-### 09-02-2024
-
-#### kernel/sony/sm8550
-
-* 33b88eb  configs: sony: Enable Kallsyms  [someone5678]
-* 06fa5fc  drivers: qcom: Make CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS depend on DEBUGFS  [Luofan Chen]
-* 544834a  Makefile.lib: Lower kernel gzip compression to fastest  [Angelo G. Del Regno]
-* daa911b  configs: sony: Enable ZRAM writeback  [Luofan Chen]
-* 354c0af0  arch: configs: sony: Disable CONFIG_QCOM_SOC_SLEEP_STATS_ON_SYSFS  [Luofan Chen]
-* b0bb9f9  configs: Move sony specific config to its fragment  [Luofan Chen]
-* 132b624  sony: config: Use 1M for kernel log  [Juhyung Park]
-* 2781ffb  sony: config: Disable most of the debugging configs  [Pranav Vashi]
-* efbaa2c  sony: config: Disable wcd-usbss  [Bruno Martins]
-* 0be3420  sony: config: Unset all configs related with crow chipset  [Bruno Martins]
-* eace1c3  power: Import wakeup_irq_debug driver  [Luofan Chen]
-* 4d71f14  ARM64: dts: vendor: Add symlink to sm8550-devicetrees  [Bruno Martins]
-* baac276  et6xx: Align implementation in sm8550  [Luofan Chen]
-* 1e75ba5  et6xx: Remove reference to hardware_info  [Luofan Chen]
-* ddccb85  drivers: sony: Import et6xx driver from 68.0.A.0.768  [Luofan Chen]
-* 4984f6f  drivers: Import sony drivers to build inline  [Luofan Chen]
-* 7ab8ad6  tools/resolve_btfids: Skip unresolved symbol warning for empty BTF sets  [Kumar Kartikeya Dwivedi]
-* 4e81268  minimal sony changes  [Luofan Chen]
-* 550678f  Merge tag 'KERNEL.PLATFORM.2.0.r1-18400-kernel.0' of https://git.codelinaro.org/clo/la/kernel/msm-5.15 into HEAD  [Bruno Martins]
-
-#### kernel/sony/sm8550-modules
-
-* f364fb9  dp_display: Fix compile after merge  [Luofan Chen]
-* d57ce4e  camera-kernel: Fixup after import sony changes  [someone5678]
-* 45e6537  sm8550-modules: qcom: wlan: Remove git merge conflicts leftover from dp_mon.h  [someone5678]
-* b1109d2  sm8550-modules: Add .gitignore  [someone5678]
-* 6136250  display-drivers: Set display brightness after entering AOD  [Luofan Chen]
-* fa463b9  dsi_panel: Add dsi_panel_get_backlight  [Demon000]
-* 443fd26  sony: sony_camera: Fix clang compile error  [Luofan Chen]
-* c903232  camera-kernel: Import changes from sony  [someone5678]
-* a002a15  Android.bp: Change kernel path  [Luofan Chen]
-* b5b19e7  sony: Import modules from sony  [Luofan Chen]
-* ec83091  video-driver: Import changes from sony  [Luofan Chen]
-* 5b7f0ba  securemsm-kernel: Import changes from sony  [Luofan Chen]
-* 4812e87  graphics-kernel: Import changes from sony  [Luofan Chen]
-* 8f26cf8  display-driver: Import changes from sony  [Luofan Chen]
-* 324b14d  bt-kernel: Import changes from sony  [Luofan Chen]
-* 51b8ade  audio-kernel: Import changes from sony  [Luofan Chen]
-* 10b5e50  Merge remote-tracking branch 'linaro/qca-wifi-host-cmn/wlan-cmn.driver.lnx.2.0.r61-rel'  [someone5678]
-* 8476703  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD  [Bruno Martins]
-* 400d29e  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into HEAD  [Bruno Martins]
-* de5084c  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD  [Bruno Martins]
-* 1c8ac4a  Merge tag 'GRAPHICS.LA.1.0.r1-08500-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/graphics-kernel into HEAD  [Bruno Martins]
-* 0212c29  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/datarmnet into HEAD  [Bruno Martins]
-* fc95562  Merge tag 'LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into HEAD  [Bruno Martins]
-* d7fdb1b  Merge tag 'CAMERA.LA.3.0.r1-09600-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into HEAD  [Bruno Martins]
-
-#### system/core
-
-* ce5af0f  toolbox/libmodprobe: add toolbox to vendor_ramdisk  [Junki Min]
-
-### 09-01-2024
-
-#### bionic
-
-* 26fdf5f  bionic: Optimize libc for performance  [Vaisakh Murali]
-
-#### hardware/xiaomi
-
-* 1eff3da  ir: Stop setting duty cycle  [Sebastiano Barezzi]
-* af6a4d1  Drop HIDL IR HAL  [Sebastiano Barezzi]
-* 01f73b1  Rewrite IR HAL in AIDL  [Sebastiano Barezzi]
-* c978c4d  sensors: Create v{1,2} subdirectories for respective subhals  [Arian]
-* 6c4ce8b  hidl: sensors: 2.1: HalProxy: Forward 'lshal debug' options.  [Chris Kuiper]
-* ecae650  hidl: sensors: 2.1: Adding suport for multiple multihal config files  [Aditya Chitnis]
-
-#### packages/resources/devicesettings
-
-* d973342  devicesettings: Import popupcamera strings  [Arian]
-
-#### vendor/parasite/common
-
-* 87eba3a  Utils: Run google-java-format  [someone5678]
-
-#### vendor/parasite/prebuilts
-
-* 8da425c  prebuilts: Update Gramophone to 1.0.9  [someone5678]
 
