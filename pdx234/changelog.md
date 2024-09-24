@@ -1,86 +1,83 @@
 # pdx234
 
-### 09-14-2024
+### 09-22-2024
+
+#### device/sony/pdx234
+
+* 43e84b6  pdx234: Update  [hccodetech]
+
+#### manifest
+
+* f02b7e2  manifest: lineage: Track android_external_grub  [hccodetech]
+
+#### vendor/aosp
+
+* e550428  apn: Add finetwork  [Arian]
+
+### 09-21-2024
+
+#### external/tinycompress
+
+* 4c503e7  tinycompress: Add conditional compilation check for compress param  [George Gao]
+
+#### frameworks/base
+
+* 7baedf7  aapt2: support freezing private resource IDs  [nift4]
+
+#### kernel/sony/sm8550-modules
+
+* 53bb14d  dp_display: Fix compile after merge  [Luofan Chen]
+* ee0f0ee  camera-kernel: Fixup after import sony changes  [someone5678]
+* 75df302  sm8550-modules: qcom: wlan: Remove git merge conflicts leftover from dp_mon.h  [someone5678]
+* 8d06901  sm8550-modules: Add .gitignore  [someone5678]
+* 5a3fcbc  display-drivers: Set display brightness after entering AOD  [Luofan Chen]
+* 007b3bc  dsi_panel: Add dsi_panel_get_backlight  [Demon000]
+* e50b965  sony: sony_camera: Fix clang compile error  [Luofan Chen]
+* 1b3d4b1  camera-kernel: Import changes from sony  [someone5678]
+* c40f936  Android.bp: Change kernel path  [Luofan Chen]
+* 34a4147  sony: Import modules from sony  [Luofan Chen]
+* c41c51f  video-driver: Import changes from sony  [Luofan Chen]
+* 5718681  securemsm-kernel: Import changes from sony  [Luofan Chen]
+* 4ee01c1  graphics-kernel: Import changes from sony  [Luofan Chen]
+* 5fe634a  display-driver: Import changes from sony  [Luofan Chen]
+* f14f1a6  bt-kernel: Import changes from sony  [Luofan Chen]
+* 77cab57  audio-kernel: Import changes from sony  [Luofan Chen]
 
 #### packages/apps/Settings
 
-* d287d98  Settings: Add BatteryDivider to fuelgauge  [kamikaonashi]
+* 0f23ae2  Settings: Whitelist WRITE_DEVICE_CONFIG permission  [saikiran2001]
 
-### 09-13-2024
+#### packages/apps/Updater
 
-#### frameworks/base
+* d5e2d7a  UpdateImporter: explicitly get entry instead of iterating  [Alexander Martinz]
+* 8949f26  UpdateImporter: return correct time in case timestamp can not be read  [Alexander Martinz]
 
-* 186444c  fixup! MobileSignalController: Prevent possible memory leak  [minaripenguin]
-* ed24390  fixup! NetworkTraffic: Refactor and remove indication on quick settings  [minaripenguin]
+#### vendor/aosp
 
-#### packages/apps/Settings
+* a2a1e99  kernel/build: Hide sensitive info in /proc/version  [Yuan Si]
+* a11ffb7  apn: Use the proper settings for SFR (MCC 208 with MNC 10)  [Mashopy]
+* 2ef3c69  apn: some fixes for Bouygues Telecom  [Joel Beckmeyer]
+* e647444  Disable debug logging on non-eng builds  [Aaron Kling]
 
-* eb32222  Settings: Make sure settings shortcut icons follow system accent  [Alex]
-* 7acd87c  Settings: Add PixelLauncher to allowlist for settings search  [Quick]
+### 09-20-2024
 
-#### vendor/parasite/common
+#### prebuilts/tools-parasite
 
-* 4b8f08b  Utils: Run google-java-format  [someone5678]
-* a90294b  PixelPropsUtils: Add Extra  [someone5678]
-* 00c827a  GamesPropsUtils: Spoof Brawl Stars to Mi 11T Pro  [Joey Huab]
-* 5c005b8  GamesPropsUtils: Update model for call of duty to Lenovo Y700  [Pranav Vashi]
-* 244ba31  PixelPropsUtils: Add createSpoofProps  [someone5678]
-* b8ee17a  CustomFeaturesUtils: Move configs to rro [2/2]  [someone5678]
-* 9b4f7ca4c  PixelPropsUtils: Remove Pixel device check for gms spoof  [someone5678]
-* 5e83f82  CustomFeaturesUtils: Reduce indent  [someone5678]
-* 630bc44  PixelPropsUtils: Move configs to rro [2/2]  [someone5678]
-* 38bc5b0  PixelPropsUtils: Update gms process list  [someone5678]
-* fdd7272  PixelPropsUtils: Make CertHook more independent  [someone5678]
-* 51b8ce4  libs: Add PhenotypeFlagsUtils [1/2]  [someone5678]
-* b5cb010  PixelPropsUtils: Spoof Weather to recent Pixel  [someone5678]
-* ec27c31  PixelPropsUtils: Move to Pixel 9 Pro  [someone5678]
-* 456eded  PixelPropsUtils: Spoof update and search to recent pixel  [someone5678]
-* 32c74d1  CustomFeaturesUtils: Allow to disable at runtime  [someone5678]
-* 090175a  DeviceConfigUtils: Allow to disable at runtime  [someone5678]
-* 2314ebc  PixelPropsUtils: Update  [someone5678]
-* ef7d4a0  GamesPropsUtils: Allow enable/disable at runtime  [someone5678]
-* c4266b1  PixelPropsUtils: Allow enable/disable at runtime  [someone5678]
-* 598932f  libs: Add hide annotation to *Utils  [someone5678]
-* e8d29dd  CustomFeaturesUtils: Report tensor features for Pixel Launcher  [someone5678]
-* 313f331  fixup! sensitive_pn: Update RUS numbers  [someone5678]
-* 9021a2b  PixelPropsUtils: Add back HARDWARE spoofing  [someone5678]
-* 5a61ec0  fixup! sensitive_pn: Update RUS numbers  [LuK1337]
-* 85667b2  sensitive_pn: Update RUS numbers  [Andrey Sprynga]
-* 7d383e8  sensitive_pn: Add and modify netherland numbers  [Japie3krekel]
-* 15736fe  Helplines: Update and simplify helplines for multiple countries.  [Alexander K]
-* ebe59b3  PixelPropsUtils: Simplify gms account activity check  [someone5678]
-* 2224283  PixelPropsUtils: Spoof gms processes to it's own model and fp if it's Pixel  [someone5678]
-* 423fc6e  [SQUASH] Implement DeviceConfigUtils and service [2/2]  [jhenrique09]
+* f315a98  Update apktool  [hccodetech]
 
-### 09-12-2024
+#### vendor/sony/pdx234
 
-#### frameworks/base
+* 33c02a5  pdx234: Update  [hccodetech]
 
-* 2791be3e  memory leak: Closes leaked instance  [LiLei]
-* 785e8a6  fixup! Re-add notification history tunable  [minaripenguin]
+#### vendor/sony/sm8550-common
 
-#### vendor/google/gms
+* 82cf3ee  sm8550-common: Update  [hccodetech]
 
-* 7190ec6  device_config: animate navbar on long press  [aswin7469]
+### 09-19-2024
 
-### 09-11-2024
+### 09-18-2024
 
-#### vendor/google/overlays/ThemeIcons
+#### kernel/sony/sm8550-modules
 
-* a4cdc88  pixel-style: Update oplus camera themed icon  [mukesh22584]
-
-#### vendor/parasite/prebuilts
-
-* 3d151a7  prebuilts: Update Gramophone  [someone5678]
-
-### 09-10-2024
-
-#### frameworks/base
-
-* 060514c  base: cmds: Add support for variant booanimation in non-product partition  [someone5678]
-
-#### vendor/google/gms
-
-* 90e83a1  Update README.md  [someone5678]
-* a436335  gms: Allow to customize bootanimation copy-out dir  [someone5678]
+* 8517ca4  Merge commit 'a07f68f35fcbb119382f90656f7e30824d6440e2' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into HEAD  [Luofan Chen]
 
