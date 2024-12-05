@@ -1,363 +1,91 @@
 # pdx234
 
-### 11-26-2024
-
-#### device/parasite/sepolicy
-
-* ee01e41  sepolicy: Allow fsck_untrusted to ioctl vold_device  [someone5678]
-* e7ca247  sepolicy: cache_cleaner: Allow cache_cleaner to fowner  [someone5678]
-* 0b10ff5  sepolicy: Allow system_server to get custom_hook_prop  [someone5678]
-
-#### device/sony/sm8550-common
-
-* 1c7850e  sm8550-common: overlay: Fix gamma shift on low brightness at a brightness lvl of 37%  [pckotzer]
-
-#### hardware/sony
-
-* 98eb3a5  sepolicy: Allow vendor_sony_euiccmemoryreset_app to find netstats_service  [someone5678]
-
-#### vendor/parasite/common
-
-* 5dfbf9d  config: Add text classifier files to allowed product artifacts  [LuK1337]
-* 01cf43f  parasite: Move SystemUIFlagFlipper resources to RRO  [someone5678]
-* d85f6a5  cache_cleaner: Remove cache more safely  [someone5678]
-
-### 11-25-2024
-
-#### manifest
-
-* 7f899b1  manifest: parasite: Deprecates pixel-additional  [someone5678]
-* 15164d0  manifest: parasite: Update  [someone5678]
-
-#### vendor/aosp
-
-* c658697  vendor: Clean-up and hook  [someone5678]
-* 789935e  vendor: soong: Change from custom to lineage  [someone5678]
-
-#### vendor/google/gms
-
-* 8476901  gms: Remove EuiccPixel permissions extraction  [someone5678]
-* ea6ae07  gms: Deprecates pixel-additional  [someone5678]
-* 57f682f  gms: Move in all stuffs  [someone5678]
-* 5217454  gms: Move in TurboAdapter_NoBatt  [someone5678]
-* c3f5e74  gms: Move in EuiccGoogle  [someone5678]
-* 029c5b6  gms: Move in GBoard ime key height customization  [someone5678]
-* 114e655  gms: Move in CarrierSettings  [someone5678]
-
-#### vendor/google/gms-common-proprietary
-
-* ac6f2fe  gms: Move in EuiccGoogle  [someone5678]
-* 20c29ff  gms: Move in CarrierSettings  [someone5678]
-
-#### vendor/google/overlays/ThemeIcons
-
-* b477761  lawnicons: Update  [someone5678]
-
-#### vendor/parasite/common
-
-* 502db41  parasite: Fix overlay inclusion  [someone5678]
-* e677d6f  parasite: Finalize clean-up  [someone5678]
-* 1a39c83  parasite: Inherit vendor/parasite/certification  [someone5678]
-* 3864653  PixelPropsUtils: Also handle boolean type  [someone5678]
-* d1c4355e  PixelPropsUtils: Fix parsing for TIME field  [Pranav Vashi]
-* 935dd28  PhenotypeFlagsUtils: Prevent ArrayIndexOutOfBoundsException  [someone5678]
-* 126667d  Run bpfmt  [someone5678]
-* 6ce78ff  PixelPropsUtils: Update spoofing  [someone5678]
-* 0c624f4  Utils: Run google-java-format  [someone5678]
-* 1e090ae  PixelPropsUtils: Add Extra  [someone5678]
-* d649847  GamesPropsUtils: Spoof Brawl Stars to Mi 11T Pro  [Joey Huab]
-* 8d572c6  GamesPropsUtils: Update model for call of duty to Lenovo Y700  [Pranav Vashi]
-* 97c9cfe  PixelPropsUtils: Add createSpoofProps  [someone5678]
-* 2164b61  CustomFeaturesUtils: Move configs to rro [2/2]  [someone5678]
-* c149ddf  PixelPropsUtils: Remove Pixel device check for gms spoof  [someone5678]
-* 431ef34  CustomFeaturesUtils: Reduce indent  [someone5678]
-* 0528df2  PixelPropsUtils: Move configs to rro [2/2]  [someone5678]
-* d0c5bcc  PixelPropsUtils: Update gms process list  [someone5678]
-* e933e9e  PixelPropsUtils: Make CertHook more independent  [someone5678]
-* 322c604  libs: Add PhenotypeFlagsUtils [1/2]  [someone5678]
-* 49a3345  PixelPropsUtils: Spoof Weather to recent Pixel  [someone5678]
-* ee85c8f  PixelPropsUtils: Move to Pixel 9 Pro  [someone5678]
-* e3bb7d8  PixelPropsUtils: Spoof update and search to recent pixel  [someone5678]
-* bc20691  CustomFeaturesUtils: Allow to disable at runtime  [someone5678]
-* e7faa9d  DeviceConfigUtils: Allow to disable at runtime  [someone5678]
-* 7ab752c  PixelPropsUtils: Update  [someone5678]
-* 784c73a  GamesPropsUtils: Allow enable/disable at runtime  [someone5678]
-* 30da4f5  PixelPropsUtils: Allow enable/disable at runtime  [someone5678]
-* 41fce51  libs: Add hide annotation to *Utils  [someone5678]
-* b4669ef  CustomFeaturesUtils: Report tensor features for Pixel Launcher  [someone5678]
-* 7e3fb0f  fixup! sensitive_pn: Update RUS numbers  [someone5678]
-* e6cdd2a  PixelPropsUtils: Add back HARDWARE spoofing  [someone5678]
-* 3e47c93  fixup! sensitive_pn: Update RUS numbers  [LuK1337]
-* 099db1a  sensitive_pn: Update RUS numbers  [Andrey Sprynga]
-* 1950fd1  sensitive_pn: Add and modify netherland numbers  [Japie3krekel]
-* db8d71b  Helplines: Update and simplify helplines for multiple countries.  [Alexander K]
-* b3e5c18  PixelPropsUtils: Simplify gms account activity check  [someone5678]
-* 45127de  PixelPropsUtils: Spoof gms processes to it's own model and fp if it's Pixel  [someone5678]
-* 1592396  [SQUASH] Implement DeviceConfigUtils and service [2/2]  [jhenrique09]
-* efe8f9a  PixelPropsUtils: Update gms spoofing  [someone5678]
-* 42798ba  *PropsUtils: Use TextUtils  [someone5678]
-* 45fe101  PixelPropsUtils: Move out certfication stuffs  [someone5678]
-* 8b2020c  PixelPropsUtils: Don't spood gms ui process  [someone5678]
-* 2810f4f  PixelPropsUtils: Small update to isCallerSafetyNet  [someone5678]
-* cfda13a  PixelPropsUtils: Allow disabling `onEngineGetCertificateChain` via prop  [Joey]
-* 4a13b99  PixelPropsUtils: Do not spoof gms to Pixel  [someone5678]
-* c7c56c6  PixelPropsUtils: Update  [someone5678]
-* 45d8377  parasite: Correct api files locations  [someone5678]
-* 94aaddb  PixelPropsUtils: Stop spoofing Samsung apps  [Joey]
-* 289eb81  Revert "PropImitationHooks: Fix bootloader spoofing [1/2]"  [someone5678]
-* 33421cb  parasite: Move under vendor/parasite/common  [someone5678]
-* 8a7d66f  parasite: Move in parasite specific stuffs here  [someone5678]
-* 61f9ec3  PixelPropsUtils: Spoof Photos even if util is disabled  [someone5678]
-* 7acc002  PixelPropsUtils: Sort packagesToChangeRecentPixel entries  [someone5678]
-* c1d0e5a  GamesPropsUtils: Move PUBG Mobile spoof to ROG Phone 8 as well  [Joey]
-* d5a4b93  PixelPropsUtils: Stop spoofing Gboard and Play store  [Joey]
-* 60d1868  PixelPropsUtils: Move all apps out of Pixel 5a list  [someone5678]
-* b640862  PixelPropsUtils: Spoof Gboard and Ai Wallpapers to husky  [Joey]
-* 3337e62  parasite: Include signature configs if exists  [someone5678]
-* 2239425  PixelPropsUtils: Check whether values are empty before put into map  [someone5678]
-* 75abd0d  PixelPropsUtils: Move certified props to a string resource  [Ido Ben-Hur]
-* 2201633  PixelPropsUtils: Clean up and update  [Joey]
-* 0ecf386  PixelPropsUtils: Do not spoof unspecified packages as barbet  [minaripenguin]
-* 9050f53  PixelPropsUtils: Spoof pixel launcher for circle to search feature  [minaripenguin]
-* bed3946  GamesPropsUtils: Spoof PUBG to ROG Gaming 8 Pro  [Joey]
-* cd000f7  PixelPropsUtils: Update pihook props  [someone5678]
-* 4b6785e  PixelPropsUtils: Update fp  [someone5678]
-* 9ab18a8  PixelPropsUtils: Only spoof unstable process  [someone5678]
-* acd2026  Add README.md  [someone5678]
-* 40050cc5  Revert "PixelPropsUtils: Spoof chimera process to Pixel 5a"  [someone5678]
-* 930e670  GamesPropsUtils: Re-arrange entries  [someone5678]
-* 4fec69a  MeizuPropsUtils: Re-arrange entries  [someone5678]
-* f72d46e  CustomFeaturesUtils: Re-arrange entries  [someone5678]
-* 90cf414  PixelPropsUtils: Clean-up  [someone5678]
-* 4622eee  CustomFeaturesUtils: Report tensor features to false for Photos  [someone5678]
-* 2b32fa1  PixelPropsUtils: Update  [someone5678]
-* 275b874  vendorsetup.sh: kprofiles: Enable auto kprofiles for QGKI kernels  [someone5678]
-* cb49426  parasite: vendorsetup.sh: Move KernelSU and KProfiles setup to here  [someone5678]
-* f295e68  parasite: Import strip downed LineageOS sdk api setup  [someone5678]
-* b5a4880  Revert "PixelPropsUtils: Spoof realme link"  [Tejas Singh]
-* 71dec5f  parasite: CustomFeaturesUtils: Import SystemProperties  [someone5678]
-* c45f575  parasite: Make hasSystemFeatureCustom static  [someone5678]
-* 1f04c4e  PixelPropsUtils: Update fingerprint  [someone5678]
-* 493904c  PixelPropsUtils: Bring back shouldTryToCertifyDevice  [someone5678]
-* 87f96a3  PixelPropsUtils: Spoof chimera process to Pixel 5a  [someone5678]
-* 3faad4f  ApplicationPackageManager: Rearrange Tensor feature checks  [someone5678]
-* 7856b15  PixelPropsUtils: Bring back gms spoofing  [someone5678]
-* 88daa3d  PixelPropsUtils: Spoof realme link  [Blackmanx]
-* 4d4b13d  PixelPropUtils: unspoof some packages  [aswin7469]
-* 8eb0650  GamesPropsUtils: Update packages list  [Gustavo Mendes]
-* 2e39bbe  PropImitationHooks: Fix bootloader spoofing [1/2]  [minaripenguin]
-* 7a88103  PropImitationHooks: Improvements and fixes  [minaripenguin]
-* d5fe8c2  PropImitationHooks: Simplify reflection methods and remove conflicting task stack listeners  [minaripenguin]
-* 37e45db  fixup! core: Workaround for ASI crash  [minaripenguin]
-* 4699acd  PixelPropUtils: Spoof velvet search process and gms  [aswin7469]
-* ef49831  PixelPropUtils: Refactor and cleanup spoofing  [someone5678]
-* 28883c2  PixelPropsUtils: Improve tablet spoofing  [minaripenguin]
-* 08c43b9  base: Use Context instead of Application for *PropsUtils [1/2]  [someone5678]
-* a601f67  PPU: Spoof Gemini to P8P  [Joey Huab]
-* 5845e11  PixelPropsUtils: Update  [someone5678]
-* 3150786  PixelPropsUtils: Reorder cert props  [someone5678]
-* a58a787  fixup! PixelPropsUtils: User toggle for unlimited photos storage [1/2]  [someone5678]
-* bed6833e  PixelPropsUtils: Check process name before doing certify  [someone5678]
-* 793d1ef  PixelPropsUtils: Update  [someone5678]
-* e27b2a3  PixelPropsUtils: Update to december release  [someone5678]
-* 6f7a8d5  PixelPropsUtils: Spoof as Pixel Tab for tablets  [saikiran2001]
-* 3adb202  PPU: Spoof to recent Pixel on iD apps * This fixes some JP devices get refusing launch iD apps.  [lahaina]
-* bad2485  MeizuPropsUtils: Spoof Hihonor Cloudmusic  [QKIvan]
-* 383834a  base: Reset props for status bar lyric [1/3]  [cjybyjk]
-* 46db76e  PixelPropsUtils: Drop unused Pixel Fold spoof  [someone5678]
-* 8bb8808  PPU: Allow spoofing INITIAL_SDK_INT & SECURITY_PATCH  [AnierinB]
-* 925ee35  PIH: Unregister task listener when not needed  [minaripenguin]
-* b6fa27a  PIHooks: Make CTS/Play Integrity pass again  [Adithya R]
-* 08e9ee1  PPU: Handle failing cases of google sign-in caused by spoofing  [minaripenguin]
-* f111a31  services: Fix google apps permission denials [1/2]  [minaripenguin]
-* 6af9183  GamesPropsUtils: Add Gameprops for Teamfight Tactics (TFT)  [Le Hong Duc]
-* bf49899  Let's stop this madness please  [chiteroman]
-* a803c71  Why did the sailfish start a band?  [Giovanni Ricca]
-* 71d313e  ApplicationPackageManager: Drop features that already shipped by default  [someone5678]
-* 09bac42  PropImitationHooks: Fix extracted device string from fingerprint  [minaripenguin]
-* fdd9715b  PixelPropsUtils: Improve device certification bypass  [minaripenguin]
-* f420af4  services/PPU: Simplify and improve bypassing for PPU `onTaskStackChanged` listening [1/2]  [minaripenguin]
-* 3cf3593  PPU: Another day, another cat and mouse chase  [saikiran2001]
-* 7b3c800  PixelPropsUtils: Completely spoof as asus zenfone 4 for gms  [minaripenguin]
-* 1997973  Bump to November 2023 ASB and cleanup `createGoogleSpoofProps`  [minaripenguin]
-* e0e3b73  Fix new Google update to their servers, MEETS_DEVICE_INTEGRITY green again  [chiteroman]
-* 71435da0  PixelPropsUtils: Update to 2023 November release  [someone5678]
-* 8480849  ApplicationPackageManager: Add a config for device with Tensor SoC  [someone5678]
-* f5bdaeb  PixelPropsUtils: Fix GMS drain triggered by an outdated ROM build date  [Tim Josten]
-* d53cd89  PixelPropsUtils: Drop pixel codenames and checks  [someone5678]
-* e15fc47  PropImitationHooks: Add a config to enable/disable prop imitation  [Chris Crump]
-* b414130  ApplicationPackageManager: Merge Tensor list  [someone5678]
-* 1858007  PixelPropsUtils: User toggle for unlimited photos storage [1/2]  [someone5678]
-* 88e97aa  PixelPropsUtils: Use RecentPixel instead of individual model name  [someone5678]
-* cd4f856  PixelPropsUtils: Update Pixel codenames  [someone5678]
-* 3320811  PixelPropsUtils: Replace Pixel 7 Pro with Pixel 8 Pro  [someone5678]
-* 59b7e9f  base: PixelPropsUtils: Update to Android 14  [someone5678]
-* 9fedebd  PixelPropsUtils: Update fp to 2023 september release  [someone5678]
-* 180d477  GamesPropsUtils: Press F for Apex Legends  [Gustavo Mendes]
-* 115228f  PixelPropUtils: Stop spoofing some google apps  [aswin7469]
-* 42924f9  GamesPropUtils: Switch back BGMI to OnePlus 8 Pro  [COSMIC]
-* 0bb7610  PIH: Fixes and spoofing improvements [1/2]  [minaripenguin]
-* 0ccfb53  GamesPropUtils: Switch Mobile Legends to Mi11TP  [COSMIC]
-* a802801  PixelPropsUtils: Move all leftover packages in Pixel Fold to Pixel 5a  [someone5678]
-* 4bea1a9  PixelPropsUtils: Update fingerprint to August release  [someone5678]
-* e2460cb  PixelPropsUtils: Refactor logic and cleanup  [jhenrique09]
-* 7aa6afb  PixelPropsUtils: Spoof all wallpaper packages to Pixel 7 Pro  [someone5678]
-* 98c4d44  PixelPropsUtils: Set HARDWARE, ID values  [someone5678]
-* 31f3bda  PixelPropsUtils: Correctly spoof unstable process  [someone5678]
-* b0551d5  PixelPropsUtils: Switched to Pixel Fold spoofing  [someone5678]
-* f510d4a  PixelPropsUtils: Correctly add packagesToChangePixelXL  [someone5678]
-* 5330a8c  base: Spoof Google Photos to Pixel XL again  [someone5678]
-* 9ae09ee  core: Workaround for ASI crash [1/2]  [minaripenguin]
-* 82b39e7  PixelPropUtils: refactor [1/2]  [aswin7469]
-* 5148fa1  PixelPropsUtils: Add back Pixel 6 Pro spoofing  [someone5678]
-* 5a98669  Revert "PropImitationHooks: Enable new Velvet Weather UI"  [someone5678]
-* ce1e575  PixelPropsUtils: Spoof to Pixel 5a by default  [someone5678]
-* f7127cd  base: ApplicationPackageManager: Exclude PE 2021 Midyear from tensor pixel list  [someone5678]
-* e1cdfc0  PixelPropsUtils: Update pixelCodenames  [someone5678]
-* 1846b24  PixelPropsUtils: Update fingerprints to 2023 July release  [someone5678]
-* 94249e1  base: Update Tensor soc device list  [someone5678]
-* bfce2e0  PixelPropsUtils: Spoof all packages to cheetah again  [someone5678]
-* 517ef49  PropImitationHooks: Enable new Velvet Weather UI  [Sourajit Karmakar]
-* 7b2045b  Revert "PixelPropUtils: Spoof userdebug to pixel launcher"  [aswin7469]
-* f26a391  PixelPropUtils: Switch to raven for asi  [aswin7469]
-* ca23868  PixelPropUtils: Add emojiwalls and cinematiceffects pkgs  [aswin7469]
-* ab521cc  PixelPropsUtils: Move/add several packages to raven  [someone5678]
-* ec97e79  PixelPropsUtils: Update fingerprints to June 2023 release  [someone5678]
-* c401b7c  PixelPropsUtils: Un-spoof GMS while adding google account [1/2]  [Adithya R]
-* 3118d93  PixelPropsUtils: Switch Honor of Kings hide to Xiaomi 13 Pro (China)  [johnmart19]
-* d4a3f7e  PixelPropsUtils: Use OP9 PRO for LOLM  [Gustavo Mendes]
-* de0c088  PixelPropsUtils: OP9R > OP9P  [Gustavo Mendes]
-* 5bb5ded  PixelPropsUtils: Spoof GMS and vending to redfin  [someone5678]
-* 514dc0c  PixelPropsUtils: Switch Honor of Kings spoof to Redmi K30 Ultra  [johnmart19]
-* e7c446629  PixelPropsUtils: Spoof Mobile Legends: Bang Bang VNG to Mi 11T  [someone5678]
-* 36b55ab  PixelPropsUtils: Add Gameprops for Battlegrounds Mobile India (BGMI)  [SwapnilVicky]
-* c9f0537  ApplicationPackageManager: Extend freeform window feature to all apps  [minaripenguin]
-* 2880224  core: ApplicationPackageManager: Organize Pixel features list  [someone5678]
-* f0b491c  core: block 2021/22 pixel features to ASI and pixel launcher  [aswin7469]
-* c52beb8  PixelPropsUtils: Allow spoofing device model for Netflix  [Adithya R]
-* 6afbc6c  PixelPropsUtils: Introduce ROG Phone 6  [Gustavo Mendes]
-* 7e8941d  PixelPropsUtils: Update supported pixel code names  [Pranav Vashi]
-* 56bc2ef  PixelPropsUtils: Don't return after sIsFinsky set  [someone5678]
-* 285205d  base: Don't report Wireless Charging, Adaptive Charging as supported by default  [someone5678]
-* 3ec004b  core: Integrate and Enable Pixel features capabilities [1/2]  [Shivan Singh]
-* d220971  core: Add more pixel experience features  [someone5678]
-* f43ae95  PixelPropsUtils: Allow Spoofing of Pixel 7 Pro for pixel devices  [minaripenguin]
-* 0cec1f0  PixelPropsUtils: Spoof ROG Phone 3 for FIFA Mobile  [Richard Raya]
-* d62fdb5  PixelPropsUtils: Do not spoof device for ING Italia  [johnmart19]
-* 047130f  PixelPropsUtils: Use OP 8 PRO for Mobile legends  [Gustavo Mendes]
-* 5112cc4  PixelPropsUtils: move snapchat to walleye spoofing  [John Galt]
-* 30d4b1d  PixelPropsUtils: Add support for Asphalt 9  [Golbinex]
-* da24f2d  PixelPropsUtils: Drop Google Photos spoofing  [someone5678]
-* c60f9a2  PixelPropUtils: Spoof userdebug to pixel launcher  [aswin7469]
-* 2e82037  PixelPropsUtils: Move over propsToChange hashmap to top  [someone5678]
-* 8c7c974  PixelPropsUtils: Don't spoof Google Photos twice  [someone5678]
-* 6e6554f  PixelPropsUtils: Spoof build props to gms.ui and gms.learning  [Ido Ben-Hur]
-* 7ba17a6  PixelPropsUtils: Fix google restore issue  [minaripenguin]
-* 568b5df7  PixelPropsUtils: Spoof gms.persistent to Pixel 7 Pro  [someone5678]
-* 4d1dace  PixelPropsUtils: Spoof raven to gms.persistent  [Ido Ben-Hur]
-* 96ab39d  core: Extend pixel experience features  [minaripenguin]
-* 614f9ed  PixelPropsUtils: Use Xiaomi 11T for Clash of Clans  [Joey Huab]
-* 105c3c4  PixelPropsUtils: Don't set custom model/product/device for gms  [someone5678]
-* dff1af7  PixelPropsUtils: Spoof walleye to gms and PlayStore  [someone5678]
-* 7e21ce6  PixelPropsUtils: Remove dialer and recorder from packagesToKeep list  [someone5678]
-* daa6e3a  PixelPropsUtils: Spoof Pixel 7 Pro to SMS Organizer  [Gokul GK]
-* bb097b8  PixelPropsUtils: Spoof entire google packages to Pixel 7 Pro  [someone5678]
-* bde6924  PixelPropsUtils: Misc changes  [Gustavo Mendes]
-* 6e89899  PixelPropsUtils: Move over gms check to top  [someone5678]
-* e3336c8  PixelPropsUtils: Fix setProps check logic  [someone5678]
-* 702bc35  PixelPropsUtils: Merge game props check  [someone5678]
-* 6a5702d  PixelPropsUtils: Merge streamingPackagesToChange with extraPackagesToChange  [someone5678]
-* a979710  PixelPropsUtils: add snapchat to cheetah list  [Chiranth A J]
-* bf4d766  PixelPropsUtils: GameProps: Hide Apex Legends as Mi11  [johnmart19]
-* ca8aa2c  PixelPropsUtils: GameProps: Spoof Honor of Kings to Mi 11 Ultra  [someone5678]
-* 2032367  PixelPropsUtils: Use Mi 11 Ultra for games prop  [Pranav Vashi]
-* 5ca49c7  PixelPropsUtils: Remove fortnite from Games spoof  [Joey Huab]
-* 05878e2  PixelPropsUtils: Add game props for mobile legends  [Pranav Vashi]
-* 7c1d24e  PixelPropsUtils: Add NHS App props spoofing  [quagsirus]
-* ff9b802  PixelPropsUtils: Invite streaming apps to the party  [neobuddy89]
-* f2668ea  PixelPropsUtils: Remove Pubg New State from GamesProps  [Ivan Martynov]
-* 11e8b80  PixelPropsUtils: Add GamesProps  [rdkng1]
-* 2d3f754  PixelPropsUtils: Update fingerprints to May release  [jhenrique09]
-* 4df221e  PixelPropsUtils: Update from April release  [jhenrique09]
-* a4939c6  PixelPropsUtils: Don't spoof fewer apps  [jhenrique09]
-* 1e9a853  PixelPropsUtils: Spoof user build  [jhenrique09]
-* 8cb95b7  PixelPropsUtils: Simplify GoogleCamera whitelisting  [jhenrique09]
-* f3a4a70  PixelPropsUtils: Don't spoof Google One  [LynnrinChan]
-* 3d4ae93  PixelPropsUtils: Change Samsung whitelist to be more inclusive  [jhenrique09]
-* 670a96d  PixelPropsUtils: Update for March release  [jhenrique09]
-* dc4b178  PixelPropsUtils: Don't declare propsToChange as static  [jhenrique09]
-* 2a44a3d  PixelPropsUtils: Update fingerprint from February update  [jhenrique09]
-* a421d89  PixelPropsUtils: Make CTS/Play Integrity pass again  [Dyneteve]
-* 3d49373  PixelPropsUtils: Set shipping level to 32 for devices >=33  [Anirudh Gupta]
-* ebb1344  PixelPropsUtils: Update fingerprint from January  [jhenrique09]
-* 4190dc2  PixelPropsUtils: Use redfin props for extra packages  [jhenrique09]
-* 55ede50  PixelPropsUtils: spoof nothing smartcenter to pixel  [aswin7469]
-* e25b38c6  PixelPropsUtils: Update from december  [jhenrique09]
-* ae6b848  PixelPropsUtils: Press F for flame and coral  [jhenrique09]
-* 5c2a030  PixelPropsUtils: Update for november security patch  [jhenrique09]
-* a9e5d1f  PixelPropsUtils: Get package name from context instead of app [2/2]  [jhenrique09]
-* 0b2d224  PixelPropsUtils: Correct spoof props for Samsung apps  [jhenrique09]
-* 0801f86  PixelPropsUtils: Spoof Gboard with PixelXL  [Pranav Vashi]
-* 78b7ebe  PixelPropsUtils: Don't spoof euicc  [EnesSastim]
-* 73acacf  PixelPropsUtils: Apply key attestation workaround to Play Store as well  [Dyneteve]
-* 75ef10b  PixelPropsUtils: Switch from raven fp to cheetah  [Joey Huab]
-* 508767d  PixelPropsUtils: Spoof Nexus 6P for GMS unstable process  [Alexander Winkowski]
-* 9445698  PixelPropsUtils: Limit SafetyNet workarounds to unstable GMS process  [Danny Lin]
-* f29b18d  PixelPropsUtils: Exclude recorder from pixel props  [Pranav Vashi]
-* 464a23d  PixelPropsUtils: Remove spoofing for currently supported Pixel devices  [Anay Wadhera]
-* 5c1b2ae  PixelPropsUtils: Only spoof GMS to Raven  [Omkar Chandorkar]
-* 5ea5ca7  PixelPropsUtils: Whitelist YouTube apps  [Pranav Vashi]
-* 7ade6c9  PixelPropsUtils: Whitelist ARCore  [Joey Huab]
-* c71062d  PixelPropsUtils: Bail out early when required  [Pranav Vashi]
-* 7caa503  PixelPropsUtils: Extend list of packages to keep  [Pranav Vashi]
-* 091a9b8  PixelPropsUtils: Consolidate google app checks  [Pranav Vashi]
-* 206a469  PixelPropsUtils: Do not change props for play store  [Pranav Vashi]
-* e74e1ad  keystore: Block key attestation for SafetyNet [1/2]  [Danny Lin]
-* c4672df  parasite: libs: Adapt feature blacklisting to current project  [someone5678]
-* 8aa2111  Import PixelPropsUtils [1/2]  [jhenrique09]
-* 1db75e2  [SQUASHED] core: Blacklist pixel system feature from Google Photos  [Kuba Wojciechowski]
-* 14d4e29  parasite: Add CustomFeaturesUtils  [someone5678]
-* fb596a1  parasite: libs: Add com.android.internal.util.custom  [someone5678]
-* e7a0192  parasite: lib: Move org.lineageos.lib.phone to own directory  [someone5678]
-* bb609b10  parasite: Build org.lineageos.lib.phone  [someone5678]
-* 89ea413  parasite: lib: Make org.lineageos.lib.phone installable  [someone5678]
-* 35e9200  parasite: lib: Import sensitive_pn configs here  [someone5678]
-* 9973427  parasite: Import org.lineageos.lib.phone from lineage-sdk  [someone5678]
-* 9f70112  vendor: Clean-ups  [someone5678]
-
-### 11-24-2024
-
-#### vendor/aosp
-
-* 7ee738d  SystemUI: Enable smart replies for apps that target APIs lower than 28  [Diab Neiroukh]
-
-#### vendor/parasite/common
-
-* 7ee738d  SystemUI: Enable smart replies for apps that target APIs lower than 28  [Diab Neiroukh]
-
-### 11-23-2024
-
-#### vendor/google/gms
-
-* 619d68f  gms: config: Set locationProvider and locationExtra  [someone5678]
-* 092561e  gms: config: Move from locationExtra to indicatorExempted  [someone5678]
-* be638e6  [SQUASH] Exempt more pacakges from location indicators  [flawedworld]
-
-### 11-22-2024
+### 12-05-2024
 
 #### device/sony/pdx234
 
-* 1a7469b  pdx234: Update  [someone5678]
+* f1ceb95  pdx234: nfc: Add config file for FeliCa (Type-F).  [kyasu]
+* 4b89fc1  pdx234: Add kernel config file for pdx234  [kyasu]
+* 1b1158c  pdx234: Decommonize some proprietary firmware blobs  [kyasu]
 
-#### vendor/google/gms
+#### device/sony/sm8550-common
 
-* 7e80453  gms: config: Spoof realme link  [Blackmanx]
+* 378f185  sm8550-common: fstab: Remove non-existent qmcs entry  [kyasu]
+* a70f2c7  sm8550-common: Add FeliCa (NFC Type-F) support for yodo JP models  [kyasu]
+* 9f2043d  sm8550-common: Decommonize some proprietary firmware blobs  [kyasu]
+* ad71387  sm8550-common: Add Xperia 5 V family (pdx237) support  [kyasu]
+
+#### frameworks/base
+
+* a279533  wm: Show rounded corners on freeform window on internal display  [Adithya R]
+
+#### kernel/sony/sm8550
+
+* a3b5a22  arm64: configs: Add pdx23{4,7}.config for building split DTBs  [kyasu]
+
+#### kernel/sony/sm8550-devicetrees
+
+* 224acab  qcom: Add pdx237 DTB build support  [kyasu]
+* dcba995  sm8550-devicetrees: pdx237: Unify compatible, qcom,msm-id tags  [kyasu]
+* ed384fd  sm8550-devicetrees: Import pdx237 dts files from sony copyleft 67.0.A.8.xxx  [kyasu]
+
+#### kernel/sony/sm8550-modules
+
+* 920ea18  semc: sony_camera: Add dual camera support for pdx237  [kyasu]
+
+#### packages/apps/Settings
+
+* 6ac9323  Settings: Organize misc security and privacy settings  [someone5678]
+* 6860410  fixup! Settings: Add additional security settings preference  [someone5678]
+* c4cfa1c  fixup! Settings: Allow toggling privacy indicators [2/2]  [someone5678]
+* 820040d  Settings: Avoid enforcing weird backgrounds  [El Dainosor]
 
 #### vendor/sony/pdx234
 
-* ac33204  pdx234: Update  [someone5678]
+* 3de27c5  pdx234: Sync to device  [someone5678]
 
 #### vendor/sony/sm8550-common
 
-* fccdfcf  sm8550-common: Update  [someone5678]
+* 7cf03f2  sm8550-common: Sync to device  [someone5678]
+
+### 12-04-2024
+
+#### packages/apps/Settings
+
+* aec928d  Settings: Expose clipboard auto clear setting [2/2]  [Oliver Scott]
+
+### 12-03-2024
+
+#### device/sony/pdx234
+
+* ca71b12  pdx234: Set TARGET_COLUMBUS_MODEL to crosshatch  [someone5678]
+
+#### frameworks/base
+
+* b2189a3  Settings: Expose clipboard auto clear setting [2/2]  [someone5678]
+
+#### packages/apps/Settings
+
+* 23f3b75  fixup! Settings: Add Glide library  [someone5678]
+
+#### vendor/google/gms
+
+* d4cd909  gms: configs: Add more camera apps to processKeep  [someone5678]
+* 5159b4d  gms: Add flags to set columbus model  [someone5678]
+
+### 12-02-2024
+
+#### packages/apps/Settings
+
+* 45c714a  Settings: Move extended/L back swipe to MainSwitchPreference  [someone5678]
+* 4f10cb2  Settings: island: Move to MainSwitchPreference  [someone5678]
+
+#### prebuilts/custom-sdk
+
+* 7cd5d5d  custom-sdk: Add dummy manifest  [someone5678]
+* 7bf4c82  Run ./gradlew generateBp  [someone5678]
+* bea8c5b  custom-sdk: Initial configs for Lineage generateBp  [someone5678]
+* c960d43  Initial commit  [someone5678]
+
+### 12-01-2024
 
