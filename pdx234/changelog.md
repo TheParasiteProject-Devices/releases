@@ -1,6 +1,35 @@
 # pdx234
 
-### 12-05-2024
+### 12-10-2024
+
+#### frameworks/base
+
+* 5824613  base: Add support for hide applist [1/2]  [someone5678]
+* 24bb33b  Hide hidden apps from all apps except system  [Oliver Scott]
+
+### 12-09-2024
+
+#### frameworks/base
+
+* 1809e7f  fixup! base: Hide ADB and developer setting enable status [1/2]  [someone5678]
+
+#### vendor/parasite/certification
+
+* 2025e0e  certification: Update  [someone5678]
+
+### 12-08-2024
+
+#### packages/apps/Settings
+
+* 898df92  Settings: Add support for hide applist [2/2]  [someone5678]
+
+#### vendor/google/overlays/ThemeIcons
+
+* 1ba1e92  lawnicons: Update  [someone5678]
+
+### 12-07-2024
+
+### 12-06-2024
 
 #### device/sony/pdx234
 
@@ -47,45 +76,4 @@
 #### vendor/sony/sm8550-common
 
 * 7cf03f2  sm8550-common: Sync to device  [someone5678]
-
-### 12-04-2024
-
-#### packages/apps/Settings
-
-* aec928d  Settings: Expose clipboard auto clear setting [2/2]  [Oliver Scott]
-
-### 12-03-2024
-
-#### device/sony/pdx234
-
-* ca71b12  pdx234: Set TARGET_COLUMBUS_MODEL to crosshatch  [someone5678]
-
-#### frameworks/base
-
-* b2189a3  Settings: Expose clipboard auto clear setting [2/2]  [someone5678]
-
-#### packages/apps/Settings
-
-* 23f3b75  fixup! Settings: Add Glide library  [someone5678]
-
-#### vendor/google/gms
-
-* d4cd909  gms: configs: Add more camera apps to processKeep  [someone5678]
-* 5159b4d  gms: Add flags to set columbus model  [someone5678]
-
-### 12-02-2024
-
-#### packages/apps/Settings
-
-* 45c714a  Settings: Move extended/L back swipe to MainSwitchPreference  [someone5678]
-* 4f10cb2  Settings: island: Move to MainSwitchPreference  [someone5678]
-
-#### prebuilts/custom-sdk
-
-* 7cd5d5d  custom-sdk: Add dummy manifest  [someone5678]
-* 7bf4c82  Run ./gradlew generateBp  [someone5678]
-* bea8c5b  custom-sdk: Initial configs for Lineage generateBp  [someone5678]
-* c960d43  Initial commit  [someone5678]
-
-### 12-01-2024
 
