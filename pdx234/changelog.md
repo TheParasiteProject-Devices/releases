@@ -1,79 +1,34 @@
 # pdx234
 
-### 12-10-2024
+### 12-15-2024
 
 #### frameworks/base
 
-* 5824613  base: Add support for hide applist [1/2]  [someone5678]
-* 24bb33b  Hide hidden apps from all apps except system  [Oliver Scott]
-
-### 12-09-2024
-
-#### frameworks/base
-
-* 1809e7f  fixup! base: Hide ADB and developer setting enable status [1/2]  [someone5678]
-
-#### vendor/parasite/certification
-
-* 2025e0e  certification: Update  [someone5678]
-
-### 12-08-2024
+* d6566cf  SystemUI: ConfigurationControllerImpl: Avoid NullPointerException  [someone5678]
+* c7ec063  base: Rework lock gesture feature  [cjh1249131356]
+* 6156c1b  base: Add support for hide applist [1/2]  [someone5678]
+* 82bfe6e  Hide hidden apps from all apps except system  [Oliver Scott]
+* 76240a8  fixup! base: Hide ADB and developer setting enable status [1/2]  [someone5678]
+* e52ed63  wm: Show rounded corners on freeform window on internal display  [Adithya R]
+* c6e493d  base: Expose clipboard auto clear setting [1/2]  [someone5678]
 
 #### packages/apps/Settings
 
-* 898df92  Settings: Add support for hide applist [2/2]  [someone5678]
+* 4d3fc8e  Settings: Import androidx.room_room-runtime  [someone5678]
+* a8c32e2  Revert "BatteryStateDatabase: Set exportSchema to false"  [someone5678]
 
-#### vendor/google/overlays/ThemeIcons
+### 12-14-2024
 
-* 1ba1e92  lawnicons: Update  [someone5678]
+### 12-13-2024
 
-### 12-07-2024
+### 12-12-2024
 
-### 12-06-2024
+### 12-11-2024
 
-#### device/sony/pdx234
+#### packages/apps/GameSpace
 
-* f1ceb95  pdx234: nfc: Add config file for FeliCa (Type-F).  [kyasu]
-* 4b89fc1  pdx234: Add kernel config file for pdx234  [kyasu]
-* 1b1158c  pdx234: Decommonize some proprietary firmware blobs  [kyasu]
-
-#### device/sony/sm8550-common
-
-* 378f185  sm8550-common: fstab: Remove non-existent qmcs entry  [kyasu]
-* a70f2c7  sm8550-common: Add FeliCa (NFC Type-F) support for yodo JP models  [kyasu]
-* 9f2043d  sm8550-common: Decommonize some proprietary firmware blobs  [kyasu]
-* ad71387  sm8550-common: Add Xperia 5 V family (pdx237) support  [kyasu]
-
-#### frameworks/base
-
-* a279533  wm: Show rounded corners on freeform window on internal display  [Adithya R]
-
-#### kernel/sony/sm8550
-
-* a3b5a22  arm64: configs: Add pdx23{4,7}.config for building split DTBs  [kyasu]
-
-#### kernel/sony/sm8550-devicetrees
-
-* 224acab  qcom: Add pdx237 DTB build support  [kyasu]
-* dcba995  sm8550-devicetrees: pdx237: Unify compatible, qcom,msm-id tags  [kyasu]
-* ed384fd  sm8550-devicetrees: Import pdx237 dts files from sony copyleft 67.0.A.8.xxx  [kyasu]
-
-#### kernel/sony/sm8550-modules
-
-* 920ea18  semc: sony_camera: Add dual camera support for pdx237  [kyasu]
-
-#### packages/apps/Settings
-
-* 6ac9323  Settings: Organize misc security and privacy settings  [someone5678]
-* 6860410  fixup! Settings: Add additional security settings preference  [someone5678]
-* c4cfa1c  fixup! Settings: Allow toggling privacy indicators [2/2]  [someone5678]
-* 820040d  Settings: Avoid enforcing weird backgrounds  [El Dainosor]
-
-#### vendor/sony/pdx234
-
-* 3de27c5  pdx234: Sync to device  [someone5678]
-
-#### vendor/sony/sm8550-common
-
-* 7cf03f2  sm8550-common: Sync to device  [someone5678]
+* 5f1248f  GameSpace: Fix lock gesture not working for secondary users  [Pranav Vashi]
+* 433b087  GameSpace: Adapt with base lock gesture change  [cjh1249131356]
+* fef028c  GameSpace: Prevent duplicate instances of gamebar  [Pranav Vashi]
+* 7350fd6  GameSpace: Update app name to Game Mode Service  [someone5678]
 
